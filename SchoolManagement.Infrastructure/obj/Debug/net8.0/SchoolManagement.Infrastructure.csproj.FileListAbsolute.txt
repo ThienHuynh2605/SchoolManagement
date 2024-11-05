@@ -1,0 +1,17 @@
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\bin\Debug\net8.0\SchoolManagement.Infrastructure.deps.json
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\bin\Debug\net8.0\SchoolManagement.Infrastructure.dll
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\bin\Debug\net8.0\SchoolManagement.Infrastructure.pdb
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\bin\Debug\net8.0\SchoolManagement.Domain.dll
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\bin\Debug\net8.0\SchoolManagement.Domain.pdb
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\obj\Debug\net8.0\SchoolManagement.Infrastructure.csproj.AssemblyReference.cache
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\obj\Debug\net8.0\SchoolManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\obj\Debug\net8.0\SchoolManagement.Infrastructure.AssemblyInfoInputs.cache
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\obj\Debug\net8.0\SchoolManagement.Infrastructure.AssemblyInfo.cs
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\obj\Debug\net8.0\SchoolManagement.Infrastructure.csproj.CoreCompileInputs.cache
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\obj\Debug\net8.0\SchoolMa.324EA75F.Up2Date
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\obj\Debug\net8.0\SchoolManagement.Infrastructure.dll
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\obj\Debug\net8.0\refint\SchoolManagement.Infrastructure.dll
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\obj\Debug\net8.0\SchoolManagement.Infrastructure.pdb
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\obj\Debug\net8.0\ref\SchoolManagement.Infrastructure.dll
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\bin\Debug\net8.0\SchoolManagement.Infrastructure.runtimeconfig.json
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\obj\Debug\net8.0\SchoolManagement.Infrastructure.genruntimeconfig.cache

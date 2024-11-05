@@ -1,0 +1,12 @@
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Domain\bin\Debug\net8.0\SchoolManagement.Domain.deps.json
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Domain\bin\Debug\net8.0\SchoolManagement.Domain.dll
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Domain\bin\Debug\net8.0\SchoolManagement.Domain.pdb
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Domain\obj\Debug\net8.0\SchoolManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Domain\obj\Debug\net8.0\SchoolManagement.Domain.AssemblyInfoInputs.cache
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Domain\obj\Debug\net8.0\SchoolManagement.Domain.AssemblyInfo.cs
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Domain\obj\Debug\net8.0\SchoolManagement.Domain.csproj.CoreCompileInputs.cache
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Domain\obj\Debug\net8.0\SchoolManagement.Domain.dll
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Domain\obj\Debug\net8.0\refint\SchoolManagement.Domain.dll
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Domain\obj\Debug\net8.0\SchoolManagement.Domain.pdb
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Domain\obj\Debug\net8.0\ref\SchoolManagement.Domain.dll
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Domain\obj\Debug\net8.0\SchoolManagement.Domain.csproj.AssemblyReference.cache

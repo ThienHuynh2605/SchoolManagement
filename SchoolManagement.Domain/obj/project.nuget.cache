@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mYTTPLoNdNY=",
+  "success": true,
+  "projectFilePath": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\SchoolManagement.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Thien.huynh2\\.nuget\\packages\\enums.net\\5.0.0\\enums.net.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
