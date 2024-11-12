@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace SchoolManagement.Domain.Entities
 {
-    public class Student
+    public class Student : BaseEntity
     {
-        public int Id { get; set; }
         public string? Name { get; set; }
-        public DateTime DateOfBirth { get; set; }
+        public DateTime? DateOfBirth { get; set; }
         public string? Email { get; set; }
         public string? HomeTown { get; set; }
+
+        public StudentAccount? Account { get; set; }
     }
 }

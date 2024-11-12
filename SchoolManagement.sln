@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagement.API", "SchoolManagement.API\SchoolManagement.API.csproj", "{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManagement.API", "SchoolManagement.API\SchoolManagement.API.csproj", "{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagement.Domain", "SchoolManagement.Domain\SchoolManagement.Domain.csproj", "{2C566962-1B18-446D-85A2-20F197C0CD31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManagement.Domain", "SchoolManagement.Domain\SchoolManagement.Domain.csproj", "{2C566962-1B18-446D-85A2-20F197C0CD31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagement.Application", "SchoolManagement.Application\SchoolManagement.Application.csproj", "{351325E5-9F6F-400B-9C41-77EB1CA9043E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManagement.Application", "SchoolManagement.Application\SchoolManagement.Application.csproj", "{351325E5-9F6F-400B-9C41-77EB1CA9043E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagement.Infrastructure", "SchoolManagement.Infrastructure\SchoolManagement.Infrastructure.csproj", "{D86D9BB3-12C9-4423-AC6A-51DB217F9525}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManagement.Infrastructure", "SchoolManagement.Infrastructure\SchoolManagement.Infrastructure.csproj", "{D86D9BB3-12C9-4423-AC6A-51DB217F9525}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManager.Test", "SchoolManager.Test\SchoolManager.Test.csproj", "{863A368A-BC21-4F2B-A5BA-BF651826FCC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D86D9BB3-12C9-4423-AC6A-51DB217F9525}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D86D9BB3-12C9-4423-AC6A-51DB217F9525}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D86D9BB3-12C9-4423-AC6A-51DB217F9525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{863A368A-BC21-4F2B-A5BA-BF651826FCC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{863A368A-BC21-4F2B-A5BA-BF651826FCC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{863A368A-BC21-4F2B-A5BA-BF651826FCC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{863A368A-BC21-4F2B-A5BA-BF651826FCC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

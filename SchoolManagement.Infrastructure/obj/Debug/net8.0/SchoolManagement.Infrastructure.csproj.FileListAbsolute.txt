@@ -15,3 +15,4 @@ C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Inf
 C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\obj\Debug\net8.0\ref\SchoolManagement.Infrastructure.dll
 C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\bin\Debug\net8.0\SchoolManagement.Infrastructure.runtimeconfig.json
 C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\obj\Debug\net8.0\SchoolManagement.Infrastructure.genruntimeconfig.cache
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Infrastructure\obj\Debug\net8.0\SchoolManagement.Infrastructure.sourcelink.json

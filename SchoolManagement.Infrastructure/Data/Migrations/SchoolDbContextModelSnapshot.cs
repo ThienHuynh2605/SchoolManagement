@@ -30,7 +30,7 @@ namespace SchoolManagement.Infrastructure.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("DateOfBirth")
+                    b.Property<DateTime?>("DateOfBirth")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
@@ -39,94 +39,59 @@ namespace SchoolManagement.Infrastructure.Data.Migrations
                     b.Property<string>("HomeTown")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Students");
+                });
 
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            DateOfBirth = new DateTime(2003, 9, 22, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "emailStudent1@gmail.com",
-                            HomeTown = "HomeTown1",
-                            Name = "Student1"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            DateOfBirth = new DateTime(2004, 9, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "emailStudent2@gmail.com",
-                            HomeTown = "HomeTown2",
-                            Name = "Student2"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            DateOfBirth = new DateTime(2005, 11, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "emailStudent3@gmail.com",
-                            HomeTown = "HomeTown3",
-                            Name = "Student3"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            DateOfBirth = new DateTime(2004, 7, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "emailStudent4@gmail.com",
-                            HomeTown = "HomeTown4",
-                            Name = "Student4"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            DateOfBirth = new DateTime(2004, 10, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "emailStudent5@gmail.com",
-                            HomeTown = "HomeTown0",
-                            Name = "Student5"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            DateOfBirth = new DateTime(2005, 7, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "emailStudent6@gmail.com",
-                            HomeTown = "HomeTown1",
-                            Name = "Student6"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            DateOfBirth = new DateTime(2002, 2, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "emailStudent7@gmail.com",
-                            HomeTown = "HomeTown2",
-                            Name = "Student7"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            DateOfBirth = new DateTime(2005, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "emailStudent8@gmail.com",
-                            HomeTown = "HomeTown3",
-                            Name = "Student8"
-                        },
-                        new
-                        {
-                            Id = 9,
-                            DateOfBirth = new DateTime(2002, 1, 22, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "emailStudent9@gmail.com",
-                            HomeTown = "HomeTown4",
-                            Name = "Student9"
-                        },
-                        new
-                        {
-                            Id = 10,
-                            DateOfBirth = new DateTime(2004, 9, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "emailStudent10@gmail.com",
-                            HomeTown = "HomeTown0",
-                            Name = "Student10"
-                        });
+            modelBuilder.Entity("SchoolManagement.Domain.Entities.StudentAccount", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("StudentId")
+                        .IsUnique();
+
+                    b.ToTable("StudentAccounts");
+                });
+
+            modelBuilder.Entity("SchoolManagement.Domain.Entities.StudentAccount", b =>
+                {
+                    b.HasOne("SchoolManagement.Domain.Entities.Student", "Student")
+                        .WithOne("Account")
+                        .HasForeignKey("SchoolManagement.Domain.Entities.StudentAccount", "StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Student");
+                });
+
+            modelBuilder.Entity("SchoolManagement.Domain.Entities.Student", b =>
+                {
+                    b.Navigation("Account");
                 });
 #pragma warning restore 612, 618
         }

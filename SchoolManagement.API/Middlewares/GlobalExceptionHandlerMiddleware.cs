@@ -39,7 +39,7 @@ namespace SchoolManagement.API.Middlewares
 
             if (ex is NotFoundException)
             {
-                context.Response.StatusCode = (int)HttpStatusCode.NotFound;
+                context.Response.StatusCode = (int)HttpStatusCode.OK;
                 responseData.StatusCode = HttpStatusCode.NotFound;
             }
             else

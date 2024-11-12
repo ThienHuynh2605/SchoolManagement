@@ -10,3 +10,4 @@ C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Dom
 C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Domain\obj\Debug\net8.0\SchoolManagement.Domain.pdb
 C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Domain\obj\Debug\net8.0\ref\SchoolManagement.Domain.dll
 C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Domain\obj\Debug\net8.0\SchoolManagement.Domain.csproj.AssemblyReference.cache
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Domain\obj\Debug\net8.0\SchoolManagement.Domain.sourcelink.json
