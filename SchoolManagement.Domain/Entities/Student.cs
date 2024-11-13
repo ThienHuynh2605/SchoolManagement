@@ -14,5 +14,7 @@ namespace SchoolManagement.Domain.Entities
         public string? HomeTown { get; set; }
 
         public StudentAccount? Account { get; set; }
+        public Grade? Grade { get; set; }
+        public int GradeId { get; set; }    
     }
 }

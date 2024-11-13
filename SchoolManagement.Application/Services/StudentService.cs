@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using SchoolManagement.Application.DTOs;
+using SchoolManagement.Application.DTOs.StudentDtos;
 using SchoolManagement.Application.Supports.Paginations;
 using SchoolManagement.Domain.Entities;
 using SchoolManagement.Domain.Exceptions;

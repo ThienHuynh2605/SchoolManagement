@@ -13,6 +13,9 @@ using Microsoft.AspNetCore.Http.Features;
 using SchoolManagement.Application.Supports.Mappers;
 using SchoolManagement.Application.DTOs;
 using SchoolManagement.Application.Supports.Validations;
+using SchoolManagement.Application.DTOs.StudentDtos;
+using SchoolManagement.Domain.IRepositories;
+using SchoolManagement.Application.IServices;
 //using Hellang.Middleware.ProblemDetails;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,10 +28,15 @@ builder.Services.AddDbContext<SchoolDbContext>(Options =>
 
 // Add AutoMapper
 builder.Services.AddAutoMapper(typeof(StudentMapping));
+builder.Services.AddAutoMapper(typeof(GradeMapping));
 
-// Add Dependency Injection
+// Add Dependency Injection for Repositories
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+builder.Services.AddScoped<IGradeRepository, GradeRepository>();
+
+// Add Dependency Injection for Services
 builder.Services.AddScoped<IStudentService, StudentService>();
+builder.Services.AddScoped<IGradeService, GradeService>();
 
 // Add Fluent Validation 
 builder.Services.AddFluentValidationAutoValidation();

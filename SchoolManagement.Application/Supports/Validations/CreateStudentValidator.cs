@@ -1,4 +1,4 @@
-﻿using SchoolManagement.Application.DTOs;
+﻿using SchoolManagement.Application.DTOs.StudentDtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;

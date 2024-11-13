@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using SchoolManagement.Application.DTOs;
+using SchoolManagement.Application.DTOs.StudentDtos;
 using SchoolManagement.Domain.Entities;
 using System;
 using System.Collections.Generic;
