@@ -96,6 +96,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             }
 
             existingStudent.Email = student.Email;
+            existingStudent.GradeId = student.GradeId;
             existingStudent.DateOfBirth = student.DateOfBirth;  
             existingStudent.Name = student.Name;
             existingStudent.IsActive = student.IsActive;
@@ -134,6 +135,11 @@ namespace SchoolManagement.Infrastructure.Repositories
             if (student.DateOfBirth.HasValue)
             {
                 existingStudent.DateOfBirth = student.DateOfBirth.Value;
+            }
+
+            if (student.GradeId != null)
+            {
+                existingStudent.GradeId = student.GradeId;
             }
 
 #pragma warning disable CS0472 // The result of the expression is always the same since a value of this type is never equal to 'null'
