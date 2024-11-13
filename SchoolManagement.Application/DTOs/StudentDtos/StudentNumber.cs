@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SchoolManagement.Application.DTOs
+namespace SchoolManagement.Application.DTOs.StudentDtos
 {
     public class StudentNumber
     {

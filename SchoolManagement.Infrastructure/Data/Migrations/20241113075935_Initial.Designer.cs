@@ -12,8 +12,8 @@ using SchoolManagement.Infrastructure.Data;
 namespace SchoolManagement.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(SchoolDbContext))]
-    [Migration("20241108084124_AddStudentAccount")]
-    partial class AddStudentAccount
+    [Migration("20241113075935_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,28 @@ namespace SchoolManagement.Infrastructure.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("SchoolManagement.Domain.Entities.Grade", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Classroom")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Grades");
+                });
 
             modelBuilder.Entity("SchoolManagement.Domain.Entities.Student", b =>
                 {
@@ -39,6 +61,9 @@ namespace SchoolManagement.Infrastructure.Data.Migrations
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("GradeId")
+                        .HasColumnType("int");
+
                     b.Property<string>("HomeTown")
                         .HasColumnType("nvarchar(max)");
 
@@ -49,6 +74,8 @@ namespace SchoolManagement.Infrastructure.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("GradeId");
 
                     b.ToTable("Students");
                 });
@@ -81,6 +108,17 @@ namespace SchoolManagement.Infrastructure.Data.Migrations
                     b.ToTable("StudentAccounts");
                 });
 
+            modelBuilder.Entity("SchoolManagement.Domain.Entities.Student", b =>
+                {
+                    b.HasOne("SchoolManagement.Domain.Entities.Grade", "Grade")
+                        .WithMany("Students")
+                        .HasForeignKey("GradeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Grade");
+                });
+
             modelBuilder.Entity("SchoolManagement.Domain.Entities.StudentAccount", b =>
                 {
                     b.HasOne("SchoolManagement.Domain.Entities.Student", "Student")
@@ -90,6 +128,11 @@ namespace SchoolManagement.Infrastructure.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Student");
+                });
+
+            modelBuilder.Entity("SchoolManagement.Domain.Entities.Grade", b =>
+                {
+                    b.Navigation("Students");
                 });
 
             modelBuilder.Entity("SchoolManagement.Domain.Entities.Student", b =>

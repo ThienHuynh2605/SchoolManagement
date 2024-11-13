@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "SchoolManagement.API.Controllers.GradesController",
+    "Method": "CreateGradeAsync",
+    "RelativePath": "api/Grades",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gradeDto",
+        "Type": "SchoolManagement.Application.DTOs.GradeDtos.GradeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SchoolManagement.API.Controllers.StudentsController",
     "Method": "GetStudentsAsync",
     "RelativePath": "api/students",
@@ -30,7 +46,7 @@
     "Parameters": [
       {
         "Name": "studentDto",
-        "Type": "SchoolManagement.Application.DTOs.CreateStudentDto",
+        "Type": "SchoolManagement.Application.DTOs.StudentDtos.CreateStudentDto",
         "IsRequired": true
       }
     ],
@@ -67,7 +83,7 @@
       },
       {
         "Name": "studentDto",
-        "Type": "SchoolManagement.Application.DTOs.UpdateStudentDto",
+        "Type": "SchoolManagement.Application.DTOs.StudentDtos.UpdateStudentDto",
         "IsRequired": true
       }
     ],
@@ -88,7 +104,7 @@
       },
       {
         "Name": "studentDto",
-        "Type": "SchoolManagement.Application.DTOs.UpdateStudentPartialDto",
+        "Type": "SchoolManagement.Application.DTOs.StudentDtos.UpdateStudentPartialDto",
         "IsRequired": true
       }
     ],
@@ -125,7 +141,7 @@
       },
       {
         "Name": "accountDto",
-        "Type": "SchoolManagement.Application.DTOs.StudentAccountDto",
+        "Type": "SchoolManagement.Application.DTOs.StudentDtos.StudentAccountDto",
         "IsRequired": true
       }
     ],
