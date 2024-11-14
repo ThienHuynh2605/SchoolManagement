@@ -3,52 +3,72 @@
   "WorkspaceRootPath": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.api\\controllers\\gradescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:schoolmanagement.api\\controllers\\gradescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\iservices\\igradeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\iservices\\igradeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\services\\gradeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\services\\gradeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\gradedtos\\gradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\gradedtos\\gradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\supports\\mappers\\grademapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\supports\\mappers\\grademapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.infrastructure\\repositories\\graderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|solutionrelative:schoolmanagement.infrastructure\\repositories\\graderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.domain\\irepositories\\igraderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|solutionrelative:schoolmanagement.domain\\irepositories\\igraderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\iservices\\igradeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\iservices\\igradeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\gradedtos\\getgradesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\gradedtos\\getgradesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\supports\\paginations\\paginationgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\supports\\paginations\\paginationgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\supports\\paginations\\paginationgradedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\supports\\paginations\\paginationgradedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\supports\\paginations\\paginationstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\supports\\paginations\\paginationstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\gradedtos\\getgradedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\gradedtos\\getgradedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\supports\\mappers\\studentmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\supports\\mappers\\studentmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\gradedtos\\studentingradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\gradedtos\\studentingradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\supports\\mappers\\grademapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\supports\\mappers\\grademapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\gradedtos\\getgradesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\gradedtos\\getgradesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.api\\controllers\\gradescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:schoolmanagement.api\\controllers\\gradescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\studentdtos\\getstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\studentdtos\\getstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\gradedtos\\gradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\gradedtos\\gradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.infrastructure\\repositories\\graderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|solutionrelative:schoolmanagement.infrastructure\\repositories\\graderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.infrastructure\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|solutionrelative:schoolmanagement.infrastructure\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.domain\\irepositories\\igraderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|solutionrelative:schoolmanagement.domain\\irepositories\\igraderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\supports\\paginations\\paginationgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\supports\\paginations\\paginationgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,32 +86,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "StudentMapping.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Mappers\\StudentMapping.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\Supports\\Mappers\\StudentMapping.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Mappers\\StudentMapping.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\Supports\\Mappers\\StudentMapping.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T03:15:50.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetGradeDetail.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradeDetail.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradeDetail.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradeDetail.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradeDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T03:12:04.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PaginationGradeDetail.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Paginations\\PaginationGradeDetail.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\Supports\\Paginations\\PaginationGradeDetail.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Paginations\\PaginationGradeDetail.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\Supports\\Paginations\\PaginationGradeDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T02:32:52.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GetStudentDto.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\StudentDtos\\GetStudentDto.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\StudentDtos\\GetStudentDto.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\StudentDtos\\GetStudentDto.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\StudentDtos\\GetStudentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T02:21:45.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentInGradeDto.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\StudentInGradeDto.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\GradeDtos\\StudentInGradeDto.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\StudentInGradeDto.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\GradeDtos\\StudentInGradeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T02:23:10.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "GradesController.cs",
               "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\GradesController.cs",
               "RelativeDocumentMoniker": "SchoolManagement.API\\Controllers\\GradesController.cs",
               "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\GradesController.cs",
               "RelativeToolTip": "SchoolManagement.API\\Controllers\\GradesController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAmwCEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwCAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T09:46:44.987Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "GradeMapping.cs",
               "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Mappers\\GradeMapping.cs",
               "RelativeDocumentMoniker": "SchoolManagement.Application\\Supports\\Mappers\\GradeMapping.cs",
               "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Mappers\\GradeMapping.cs",
               "RelativeToolTip": "SchoolManagement.Application\\Supports\\Mappers\\GradeMapping.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:42:30.596Z"
+              "WhenOpened": "2024-11-13T09:42:30.596Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
               "Title": "StudentService.cs",
               "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Services\\StudentService.cs",
               "RelativeDocumentMoniker": "SchoolManagement.Application\\Services\\StudentService.cs",
@@ -109,9 +195,10 @@
               "RelativeDocumentMoniker": "SchoolManagement.Application\\Services\\GradeService.cs",
               "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Services\\GradeService.cs",
               "RelativeToolTip": "SchoolManagement.Application\\Services\\GradeService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAmwDgAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwDwAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:37:14.552Z"
+              "WhenOpened": "2024-11-13T09:37:14.552Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -121,13 +208,14 @@
               "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradesDto.cs",
               "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradesDto.cs",
               "RelativeToolTip": "SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradesDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:35:18.894Z"
+              "WhenOpened": "2024-11-13T09:35:18.894Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "GradeDto.cs",
               "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\GradeDto.cs",
               "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\GradeDtos\\GradeDto.cs",
@@ -135,35 +223,38 @@
               "RelativeToolTip": "SchoolManagement.Application\\DTOs\\GradeDtos\\GradeDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:34:57.937Z"
+              "WhenOpened": "2024-11-13T09:34:57.937Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "IGradeService.cs",
               "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\IServices\\IGradeService.cs",
               "RelativeDocumentMoniker": "SchoolManagement.Application\\IServices\\IGradeService.cs",
               "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\IServices\\IGradeService.cs",
               "RelativeToolTip": "SchoolManagement.Application\\IServices\\IGradeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAEwA0AAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:34:33.594Z"
+              "WhenOpened": "2024-11-13T09:34:33.594Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
               "Title": "PaginationStudent.cs",
               "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Paginations\\PaginationStudent.cs",
               "RelativeDocumentMoniker": "SchoolManagement.Application\\Supports\\Paginations\\PaginationStudent.cs",
               "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Paginations\\PaginationStudent.cs",
               "RelativeToolTip": "SchoolManagement.Application\\Supports\\Paginations\\PaginationStudent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:33:21.856Z"
+              "WhenOpened": "2024-11-13T09:33:21.856Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "PaginationGrade.cs",
               "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Paginations\\PaginationGrade.cs",
               "RelativeDocumentMoniker": "SchoolManagement.Application\\Supports\\Paginations\\PaginationGrade.cs",
@@ -175,39 +266,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "StudentRepository.cs",
               "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Repositories\\StudentRepository.cs",
               "RelativeDocumentMoniker": "SchoolManagement.Infrastructure\\Repositories\\StudentRepository.cs",
               "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Repositories\\StudentRepository.cs",
               "RelativeToolTip": "SchoolManagement.Infrastructure\\Repositories\\StudentRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:29:05.991Z"
+              "WhenOpened": "2024-11-13T09:29:05.991Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "GradeRepository.cs",
               "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Repositories\\GradeRepository.cs",
               "RelativeDocumentMoniker": "SchoolManagement.Infrastructure\\Repositories\\GradeRepository.cs",
               "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Repositories\\GradeRepository.cs",
               "RelativeToolTip": "SchoolManagement.Infrastructure\\Repositories\\GradeRepository.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAcwBwAAABlAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCgAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:24:54.686Z"
+              "WhenOpened": "2024-11-13T09:24:54.686Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "IGradeRepository.cs",
               "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\IRepositories\\IGradeRepository.cs",
               "RelativeDocumentMoniker": "SchoolManagement.Domain\\IRepositories\\IGradeRepository.cs",
               "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\IRepositories\\IGradeRepository.cs",
               "RelativeToolTip": "SchoolManagement.Domain\\IRepositories\\IGradeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:24:11.426Z"
+              "WhenOpened": "2024-11-13T09:24:11.426Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using SchoolManagement.Application.DTOs.GradeDtos;
 using SchoolManagement.Application.DTOs.StudentDtos;
 using SchoolManagement.Domain.Entities;
 using System;
@@ -20,6 +21,8 @@ namespace SchoolManagement.Application.Supports.Mappers
             CreateMap<StudentAccountDto, StudentAccount>().ReverseMap();
             CreateMap<UpdateStudentDto, Student>().ReverseMap();
             CreateMap<UpdateStudentPartialDto, Student>();
+
+            CreateMap<Student, StudentInGradeDto>().ReverseMap();
         }
     }
 }

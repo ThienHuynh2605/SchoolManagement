@@ -37,6 +37,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SchoolManagement.API.Controllers.GradesController",
+    "Method": "GetGradeDetailAsync",
+    "RelativePath": "api/Grades/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SchoolManagement.API.Controllers.StudentsController",
     "Method": "GetStudentsAsync",
     "RelativePath": "api/students",

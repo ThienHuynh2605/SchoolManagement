@@ -11,5 +11,6 @@ namespace SchoolManagement.Domain.IRepositories
     {
         Task<Grade> CreateGradeAsync(Grade grade);
         Task<(List<Grade> grades, int totalGrade)> GetGradeAsync(int page, int pageSize);
+        Task<Grade> GetGradeDetailAsync(int id);
     }
 }
