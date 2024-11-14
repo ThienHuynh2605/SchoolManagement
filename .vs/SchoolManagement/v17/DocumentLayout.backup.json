@@ -87,8 +87,7 @@
               "RelativeToolTip": "SchoolManagement.Application\\Supports\\Mappers\\GradeMapping.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:42:30.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T09:42:30.596Z"
             },
             {
               "$type": "Document",
@@ -100,8 +99,7 @@
               "RelativeToolTip": "SchoolManagement.Application\\Services\\StudentService.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAA1wDYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:38:33.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T09:38:33.698Z"
             },
             {
               "$type": "Document",
@@ -113,8 +111,7 @@
               "RelativeToolTip": "SchoolManagement.Application\\Services\\GradeService.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAmwDgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:37:14.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T09:37:14.552Z"
             },
             {
               "$type": "Document",
@@ -126,8 +123,7 @@
               "RelativeToolTip": "SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradesDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:35:18.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T09:35:18.894Z"
             },
             {
               "$type": "Document",
@@ -139,8 +135,7 @@
               "RelativeToolTip": "SchoolManagement.Application\\DTOs\\GradeDtos\\GradeDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:34:57.937Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T09:34:57.937Z"
             },
             {
               "$type": "Document",
@@ -152,8 +147,7 @@
               "RelativeToolTip": "SchoolManagement.Application\\IServices\\IGradeService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAEwA0AAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:34:33.594Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T09:34:33.594Z"
             },
             {
               "$type": "Document",
@@ -165,8 +159,7 @@
               "RelativeToolTip": "SchoolManagement.Application\\Supports\\Paginations\\PaginationStudent.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:33:21.856Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T09:33:21.856Z"
             },
             {
               "$type": "Document",
@@ -178,8 +171,7 @@
               "RelativeToolTip": "SchoolManagement.Application\\Supports\\Paginations\\PaginationGrade.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:33:09.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T09:33:09.991Z"
             },
             {
               "$type": "Document",
@@ -191,8 +183,7 @@
               "RelativeToolTip": "SchoolManagement.Infrastructure\\Repositories\\StudentRepository.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:29:05.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T09:29:05.991Z"
             },
             {
               "$type": "Document",
@@ -204,8 +195,7 @@
               "RelativeToolTip": "SchoolManagement.Infrastructure\\Repositories\\GradeRepository.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAcwBwAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:24:54.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T09:24:54.686Z"
             },
             {
               "$type": "Document",
@@ -217,8 +207,7 @@
               "RelativeToolTip": "SchoolManagement.Domain\\IRepositories\\IGradeRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:24:11.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T09:24:11.426Z"
             }
           ]
         }
