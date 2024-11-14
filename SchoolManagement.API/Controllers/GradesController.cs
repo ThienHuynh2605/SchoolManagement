@@ -22,5 +22,12 @@ namespace SchoolManagement.API.Controllers
              var createGrade = await _gradeService.CreateGradeAsync(gradeDto);
             return Ok(createGrade);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetGradesAsync(int page = 1, int pageSize = 5)
+        {
+            var getGrade = await _gradeService.GetGradesAsync(page, pageSize);
+            return Ok(getGrade);
+        }
     }
 }

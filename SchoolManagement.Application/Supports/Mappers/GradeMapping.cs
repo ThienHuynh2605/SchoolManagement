@@ -14,6 +14,7 @@ namespace SchoolManagement.Application.Supports.Mappers
         public GradeMapping()
         {
             CreateMap<Grade, GradeDto>().ReverseMap();
+            CreateMap<Grade, GetGradesDto>().ReverseMap();  
         }
     }
 }
