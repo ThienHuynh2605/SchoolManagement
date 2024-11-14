@@ -1,10 +1,5 @@
 ﻿using SchoolManagement.Application.DTOs.GradeDtos;
 using SchoolManagement.Application.Supports.Paginations;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolManagement.Application.IServices
 {
@@ -12,5 +7,6 @@ namespace SchoolManagement.Application.IServices
     {
         Task<GradeDto> CreateGradeAsync(GradeDto gradeDto);
         Task<PaginationGrade<GetGradesDto>> GetGradesAsync(int page, int pageSize);
+        Task<PaginationGradeDetail> GetGradeDetailAsync(int id, int page, int pageSize);
     }
 }

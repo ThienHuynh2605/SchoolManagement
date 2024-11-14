@@ -57,5 +57,32 @@ namespace SchoolManagement.Application.Services
                 Grades = gardeDtos
             };
         }
+
+        public async Task<PaginationGradeDetail> GetGradeDetailAsync(int id, int page, int pageSize)
+        {
+            var grade = await _gradeRepository.GetGradeDetailAsync (id);
+
+            var totalStudents = grade.Students?.Count() ?? 0;
+            var totalPages = (int)Math.Ceiling(totalStudents / (double)pageSize);
+
+            var students = grade.Students?
+                .OrderBy(s => s.Id)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            var studentDtos = _mapper.Map<List<StudentInGradeDto>>(students);
+            var gradeDto = _mapper.Map<GetGradeDetail>(grade);
+            gradeDto.Students = studentDtos;
+
+            return new PaginationGradeDetail
+            {
+                TotalPages = totalPages,
+                CurrentPage = page,
+                PageSize = pageSize,
+                TotalStudent = totalStudents,
+                Grade = gradeDto
+            };
+        }
     }
 }

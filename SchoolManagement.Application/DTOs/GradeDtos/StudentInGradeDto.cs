@@ -1,8 +1,7 @@
 ﻿namespace SchoolManagement.Application.DTOs.GradeDtos
 {
-    public class GetGradesDto : GradeDto
+    public class StudentInGradeDto : PeopleBaseDto
     {
         public int Id { get; set; }
-        public bool IsActive { get; set; }
     }
 }

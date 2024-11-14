@@ -29,5 +29,12 @@ namespace SchoolManagement.API.Controllers
             var getGrade = await _gradeService.GetGradesAsync(page, pageSize);
             return Ok(getGrade);
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetGradeDetailAsync(int id, int page = 1, int pageSize = 5)
+        {
+            var getGradeDetail = await _gradeService.GetGradeDetailAsync(id, page, pageSize);
+            return Ok(getGradeDetail);
+        }
     }
 }

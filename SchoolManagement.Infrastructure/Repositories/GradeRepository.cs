@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SchoolManagement.Domain.Entities;
+using SchoolManagement.Domain.Exceptions;
 using SchoolManagement.Domain.IRepositories;
 using SchoolManagement.Infrastructure.Data;
 using System;
@@ -26,6 +27,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return grade;
         }
 
+        // Get grades in Db
         public async Task<(List<Grade> grades, int totalGrade)> GetGradeAsync(int page, int pageSize)
         {
             var grades = await _context.Grades
@@ -34,6 +36,20 @@ namespace SchoolManagement.Infrastructure.Repositories
                 .ToListAsync();
             var totalGrade = await _context.Grades.CountAsync();
             return (grades, totalGrade);
+        }
+
+        public async Task<Grade> GetGradeDetailAsync(int id)
+        {
+            var grade = await _context.Grades
+                .Include(g => g.Students)
+                .FirstOrDefaultAsync(s => s.Id == id);
+
+            if (grade == null)
+            {
+                throw new NotFoundException("Grade not found.");
+            }
+
+            return grade;
         }
     }
 }
