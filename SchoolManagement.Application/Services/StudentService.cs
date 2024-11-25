@@ -130,6 +130,15 @@ namespace SchoolManagement.Application.Services
         // Update a student partial in the Db through the Repository
         public async Task<UpdateStudentDto> UpdateStudentPartialAsync(int id, UpdateStudentPartialDto studentDto)
         {
+            var findStudent = await _studentRepository.GetStudentByIdAsync(id);
+            if (studentDto.IsActive.HasValue)
+            {
+                findStudent.IsActive = studentDto.IsActive.Value;
+            }
+            else
+            {
+                findStudent.IsActive = findStudent.IsActive;
+            }
             var student = _mapper.Map<Student>(studentDto);
 
             var updateStudent = await _studentRepository.UpdateStudentPartialAsync(id, student);
