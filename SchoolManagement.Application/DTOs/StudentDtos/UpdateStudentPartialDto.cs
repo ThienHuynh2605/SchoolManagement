@@ -8,6 +8,6 @@ namespace SchoolManagement.Application.DTOs.StudentDtos
 {
     public class UpdateStudentPartialDto : PeopleBaseDto
     {
-        public int GradeId { get; set; }
+        public int? GradeId { get; set; }
     }
 }

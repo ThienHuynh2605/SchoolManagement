@@ -137,17 +137,10 @@ namespace SchoolManagement.Infrastructure.Repositories
                 existingStudent.DateOfBirth = student.DateOfBirth.Value;
             }
 
-            if (student.GradeId != null)
+            if (student.GradeId.HasValue)
             {
-                existingStudent.GradeId = student.GradeId;
+                existingStudent.GradeId = student.GradeId.Value;
             }
-
-#pragma warning disable CS0472 // The result of the expression is always the same since a value of this type is never equal to 'null'
-            if (student.IsActive != null)
-            {
-                existingStudent.IsActive = student.IsActive;
-            }
-#pragma warning restore CS0472 // The result of the expression is always the same since a value of this type is never equal to 'null'
 
             await _context.SaveChangesAsync();
 

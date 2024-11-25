@@ -63,6 +63,64 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SchoolManagement.API.Controllers.GradesController",
+    "Method": "UpdateGradeAsync",
+    "RelativePath": "api/Grades/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "gradeDto",
+        "Type": "SchoolManagement.Application.DTOs.GradeDtos.UpdateGradeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.GradesController",
+    "Method": "UpdateGradePartialAsync",
+    "RelativePath": "api/Grades/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "gradeDto",
+        "Type": "SchoolManagement.Application.DTOs.GradeDtos.UpdateGradeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.GradesController",
+    "Method": "DeleteGradeAsync",
+    "RelativePath": "api/Grades/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SchoolManagement.API.Controllers.StudentsController",
     "Method": "GetStudentsAsync",
     "RelativePath": "api/students",
