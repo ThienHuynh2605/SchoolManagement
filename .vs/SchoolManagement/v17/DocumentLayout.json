@@ -110,8 +110,7 @@
               "RelativeToolTip": "SchoolManagement.Domain\\Models\\Base\\ApiResponseModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T04:34:10.993Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T04:34:10.993Z"
             },
             {
               "$type": "Document",
@@ -123,8 +122,7 @@
               "RelativeToolTip": "SchoolManagement.Domain\\Exceptions\\UserFriendlyException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T04:33:49.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T04:33:49.973Z"
             },
             {
               "$type": "Document",
@@ -136,8 +134,7 @@
               "RelativeToolTip": "SchoolManagement.Domain\\Entities\\BaseEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T02:36:59.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T02:36:59.012Z"
             },
             {
               "$type": "Document",
@@ -149,8 +146,7 @@
               "RelativeToolTip": "SchoolManagement.Application\\DTOs\\StudentDtos\\UpdateStudentPartialDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T02:09:17.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T02:09:17.311Z"
             },
             {
               "$type": "Document",
@@ -174,8 +170,7 @@
               "RelativeToolTip": "SchoolManagement.Domain\\Entities\\Student.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T01:14:18.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T01:14:18.79Z"
             },
             {
               "$type": "Document",
@@ -187,8 +182,7 @@
               "RelativeToolTip": "SchoolManagement.Infrastructure\\Data\\SchoolDbContext.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAnwCQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T00:51:20.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T00:51:20.682Z"
             },
             {
               "$type": "Document",
@@ -200,8 +194,7 @@
               "RelativeToolTip": "SchoolManagement.Application\\DTOs\\StudentDtos\\UpdateStudentDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T00:39:30.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T00:39:30.075Z"
             },
             {
               "$type": "Document",
@@ -225,8 +218,7 @@
               "RelativeToolTip": "SchoolManagement.API\\Controllers\\GradesController.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAgwDIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T04:46:00.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T04:46:00.277Z"
             },
             {
               "$type": "Document",
@@ -250,8 +242,7 @@
               "RelativeToolTip": "SchoolManagement.Application\\Services\\StudentService.cs",
               "ViewState": "AgIAAHsAAAAAAAAAAAAowIwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T04:43:14.339Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T04:43:14.339Z"
             },
             {
               "$type": "Document",
@@ -261,7 +252,7 @@
               "RelativeDocumentMoniker": "SchoolManagement.Application\\Services\\GradeService.cs",
               "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Services\\GradeService.cs",
               "RelativeToolTip": "SchoolManagement.Application\\Services\\GradeService.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAuwG8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAuwGwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T04:42:49.075Z",
               "EditorCaption": ""
@@ -276,8 +267,7 @@
               "RelativeToolTip": "SchoolManagement.Application\\DTOs\\GradeDtos\\UpdateGradeDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T04:41:55.143Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T04:41:55.143Z"
             },
             {
               "$type": "Document",
@@ -337,8 +327,7 @@
               "RelativeToolTip": "SchoolManagement.Infrastructure\\Repositories\\StudentRepository.cs",
               "ViewState": "AgIAAGsAAAAAAAAAAAAEwJMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T04:33:01.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T04:33:01.447Z"
             },
             {
               "$type": "Document",
@@ -350,8 +339,7 @@
               "RelativeToolTip": "SchoolManagement.Infrastructure\\Repositories\\GradeRepository.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAASwFMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T04:31:42.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T04:31:42.343Z"
             },
             {
               "$type": "Document",
