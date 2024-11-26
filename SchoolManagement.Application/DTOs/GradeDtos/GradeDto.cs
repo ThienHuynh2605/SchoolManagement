@@ -10,5 +10,6 @@ namespace SchoolManagement.Application.DTOs.GradeDtos
     {
         public string? Name { get; set; }
         public string? Classroom { get; set; }
+        public int? TeacherId { get; set; }
     }
 }

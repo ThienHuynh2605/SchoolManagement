@@ -6,7 +6,7 @@ using SchoolManagement.Domain.Exceptions;
 
 namespace SchoolManagement.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/grades")]
     [ApiController]
     public class GradesController : ControllerBase
     {

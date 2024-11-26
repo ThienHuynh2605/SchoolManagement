@@ -2,7 +2,7 @@
   {
     "ContainingType": "SchoolManagement.API.Controllers.GradesController",
     "Method": "CreateGradeAsync",
-    "RelativePath": "api/Grades",
+    "RelativePath": "api/grades",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -18,7 +18,7 @@
   {
     "ContainingType": "SchoolManagement.API.Controllers.GradesController",
     "Method": "GetGradesAsync",
-    "RelativePath": "api/Grades",
+    "RelativePath": "api/grades",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -39,7 +39,7 @@
   {
     "ContainingType": "SchoolManagement.API.Controllers.GradesController",
     "Method": "GetGradeDetailAsync",
-    "RelativePath": "api/Grades/{id}",
+    "RelativePath": "api/grades/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -65,7 +65,7 @@
   {
     "ContainingType": "SchoolManagement.API.Controllers.GradesController",
     "Method": "UpdateGradeAsync",
-    "RelativePath": "api/Grades/{id}",
+    "RelativePath": "api/grades/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -86,7 +86,7 @@
   {
     "ContainingType": "SchoolManagement.API.Controllers.GradesController",
     "Method": "UpdateGradePartialAsync",
-    "RelativePath": "api/Grades/{id}",
+    "RelativePath": "api/grades/{id}",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
@@ -107,7 +107,7 @@
   {
     "ContainingType": "SchoolManagement.API.Controllers.GradesController",
     "Method": "DeleteGradeAsync",
-    "RelativePath": "api/Grades/{id}",
+    "RelativePath": "api/grades/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -277,6 +277,169 @@
     "ContainingType": "SchoolManagement.API.Controllers.StudentsController",
     "Method": "GetStudentNumberAsync",
     "RelativePath": "api/students/numbers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.TeachersController",
+    "Method": "CreateTeacherAsync",
+    "RelativePath": "api/teachers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teacherDto",
+        "Type": "SchoolManagement.Application.DTOs.TeacherDtos.CreateTeacherDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.TeachersController",
+    "Method": "GetTeachersAsync",
+    "RelativePath": "api/teachers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.TeachersController",
+    "Method": "GetTeacherIdAsync",
+    "RelativePath": "api/teachers/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.TeachersController",
+    "Method": "UpdateTeacherAsync",
+    "RelativePath": "api/teachers/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "teacherDto",
+        "Type": "SchoolManagement.Application.DTOs.TeacherDtos.UpdateTeacherDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.TeachersController",
+    "Method": "UpdateTeacherPartialAsync",
+    "RelativePath": "api/teachers/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "teacherDto",
+        "Type": "SchoolManagement.Application.DTOs.TeacherDtos.UpdateTeacherPartialDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.TeachersController",
+    "Method": "DeleteTeacherAsync",
+    "RelativePath": "api/teachers/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.TeachersController",
+    "Method": "UpdateTeacherAccountAsync",
+    "RelativePath": "api/teachers/{teacherId}/account",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teacherId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "accountDto",
+        "Type": "SchoolManagement.Application.DTOs.TeacherDtos.TeacherAccountDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.TeachersController",
+    "Method": "GetTeachersNotActiveAsync",
+    "RelativePath": "api/teachers/not-active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.TeachersController",
+    "Method": "GetTeacherNumberAsync",
+    "RelativePath": "api/teachers/numbers",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
