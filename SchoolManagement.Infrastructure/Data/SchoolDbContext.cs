@@ -17,6 +17,9 @@ namespace SchoolManagement.Infrastructure.Data
 
         public DbSet<Grade> Grades { get; set; }
 
+        public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<TeacherAccount> TeacherAccounts { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             /*-------------------------- Config Student Relationship -------------------------*/
@@ -32,6 +35,19 @@ namespace SchoolManagement.Infrastructure.Data
                 .HasMany(s => s.Students)
                 .WithOne(s => s.Grade)
                 .HasForeignKey(s => s.GradeId)
+                .IsRequired();
+
+            /*-------------------------- Config Teacher Relationship -------------------------*/
+            modelBuilder.Entity<Teacher>()
+                .HasOne(s => s.Account)
+                .WithOne(s => s.Teacher)
+                .HasForeignKey<TeacherAccount>(s => s.TeacherId)
+                .IsRequired();
+
+            modelBuilder.Entity<Teacher>()
+                .HasMany(s => s.Grades)
+                .WithOne(s => s.Teacher)
+                .HasForeignKey(s => s.TeacherId)
                 .IsRequired();
 
         }

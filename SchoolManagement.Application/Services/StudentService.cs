@@ -146,7 +146,7 @@ namespace SchoolManagement.Application.Services
             return _mapper.Map<UpdateStudentDto>(updateStudent);
         }
 
-        // Update a student account int the Db through Repository
+        // Update a student account in the Db through Repository
         public async Task<StudentAccountDto> UpdateStudentAccountAsync(int studentId, StudentAccountDto accountDto)
         {
             var account = _mapper.Map<StudentAccount>(accountDto);

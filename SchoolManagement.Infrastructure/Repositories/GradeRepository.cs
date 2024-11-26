@@ -93,6 +93,17 @@ namespace SchoolManagement.Infrastructure.Repositories
                 existingGrade.Classroom = grade.Classroom;
             }
 
+            if (grade.TeacherId.HasValue)
+            {
+                var teacher = await _context.Teachers
+                    .FirstOrDefaultAsync(s => s.Id == grade.TeacherId.Value);
+                if (teacher == null)
+                {
+                    throw new NotFoundException("Teacher not found");
+                }
+                existingGrade.TeacherId = grade.TeacherId.Value;   
+            }
+
             await _context.SaveChangesAsync();
             return existingGrade;
         }
