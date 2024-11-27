@@ -2,6 +2,6 @@
 {
     public class UpdateTeacherDto : PeopleBaseDto
     {
-
+        public int? SubjectId { get; set; }
     }
 }

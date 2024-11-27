@@ -9,6 +9,6 @@ namespace SchoolManagement.Domain.Entities
     public class StudentAccount : Account
     {
         public Student? Student { get; set; }
-        public int StudentId { get; set; }
+        public int? StudentId { get; set; }
     }
 }

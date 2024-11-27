@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using SchoolManagement.Application.DTOs.StudentDtos;
+using SchoolManagement.Application.DTOs.SubjectDtos;
 using SchoolManagement.Application.Supports.Paginations;
 using SchoolManagement.Domain.Entities;
 using SchoolManagement.Domain.Exceptions;
@@ -44,7 +45,7 @@ namespace SchoolManagement.Application.Services
             var totalPages = (int)Math.Ceiling((decimal)totalStudent / pageSize);
 
             var studentDtos = _mapper.Map<List<GetStudentDto>>(students);
-            
+
             return new PaginationStudent<GetStudentDto>
             {
                 TotalStudent = totalStudent,
@@ -104,6 +105,32 @@ namespace SchoolManagement.Application.Services
         {
             var student = await _studentRepository.GetStudentByIdAsync(id);
             return _mapper.Map<GetStudentIdDto>(student);
+        }
+
+        // Get Student and Subject from Repository
+        public async Task<PaginationStudentSubject> GetStudentByIdSubjectsAsync(int id, int page, int pageSize)
+        {
+            var student = await _studentRepository.GetStudentByIdSubjectsAsync(id);
+
+            var totalSubjects = student.Subjects?.Count() ?? 0;
+            var totalPages = (int)Math.Ceiling(totalSubjects / (double)pageSize);
+
+            var subjects = student.Subjects?
+                .OrderBy(s => s.Id)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            var subjectDto = _mapper.Map<List<DisplaySubjectDto>>(subjects);
+
+            return new PaginationStudentSubject
+            {
+                TotalPages = totalPages,
+                CurrentPage = page,
+                PageSize = pageSize,
+                TotalSubjects = totalSubjects,
+                Subjects = subjectDto
+            };
         }
 
         // Create a new student in the Db through the Repository

@@ -3,12 +3,132 @@
   "WorkspaceRootPath": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.infrastructure\\repositories\\teacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|solutionrelative:schoolmanagement.infrastructure\\repositories\\teacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\subjectdtos\\updatesubjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\subjectdtos\\updatesubjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\subjectdtos\\displaysubjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\subjectdtos\\displaysubjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\subjectdtos\\subjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\subjectdtos\\subjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\services\\subjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\services\\subjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\studentdtos\\getstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\studentdtos\\getstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\gradedtos\\getgradesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\gradedtos\\getgradesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\gradedtos\\getgradedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\gradedtos\\getgradedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.infrastructure\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|solutionrelative:schoolmanagement.infrastructure\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.infrastructure\\repositories\\teacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|solutionrelative:schoolmanagement.infrastructure\\repositories\\teacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.api\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:schoolmanagement.api\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\supports\\mappers\\studentmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\supports\\mappers\\studentmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\gradedtos\\studentingradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\gradedtos\\studentingradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\studentdtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\studentdtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\supports\\paginations\\paginationstudentsubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\supports\\paginations\\paginationstudentsubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\iservices\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\iservices\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\supports\\paginations\\paginationsubjectstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\supports\\paginations\\paginationsubjectstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\iservices\\isubjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\iservices\\isubjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.infrastructure\\repositories\\subjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|solutionrelative:schoolmanagement.infrastructure\\repositories\\subjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.domain\\irepositories\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|solutionrelative:schoolmanagement.domain\\irepositories\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\studentdtos\\getstudentiddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\studentdtos\\getstudentiddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\supports\\mappers\\subjectmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\supports\\mappers\\subjectmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\gradedtos\\gradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\gradedtos\\gradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\gradedtos\\updategradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\gradedtos\\updategradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.domain\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|solutionrelative:schoolmanagement.domain\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.api\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:schoolmanagement.api\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\teacherdtos\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\teacherdtos\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.domain\\irepositories\\isubjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|solutionrelative:schoolmanagement.domain\\irepositories\\isubjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\services\\teacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\services\\teacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.domain\\entities\\studentsubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|solutionrelative:schoolmanagement.domain\\entities\\studentsubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.infrastructure\\data\\schooldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|solutionrelative:schoolmanagement.infrastructure\\data\\schooldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.domain\\entities\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|solutionrelative:schoolmanagement.domain\\entities\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\teacherdtos\\getteacheriddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,106 +137,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\teacherdtos\\getteacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\teacherdtos\\getteacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\services\\teacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\services\\teacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.domain\\entities\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|solutionrelative:schoolmanagement.domain\\entities\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.infrastructure\\repositories\\graderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|solutionrelative:schoolmanagement.infrastructure\\repositories\\graderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\services\\gradeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\services\\gradeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\gradedtos\\getgradedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\gradedtos\\getgradedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\gradedtos\\getgradesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\gradedtos\\getgradesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\gradedtos\\gradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\gradedtos\\gradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.infrastructure\\data\\schooldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|solutionrelative:schoolmanagement.infrastructure\\data\\schooldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.domain\\entities\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|solutionrelative:schoolmanagement.domain\\entities\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.api\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:schoolmanagement.api\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.api\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:schoolmanagement.api\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\iservices\\iteacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\iservices\\iteacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\iservices\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\iservices\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.domain\\irepositories\\iteacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|solutionrelative:schoolmanagement.domain\\irepositories\\iteacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.domain\\irepositories\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|solutionrelative:schoolmanagement.domain\\irepositories\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\supports\\mappers\\teachermapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\supports\\mappers\\teachermapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\teacherdtos\\updateteacherpartialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\teacherdtos\\updateteacherpartialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\teacherdtos\\teachernumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\teacherdtos\\teachernumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\teacherdtos\\updateteacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\teacherdtos\\updateteacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\teacherdtos\\createteacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\teacherdtos\\createteacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\dtos\\studentdtos\\createstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\dtos\\studentdtos\\createstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.domain\\entities\\teacheraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|solutionrelative:schoolmanagement.domain\\entities\\teacheraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\supports\\mappers\\studentmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\supports\\mappers\\studentmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:schoolmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -126,7 +146,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 24,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -134,301 +154,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GradeRepository.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Repositories\\GradeRepository.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Infrastructure\\Repositories\\GradeRepository.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Repositories\\GradeRepository.cs",
-              "RelativeToolTip": "SchoolManagement.Infrastructure\\Repositories\\GradeRepository.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAowGUAAAA4AAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "GetStudentDto.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\StudentDtos\\GetStudentDto.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\StudentDtos\\GetStudentDto.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\StudentDtos\\GetStudentDto.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\StudentDtos\\GetStudentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T02:51:07.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GradeService.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Services\\GradeService.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Application\\Services\\GradeService.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Services\\GradeService.cs",
-              "RelativeToolTip": "SchoolManagement.Application\\Services\\GradeService.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T02:50:33.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GetGradeDetail.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradeDetail.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradeDetail.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradeDetail.cs",
-              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradeDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T02:42:09.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GetGradesDto.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradesDto.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradesDto.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradesDto.cs",
-              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradesDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T02:41:42.776Z",
+              "WhenOpened": "2024-11-27T06:11:24.863Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "GradeDto.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\GradeDto.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\GradeDtos\\GradeDto.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\GradeDto.cs",
-              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\GradeDtos\\GradeDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T02:13:14.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Grade.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\Entities\\Grade.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Domain\\Entities\\Grade.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\Entities\\Grade.cs",
-              "RelativeToolTip": "SchoolManagement.Domain\\Entities\\Grade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T13:40:41.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UpdateTeacherPartialDto.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\TeacherDtos\\UpdateTeacherPartialDto.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\TeacherDtos\\UpdateTeacherPartialDto.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\TeacherDtos\\UpdateTeacherPartialDto.cs",
-              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\TeacherDtos\\UpdateTeacherPartialDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T08:43:30.43Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "StudentsController.cs",
               "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\StudentsController.cs",
               "RelativeDocumentMoniker": "SchoolManagement.API\\Controllers\\StudentsController.cs",
               "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\StudentsController.cs",
               "RelativeToolTip": "SchoolManagement.API\\Controllers\\StudentsController.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAADwv1cAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAkwDoAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T08:37:01.311Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "TeacherNumber.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\TeacherDtos\\TeacherNumber.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\TeacherDtos\\TeacherNumber.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\TeacherDtos\\TeacherNumber.cs",
-              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\TeacherDtos\\TeacherNumber.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T08:33:28.824Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "UpdateTeacherDto.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\TeacherDtos\\UpdateTeacherDto.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\TeacherDtos\\UpdateTeacherDto.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\TeacherDtos\\UpdateTeacherDto.cs",
-              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\TeacherDtos\\UpdateTeacherDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T08:21:42.816Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetTeacherIdDto.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\TeacherDtos\\GetTeacherIdDto.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\TeacherDtos\\GetTeacherIdDto.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\TeacherDtos\\GetTeacherIdDto.cs",
-              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\TeacherDtos\\GetTeacherIdDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T08:08:29.927Z",
+              "WhenOpened": "2024-11-27T04:27:31.249Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "CreateStudentDto.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\StudentDtos\\CreateStudentDto.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\StudentDtos\\CreateStudentDto.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\StudentDtos\\CreateStudentDto.cs",
-              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\StudentDtos\\CreateStudentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "PaginationStudentSubject.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Paginations\\PaginationStudentSubject.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\Supports\\Paginations\\PaginationStudentSubject.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Paginations\\PaginationStudentSubject.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\Supports\\Paginations\\PaginationStudentSubject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T08:00:01.792Z"
+              "WhenOpened": "2024-11-27T04:21:02.858Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "IStudentService.cs",
               "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\IServices\\IStudentService.cs",
               "RelativeDocumentMoniker": "SchoolManagement.Application\\IServices\\IStudentService.cs",
               "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\IServices\\IStudentService.cs",
               "RelativeToolTip": "SchoolManagement.Application\\IServices\\IStudentService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T07:19:49.545Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StudentRepository.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Repositories\\StudentRepository.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Infrastructure\\Repositories\\StudentRepository.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Repositories\\StudentRepository.cs",
-              "RelativeToolTip": "SchoolManagement.Infrastructure\\Repositories\\StudentRepository.cs",
-              "ViewState": "AgIAAKQAAAAAAAAAAAAIwLYAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T07:13:17.857Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetTeacherDto.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\TeacherDtos\\GetTeacherDto.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\TeacherDtos\\GetTeacherDto.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\TeacherDtos\\GetTeacherDto.cs",
-              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\TeacherDtos\\GetTeacherDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T07:05:30.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "TeachersController.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\TeachersController.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.API\\Controllers\\TeachersController.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\TeachersController.cs",
-              "RelativeToolTip": "SchoolManagement.API\\Controllers\\TeachersController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwC4AAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T06:53:10.498Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Program.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.API\\Program.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Program.cs",
-              "RelativeToolTip": "SchoolManagement.API\\Program.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAACgAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T06:48:58.768Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "StudentService.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Services\\StudentService.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Application\\Services\\StudentService.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Services\\StudentService.cs",
-              "RelativeToolTip": "SchoolManagement.Application\\Services\\StudentService.cs",
-              "ViewState": "AgIAAJAAAAAAAAAAAADwv6cAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T06:46:04.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "StudentMapping.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Mappers\\StudentMapping.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Application\\Supports\\Mappers\\StudentMapping.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Mappers\\StudentMapping.cs",
-              "RelativeToolTip": "SchoolManagement.Application\\Supports\\Mappers\\StudentMapping.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T06:45:04.991Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "TeacherMapping.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Mappers\\TeacherMapping.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Application\\Supports\\Mappers\\TeacherMapping.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Mappers\\TeacherMapping.cs",
-              "RelativeToolTip": "SchoolManagement.Application\\Supports\\Mappers\\TeacherMapping.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T06:44:36.024Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TeacherService.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Services\\TeacherService.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Application\\Services\\TeacherService.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Services\\TeacherService.cs",
-              "RelativeToolTip": "SchoolManagement.Application\\Services\\TeacherService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T06:39:38.026Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "CreateTeacherDto.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\TeacherDtos\\CreateTeacherDto.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\TeacherDtos\\CreateTeacherDto.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\TeacherDtos\\CreateTeacherDto.cs",
-              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\TeacherDtos\\CreateTeacherDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T06:37:10.299Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ITeacherService.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\IServices\\ITeacherService.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Application\\IServices\\ITeacherService.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\IServices\\ITeacherService.cs",
-              "RelativeToolTip": "SchoolManagement.Application\\IServices\\ITeacherService.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAYwBAAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T06:35:55.87Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TeacherRepository.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Repositories\\TeacherRepository.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Infrastructure\\Repositories\\TeacherRepository.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Repositories\\TeacherRepository.cs*",
-              "RelativeToolTip": "SchoolManagement.Infrastructure\\Repositories\\TeacherRepository.cs*",
-              "ViewState": "AgIAAEIAAAAAAAAAAIAwwFAAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T06:31:46.31Z",
+              "WhenOpened": "2024-11-27T04:16:16.111Z",
               "EditorCaption": ""
             },
             {
@@ -439,58 +212,386 @@
               "RelativeDocumentMoniker": "SchoolManagement.Domain\\IRepositories\\IStudentRepository.cs",
               "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\IRepositories\\IStudentRepository.cs",
               "RelativeToolTip": "SchoolManagement.Domain\\IRepositories\\IStudentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T06:29:25.611Z"
+              "WhenOpened": "2024-11-27T04:14:23.807Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ITeacherRepository.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\IRepositories\\ITeacherRepository.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Domain\\IRepositories\\ITeacherRepository.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\IRepositories\\ITeacherRepository.cs",
-              "RelativeToolTip": "SchoolManagement.Domain\\IRepositories\\ITeacherRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAgAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UpdateSubjectDto.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\SubjectDtos\\UpdateSubjectDto.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\SubjectDtos\\UpdateSubjectDto.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\SubjectDtos\\UpdateSubjectDto.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\SubjectDtos\\UpdateSubjectDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T06:28:54.577Z"
+              "WhenOpened": "2024-11-27T03:57:11.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DisplaySubjectDto.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\SubjectDtos\\DisplaySubjectDto.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\SubjectDtos\\DisplaySubjectDto.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\SubjectDtos\\DisplaySubjectDto.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\SubjectDtos\\DisplaySubjectDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T03:59:08.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UpdateGradeDto.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\UpdateGradeDto.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\GradeDtos\\UpdateGradeDto.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\UpdateGradeDto.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\GradeDtos\\UpdateGradeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T03:55:06.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StudentInGradeDto.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\StudentInGradeDto.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\GradeDtos\\StudentInGradeDto.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\StudentInGradeDto.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\GradeDtos\\StudentInGradeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T03:55:04.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GetGradeDetail.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradeDetail.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradeDetail.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradeDetail.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradeDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T03:54:57.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetGradesDto.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradesDto.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradesDto.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradesDto.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\GradeDtos\\GetGradesDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T03:54:55.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GradeDto.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\GradeDto.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\GradeDtos\\GradeDto.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\GradeDtos\\GradeDto.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\GradeDtos\\GradeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T03:54:53.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GetStudentIdDto.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\StudentDtos\\GetStudentIdDto.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\StudentDtos\\GetStudentIdDto.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\StudentDtos\\GetStudentIdDto.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\StudentDtos\\GetStudentIdDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T03:50:11.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Services\\StudentService.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\Services\\StudentService.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Services\\StudentService.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\Services\\StudentService.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAcwJMAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T03:49:56.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Repositories\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Infrastructure\\Repositories\\StudentRepository.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Repositories\\StudentRepository.cs",
+              "RelativeToolTip": "SchoolManagement.Infrastructure\\Repositories\\StudentRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAowCAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T03:48:26.353Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "SchoolDbContext.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Data\\SchoolDbContext.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Infrastructure\\Data\\SchoolDbContext.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Data\\SchoolDbContext.cs",
-              "RelativeToolTip": "SchoolManagement.Infrastructure\\Data\\SchoolDbContext.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAUwDEAAAAwAAAAAAAAAA==",
+              "Title": "StudentMapping.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Mappers\\StudentMapping.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\Supports\\Mappers\\StudentMapping.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Mappers\\StudentMapping.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\Supports\\Mappers\\StudentMapping.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABQAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T06:19:43.314Z",
+              "WhenOpened": "2024-11-27T03:25:43.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SubjectMapping.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Mappers\\SubjectMapping.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\Supports\\Mappers\\SubjectMapping.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Mappers\\SubjectMapping.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\Supports\\Mappers\\SubjectMapping.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T03:25:36.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StudentDto.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\StudentDtos\\StudentDto.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\StudentDtos\\StudentDto.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\StudentDtos\\StudentDto.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\StudentDtos\\StudentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T03:21:41.142Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "TeacherAccount.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\Entities\\TeacherAccount.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Domain\\Entities\\TeacherAccount.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\Entities\\TeacherAccount.cs",
-              "RelativeToolTip": "SchoolManagement.Domain\\Entities\\TeacherAccount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Title": "TeacherDto.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\TeacherDtos\\TeacherDto.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\TeacherDtos\\TeacherDto.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\TeacherDtos\\TeacherDto.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\TeacherDtos\\TeacherDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T06:17:40.291Z"
+              "WhenOpened": "2024-11-27T03:21:22.456Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Teacher.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\Entities\\Teacher.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.Domain\\Entities\\Teacher.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\Entities\\Teacher.cs",
-              "RelativeToolTip": "SchoolManagement.Domain\\Entities\\Teacher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "PaginationSubjectStudent.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Paginations\\PaginationSubjectStudent.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\Supports\\Paginations\\PaginationSubjectStudent.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Supports\\Paginations\\PaginationSubjectStudent.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\Supports\\Paginations\\PaginationSubjectStudent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T04:53:16.63Z",
+              "WhenOpened": "2024-11-27T03:20:20.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SubjectService.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Services\\SubjectService.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\Services\\SubjectService.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Services\\SubjectService.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\Services\\SubjectService.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAUwJ0AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T03:14:44.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ISubjectService.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\IServices\\ISubjectService.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\IServices\\ISubjectService.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\IServices\\ISubjectService.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\IServices\\ISubjectService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T03:14:40.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ISubjectRepository.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\IRepositories\\ISubjectRepository.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Domain\\IRepositories\\ISubjectRepository.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\IRepositories\\ISubjectRepository.cs",
+              "RelativeToolTip": "SchoolManagement.Domain\\IRepositories\\ISubjectRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T03:14:32.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SubjectRepository.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Repositories\\SubjectRepository.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Infrastructure\\Repositories\\SubjectRepository.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Repositories\\SubjectRepository.cs",
+              "RelativeToolTip": "SchoolManagement.Infrastructure\\Repositories\\SubjectRepository.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAIwFMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T03:14:24.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Subject.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\Entities\\Subject.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Domain\\Entities\\Subject.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\Entities\\Subject.cs",
+              "RelativeToolTip": "SchoolManagement.Domain\\Entities\\Subject.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAA6wAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T02:46:45.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\Entities\\Student.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Domain\\Entities\\Student.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\Entities\\Student.cs",
+              "RelativeToolTip": "SchoolManagement.Domain\\Entities\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T02:46:44.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "StudentSubject.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\Entities\\StudentSubject.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Domain\\Entities\\StudentSubject.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\Entities\\StudentSubject.cs",
+              "RelativeToolTip": "SchoolManagement.Domain\\Entities\\StudentSubject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T02:46:24.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SubjectsController.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\SubjectsController.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.API\\Controllers\\SubjectsController.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\SubjectsController.cs",
+              "RelativeToolTip": "SchoolManagement.API\\Controllers\\SubjectsController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAowDoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T02:33:16.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SchoolDbContext.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Data\\SchoolDbContext.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Infrastructure\\Data\\SchoolDbContext.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Data\\SchoolDbContext.cs",
+              "RelativeToolTip": "SchoolManagement.Infrastructure\\Data\\SchoolDbContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBgAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T02:12:16.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "GetTeacherIdDto.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\TeacherDtos\\GetTeacherIdDto.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\TeacherDtos\\GetTeacherIdDto.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\TeacherDtos\\GetTeacherIdDto.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\TeacherDtos\\GetTeacherIdDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T02:06:36.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TeacherRepository.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Repositories\\TeacherRepository.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Infrastructure\\Repositories\\TeacherRepository.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Repositories\\TeacherRepository.cs",
+              "RelativeToolTip": "SchoolManagement.Infrastructure\\Repositories\\TeacherRepository.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAowFMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T09:39:02.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TeacherService.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Services\\TeacherService.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\Services\\TeacherService.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Services\\TeacherService.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\Services\\TeacherService.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAkwF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T09:38:17.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SubjectDto.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\SubjectDtos\\SubjectDto.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\SubjectDtos\\SubjectDto.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\SubjectDtos\\SubjectDto.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\SubjectDtos\\SubjectDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T09:37:26.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "GetTeacherDto.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\TeacherDtos\\GetTeacherDto.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\DTOs\\TeacherDtos\\GetTeacherDto.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\DTOs\\TeacherDtos\\GetTeacherDto.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\DTOs\\TeacherDtos\\GetTeacherDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T09:36:07.724Z",
               "EditorCaption": ""
             }
           ]

@@ -12,6 +12,7 @@ namespace SchoolManagement.Application.Supports.Mappers
             CreateMap<Teacher,GetTeacherDto>().ReverseMap();
             CreateMap<Teacher,GetTeacherIdDto>().ReverseMap();
             CreateMap<Teacher,UpdateTeacherDto>().ReverseMap();
+            CreateMap<Teacher,TeacherDto>().ReverseMap();
             CreateMap<Teacher,UpdateTeacherPartialDto>().ReverseMap();
             CreateMap<TeacherAccount,TeacherAccountDto>().ReverseMap();
         }

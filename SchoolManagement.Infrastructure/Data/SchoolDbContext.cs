@@ -20,6 +20,10 @@ namespace SchoolManagement.Infrastructure.Data
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<TeacherAccount> TeacherAccounts { get; set; }
 
+        public DbSet<Subject> Subjects { get; set; }
+
+        public DbSet<StudentSubject> StudentSubjects { get; set; }  
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             /*-------------------------- Config Student Relationship -------------------------*/
@@ -35,7 +39,7 @@ namespace SchoolManagement.Infrastructure.Data
                 .HasMany(s => s.Students)
                 .WithOne(s => s.Grade)
                 .HasForeignKey(s => s.GradeId)
-                .IsRequired();
+                .OnDelete(DeleteBehavior.SetNull);
 
             /*-------------------------- Config Teacher Relationship -------------------------*/
             modelBuilder.Entity<Teacher>()
@@ -48,7 +52,22 @@ namespace SchoolManagement.Infrastructure.Data
                 .HasMany(s => s.Grades)
                 .WithOne(s => s.Teacher)
                 .HasForeignKey(s => s.TeacherId)
-                .IsRequired();
+                .OnDelete(DeleteBehavior.SetNull);
+
+            /*-------------------------- Config Subject Relationship -------------------------*/
+            modelBuilder.Entity<Subject>()
+                .HasMany(s => s.Teachers)
+                .WithOne(s => s.Subject)
+                .HasForeignKey(s => s.SubjectId)
+                .OnDelete(DeleteBehavior.SetNull);
+
+            modelBuilder.Entity<Subject>()
+                .HasMany(s => s.Students)
+                .WithMany(s => s.Subjects)
+                .UsingEntity<StudentSubject>(
+                    l => l.HasOne<Student>().WithMany().HasForeignKey(s => s.StudentId),
+                    r => r.HasOne<Subject>().WithMany().HasForeignKey(s => s.SubjectId)
+                );
 
         }
     }

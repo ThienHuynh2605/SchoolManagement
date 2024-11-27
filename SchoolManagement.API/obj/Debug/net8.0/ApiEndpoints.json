@@ -159,7 +159,7 @@
   },
   {
     "ContainingType": "SchoolManagement.API.Controllers.StudentsController",
-    "Method": "GetStudentById",
+    "Method": "GetStudentByIdAsync",
     "RelativePath": "api/students/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -233,6 +233,32 @@
   },
   {
     "ContainingType": "SchoolManagement.API.Controllers.StudentsController",
+    "Method": "GetStudentByIdSubjectsAsync",
+    "RelativePath": "api/students/{id}/subjects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.StudentsController",
     "Method": "UpdateStudentAccountAsync",
     "RelativePath": "api/students/{studentId}/account",
     "HttpMethod": "PUT",
@@ -277,6 +303,163 @@
     "ContainingType": "SchoolManagement.API.Controllers.StudentsController",
     "Method": "GetStudentNumberAsync",
     "RelativePath": "api/students/numbers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.SubjectsController",
+    "Method": "CreateSubjectAsync",
+    "RelativePath": "api/subjects",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "subjectDto",
+        "Type": "SchoolManagement.Application.DTOs.SubjectDtos.CreateSubjectDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.SubjectsController",
+    "Method": "GetSubjectsAsync",
+    "RelativePath": "api/subjects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.SubjectsController",
+    "Method": "UpdateSubjectAsync",
+    "RelativePath": "api/subjects/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "subjectDto",
+        "Type": "SchoolManagement.Application.DTOs.SubjectDtos.UpdateSubjectDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.SubjectsController",
+    "Method": "DeleteSubjectAsync",
+    "RelativePath": "api/subjects/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.SubjectsController",
+    "Method": "GetSubjectIdStudentsAsync",
+    "RelativePath": "api/subjects/{id}/students",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.SubjectsController",
+    "Method": "GetSubjectIdTeachersAsync",
+    "RelativePath": "api/subjects/{id}/teachers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.SubjectsController",
+    "Method": "GetSubjectsNotActiveAsync",
+    "RelativePath": "api/subjects/not-active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagement.API.Controllers.SubjectsController",
+    "Method": "GetSubjectNumberAsync",
+    "RelativePath": "api/subjects/numbers",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

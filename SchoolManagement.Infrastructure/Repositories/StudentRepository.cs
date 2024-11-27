@@ -18,6 +18,7 @@ namespace SchoolManagement.Infrastructure.Repositories
         public async Task<List<Student>> GetStudentsAsync(int page, int pageSize)
         {
             var students = await _context.Students
+                .Include(s => s.Grade)
                 .Where(s => s.IsActive)
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
@@ -29,6 +30,7 @@ namespace SchoolManagement.Infrastructure.Repositories
         public async Task<List<Student>> GetStudentsNotActiveAsync(int page, int pageSize)
         {
             var students = await _context.Students
+                .Include (s => s.Grade)
                 .Where(s => !s.IsActive)
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
@@ -66,6 +68,22 @@ namespace SchoolManagement.Infrastructure.Repositories
         {
             var student = await _context.Students
                 .Include(s => s.Account)
+                .Include(s => s.Grade)
+                .FirstOrDefaultAsync(s => s.Id == id);
+
+            if (student == null)
+            {
+                throw new NotFoundException("Student not found.");
+            }
+
+            return student;
+        }
+
+        // Get Student and Subject by Student Id from Db
+        public async Task<Student> GetStudentByIdSubjectsAsync(int id)
+        {
+            var student = await _context.Students
+                .Include(s => s.Subjects)
                 .FirstOrDefaultAsync(s => s.Id == id);
 
             if (student == null)

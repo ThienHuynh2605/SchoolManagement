@@ -10,6 +10,8 @@ namespace SchoolManagement.Domain.Interfaces.IServices
         Task<PaginationStudent<GetStudentDto>> GetStudentsNotActiveAsync(int page, int pageSize);
         Task<StudentNumber> GetStudentNumbersAsync();
         Task<GetStudentIdDto> GetStudentByIdAsync(int id);
+        Task<PaginationStudentSubject> GetStudentByIdSubjectsAsync(int id, int page, int pageSize);
+
         Task<CreateStudentDto> CreateStudentAsync(CreateStudentDto studentDto);
         Task<UpdateStudentDto> UpdateStudentAsync(int Id, UpdateStudentDto studentDto);
         Task<UpdateStudentDto> UpdateStudentPartialAsync(int id, UpdateStudentPartialDto studentDto);
