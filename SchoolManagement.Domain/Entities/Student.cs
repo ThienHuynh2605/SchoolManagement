@@ -11,6 +11,7 @@ namespace SchoolManagement.Domain.Entities
     {
         public StudentAccount? Account { get; set; }
         public Grade? Grade { get; set; }
-        public int? GradeId { get; set; }    
+        public int? GradeId { get; set; }   
+        public List<Subject>? Subjects { get; set; }
     }
 }

@@ -3,5 +3,6 @@
     public class CreateTeacherDto : PeopleBaseDto
     {
         public TeacherAccountDto? Account { get; set; }
+        public int? SubjectId { get; set; }
     }
 }

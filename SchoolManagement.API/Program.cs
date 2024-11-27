@@ -29,16 +29,19 @@ builder.Services.AddDbContext<SchoolDbContext>(Options =>
 builder.Services.AddAutoMapper(typeof(StudentMapping));
 builder.Services.AddAutoMapper(typeof(GradeMapping));
 builder.Services.AddAutoMapper(typeof(TeacherMapping));
+builder.Services.AddAutoMapper(typeof(SubjectMapping));
 
 // Add Dependency Injection for Repositories
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 builder.Services.AddScoped<IGradeRepository, GradeRepository>();
 builder.Services.AddScoped<ITeacherRepository, TeacherRepository>();
+builder.Services.AddScoped<ISubjectRepository, SubjectRepository>();
 
 // Add Dependency Injection for Services
 builder.Services.AddScoped<IStudentService, StudentService>();
 builder.Services.AddScoped<IGradeService, GradeService>();
 builder.Services.AddScoped<ITeacherService, TeacherService>();
+builder.Services.AddScoped<ISubjectService, SubjectService>();
 
 // Add Fluent Validation 
 builder.Services.AddFluentValidationAutoValidation();

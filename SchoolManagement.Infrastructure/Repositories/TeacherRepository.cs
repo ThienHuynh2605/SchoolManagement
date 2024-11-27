@@ -29,6 +29,7 @@ namespace SchoolManagement.Infrastructure.Repositories
         {
             var teachers = await _context.Teachers
                 .Include(s => s.Grades)
+                .Include(s => s.Subject)
                 .Where(s => s.IsActive)
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
@@ -41,6 +42,7 @@ namespace SchoolManagement.Infrastructure.Repositories
         {
             var teachers = await _context.Teachers
                 .Include (s => s.Grades)
+                .Include (s => s.Subject)
                 .Where(s => !s.IsActive)
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
@@ -79,6 +81,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             var teacher = await _context.Teachers
                 .Include(s => s.Account)
                 .Include(s => s.Grades)
+                .Include(s => s.Subject)
                 .FirstOrDefaultAsync(s => s.Id == id);
 
             if (teacher == null)
@@ -99,11 +102,19 @@ namespace SchoolManagement.Infrastructure.Repositories
                 throw new NotFoundException("Teacher not found.");
             }
 
+            var existingSubject = await _context.Subjects
+                .FirstOrDefaultAsync(s => s.Id == teacher.SubjectId);
+            if (existingSubject == null)
+            {
+                throw new NotFoundException("Subject not found.");
+            }
+
             existingTeacher.Email = teacher.Email;
             existingTeacher.DateOfBirth = teacher.DateOfBirth;
             existingTeacher.Name = teacher.Name;
             existingTeacher.IsActive = teacher.IsActive;
             existingTeacher.HomeTown = teacher.HomeTown;
+            existingTeacher.SubjectId = teacher.SubjectId;
             await _context.SaveChangesAsync();
 
             return existingTeacher;
@@ -138,6 +149,18 @@ namespace SchoolManagement.Infrastructure.Repositories
             if (teacher.DateOfBirth.HasValue)
             {
                 existingTeacher.DateOfBirth = teacher.DateOfBirth.Value;
+            }
+
+            if (teacher.SubjectId.HasValue)
+            {
+                var existingSubject = await _context.Subjects
+                .FirstOrDefaultAsync(s => s.Id == teacher.SubjectId);
+                if (existingSubject == null)
+                {
+                    throw new NotFoundException("Subject not found.");
+                }
+
+                existingTeacher.SubjectId = teacher.SubjectId.Value;
             }
 
             await _context.SaveChangesAsync();

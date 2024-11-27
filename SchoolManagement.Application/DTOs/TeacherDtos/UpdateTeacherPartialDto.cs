@@ -2,5 +2,6 @@
 {
     public class UpdateTeacherPartialDto : PeopleBaseDto
     {
+        public int? SubjectId { get; set; }
     }
 }

@@ -41,9 +41,17 @@ namespace SchoolManagement.API.Controllers
 
         // Endpoint to Get the student by Id
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetStudentById(int id)
+        public async Task<IActionResult> GetStudentByIdAsync(int id)
         {
             var studentDto = await _studentService.GetStudentByIdAsync(id);
+            return Ok(studentDto);
+        }
+
+        // Endpoint to Get the student and subject by Id
+        [HttpGet("{id}/subjects")]
+        public async Task<IActionResult> GetStudentByIdSubjectsAsync(int id, int page = 1, int pageSize = 5)
+        {
+            var studentDto = await _studentService.GetStudentByIdSubjectsAsync(id, page, pageSize);
             return Ok(studentDto);
         }
 
