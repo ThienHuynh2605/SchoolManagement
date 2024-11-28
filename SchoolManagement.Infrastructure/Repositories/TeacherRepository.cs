@@ -209,5 +209,19 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             return true;
         }
+
+        public async Task<Teacher> GetTeacherByIdPrincipalsAsync(int id)
+        {
+            var teacher = await _context.Teachers
+               .Include(s => s.Principals)
+               .FirstOrDefaultAsync(s => s.Id == id);
+
+            if (teacher == null)
+            {
+                throw new NotFoundException("Teacher not found.");
+            }
+
+            return teacher;
+        }
     }
 }

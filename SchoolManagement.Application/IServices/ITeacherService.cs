@@ -1,4 +1,5 @@
-﻿using SchoolManagement.Application.DTOs.StudentDtos;
+﻿using SchoolManagement.Application.DTOs.PrincipalDtos;
+using SchoolManagement.Application.DTOs.StudentDtos;
 using SchoolManagement.Application.DTOs.TeacherDtos;
 using SchoolManagement.Application.Supports.Paginations;
 
@@ -15,5 +16,7 @@ namespace SchoolManagement.Application.IServices
         Task<TeacherNumber> GetTeacherNumbersAsync();
         Task<TeacherAccountDto> UpdateTeacherAccountAsync(int teacherId, TeacherAccountDto accountDto);
         Task<string> DeleteTeacherAsync(int id);
+        Task<PaginationPrincipal<GetPrincipalDto>> GetTeacherByIdPrincipalsAsync(int id, int page, int pageSize);
+
     }
 }

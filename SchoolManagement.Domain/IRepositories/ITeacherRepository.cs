@@ -13,5 +13,6 @@ namespace SchoolManagement.Domain.IRepositories
         Task<Teacher> UpdateTeacherPartialAsync(int Id, Teacher teacher);
         Task<TeacherAccount> UpdateTeacherAccountAsync(int teacherId, TeacherAccount account);
         Task<bool> DeleteTeacherAsync(int id);
+        Task<Teacher> GetTeacherByIdPrincipalsAsync(int id);
     }
 }

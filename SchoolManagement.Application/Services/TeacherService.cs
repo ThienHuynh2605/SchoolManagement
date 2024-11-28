@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using SchoolManagement.Application.DTOs.PrincipalDtos;
 using SchoolManagement.Application.DTOs.TeacherDtos;
 using SchoolManagement.Application.IServices;
 using SchoolManagement.Application.Supports.Paginations;
@@ -47,7 +48,7 @@ namespace SchoolManagement.Application.Services
 
             return new PaginationTeacher<GetTeacherDto>
             {
-                TotalTeacher = totalTeachers,
+                TotalTeachers = totalTeachers,
                 TotalPages = totalPages,
                 CurrentPage = page,
                 PageSize = pageSize,
@@ -77,7 +78,7 @@ namespace SchoolManagement.Application.Services
 
             return new PaginationTeacher<GetTeacherDto>
             {
-                TotalTeacher = totalTeachers,
+                TotalTeachers = totalTeachers,
                 TotalPages = totalPages,
                 CurrentPage = page,
                 PageSize = pageSize,
@@ -153,6 +154,41 @@ namespace SchoolManagement.Application.Services
             }
 
             return "Successfully";
+        }
+
+        public async Task<PaginationPrincipal<GetPrincipalDto>> GetTeacherByIdPrincipalsAsync(int id, int page, int pageSize)
+        {
+            if (page < 1)
+            {
+                throw new ArgumentException("Page must be greater than or equal to 1.");
+            }
+
+            if (pageSize < 1)
+            {
+                throw new ArgumentException("Page size must be greater than or equal to 1.");
+            }
+
+            var teachers = await _teacherRepository.GetTeacherByIdPrincipalsAsync(id);
+
+            var totalPrincipals = teachers.Principals?.Count() ?? 0;
+            var totalPages = (int)Math.Ceiling((decimal)totalPrincipals / pageSize);
+
+            var principals = teachers.Principals?
+                .OrderBy(s => s.Id)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            var principalDtos = _mapper.Map<List<GetPrincipalDto>>(principals);
+
+            return new PaginationPrincipal<GetPrincipalDto>
+            {
+                TotalPrincipals = totalPrincipals,
+                CurrentPage = page,
+                PageSize = pageSize,
+                TotalPages = totalPages,
+                Principals = principalDtos
+            };
         }
     }
 }

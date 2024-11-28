@@ -12,6 +12,7 @@ namespace SchoolManagement.Domain.IRepositories
         Task<Subject> GetSubjectByIdStudentsAsync(int id);
         Task<Subject> UpdateSubjectAsync(int Id, Subject subject);
         Task DeleteSubjectAsync(int id);
+        Task AssignStudentToSubjectAsync(int id, StudentSubject studentAdd);
 
     }
 }

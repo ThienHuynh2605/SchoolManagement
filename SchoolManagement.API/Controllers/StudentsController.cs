@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SchoolManagement.Application.DTOs.PrincipalDtos;
 using SchoolManagement.Application.DTOs.StudentDtos;
 using SchoolManagement.Domain.Interfaces.IServices;
 
@@ -93,6 +94,13 @@ namespace SchoolManagement.API.Controllers
         {
             var deleteStudent = await _studentService.DeleteStudentAsync(id);
             return Ok(deleteStudent);
+        }
+
+        [HttpPost("{studentId}/add-subject")]
+        public async Task<IActionResult> AssignSubjectToStudentAsync(int studentId, AssignSubjectDto subjectAdd)
+        {
+            await _studentService.AssignSubjectToStudentAsync(studentId, subjectAdd);
+            return Ok("Successfully.");
         }
     }
 }

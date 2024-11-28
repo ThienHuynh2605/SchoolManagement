@@ -1,4 +1,5 @@
-﻿using SchoolManagement.Application.DTOs.StudentDtos;
+﻿using SchoolManagement.Application.DTOs.PrincipalDtos;
+using SchoolManagement.Application.DTOs.StudentDtos;
 using SchoolManagement.Application.Supports.Paginations;
 using SchoolManagement.Domain.Entities;
 
@@ -17,5 +18,7 @@ namespace SchoolManagement.Domain.Interfaces.IServices
         Task<UpdateStudentDto> UpdateStudentPartialAsync(int id, UpdateStudentPartialDto studentDto);
         Task<StudentAccountDto> UpdateStudentAccountAsync(int StudentId, StudentAccountDto accountDto);
         Task<string> DeleteStudentAsync(int id);
+        Task AssignSubjectToStudentAsync(int id, AssignSubjectDto subjectAdd);
+
     }
 }

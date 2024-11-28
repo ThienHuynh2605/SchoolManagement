@@ -14,5 +14,7 @@ namespace SchoolManagement.Domain.Interfaces
         Task<Student> UpdateStudentPartialAsync(int id, Student student);
         Task<StudentAccount> UpdateStudentAccountAsync(int studentId, StudentAccount account);
         Task<bool> DeleteStudentAsync(int id);
+        Task AssignSubjectToStudentAsync(int id, StudentSubject subjectAdd);
+
     }
 }

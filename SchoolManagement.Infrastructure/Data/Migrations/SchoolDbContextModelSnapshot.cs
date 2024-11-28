@@ -49,6 +49,78 @@ namespace SchoolManagement.Infrastructure.Data.Migrations
                     b.ToTable("Grades");
                 });
 
+            modelBuilder.Entity("SchoolManagement.Domain.Entities.Principal", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("DateOfBirth")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("HomeTown")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Principals");
+                });
+
+            modelBuilder.Entity("SchoolManagement.Domain.Entities.PrincipalAccount", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("PrincipalId")
+                        .IsRequired()
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PrincipalId")
+                        .IsUnique();
+
+                    b.ToTable("PrincipalAccounts");
+                });
+
+            modelBuilder.Entity("SchoolManagement.Domain.Entities.PrincipalTeacher", b =>
+                {
+                    b.Property<int?>("PrincipalId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("TeacherId")
+                        .HasColumnType("int");
+
+                    b.HasKey("PrincipalId", "TeacherId");
+
+                    b.HasIndex("TeacherId");
+
+                    b.ToTable("PrincipalTeachers");
+                });
+
             modelBuilder.Entity("SchoolManagement.Domain.Entities.Student", b =>
                 {
                     b.Property<int>("Id")
@@ -217,6 +289,32 @@ namespace SchoolManagement.Infrastructure.Data.Migrations
                     b.Navigation("Teacher");
                 });
 
+            modelBuilder.Entity("SchoolManagement.Domain.Entities.PrincipalAccount", b =>
+                {
+                    b.HasOne("SchoolManagement.Domain.Entities.Principal", "Principal")
+                        .WithOne("Account")
+                        .HasForeignKey("SchoolManagement.Domain.Entities.PrincipalAccount", "PrincipalId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Principal");
+                });
+
+            modelBuilder.Entity("SchoolManagement.Domain.Entities.PrincipalTeacher", b =>
+                {
+                    b.HasOne("SchoolManagement.Domain.Entities.Principal", null)
+                        .WithMany()
+                        .HasForeignKey("PrincipalId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SchoolManagement.Domain.Entities.Teacher", null)
+                        .WithMany()
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("SchoolManagement.Domain.Entities.Student", b =>
                 {
                     b.HasOne("SchoolManagement.Domain.Entities.Grade", "Grade")
@@ -277,6 +375,11 @@ namespace SchoolManagement.Infrastructure.Data.Migrations
             modelBuilder.Entity("SchoolManagement.Domain.Entities.Grade", b =>
                 {
                     b.Navigation("Students");
+                });
+
+            modelBuilder.Entity("SchoolManagement.Domain.Entities.Principal", b =>
+                {
+                    b.Navigation("Account");
                 });
 
             modelBuilder.Entity("SchoolManagement.Domain.Entities.Student", b =>
