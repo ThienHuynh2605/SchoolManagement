@@ -12,6 +12,7 @@ namespace SchoolManagement.Application.Supports.Mappers
             CreateMap<Subject, SubjectDto>().ReverseMap();
             CreateMap<Subject, UpdateSubjectDto>().ReverseMap();
             CreateMap<DisplaySubjectDto, Subject>().ReverseMap();
+            CreateMap<StudentSubject, AssignStudentDto>().ReverseMap();
         }
     }
 }

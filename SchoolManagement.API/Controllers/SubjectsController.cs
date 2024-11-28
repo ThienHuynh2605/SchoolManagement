@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SchoolManagement.Application.DTOs.StudentDtos;
 using SchoolManagement.Application.DTOs.SubjectDtos;
 using SchoolManagement.Application.DTOs.TeacherDtos;
 using SchoolManagement.Application.IServices;
 using SchoolManagement.Application.Services;
+using SchoolManagement.Domain.Interfaces.IServices;
 
 namespace SchoolManagement.API.Controllers
 {
@@ -17,7 +19,7 @@ namespace SchoolManagement.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateSubjectAsync(CreateSubjectDto subjectDto)
+        public async Task<IActionResult> CreateSubjectAsync([FromBody] CreateSubjectDto subjectDto)
         {
             await _subjectService.CreateSubjectAsync(subjectDto);
             return Ok("Successfully.");
@@ -69,6 +71,13 @@ namespace SchoolManagement.API.Controllers
         public async Task<IActionResult> DeleteSubjectAsync(int id)
         {
             await _subjectService.DeleteSubjectAsync(id);
+            return Ok("Successfully.");
+        }
+
+        [HttpPost("{subjectId}/add-student")]
+        public async Task<IActionResult> AssignStudentToSubjectAsync(int subjectId, AssignStudentDto studentAdd)
+        {
+            await _subjectService.AssignStudentToSubjectAsync(subjectId, studentAdd);
             return Ok("Successfully.");
         }
     }

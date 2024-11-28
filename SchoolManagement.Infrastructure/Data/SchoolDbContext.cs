@@ -1,10 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SchoolManagement.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolManagement.Infrastructure.Data
 {
@@ -21,8 +16,11 @@ namespace SchoolManagement.Infrastructure.Data
         public DbSet<TeacherAccount> TeacherAccounts { get; set; }
 
         public DbSet<Subject> Subjects { get; set; }
-
-        public DbSet<StudentSubject> StudentSubjects { get; set; }  
+        public DbSet<StudentSubject> StudentSubjects { get; set; }
+        
+        public DbSet<Principal> Principals { get; set; }
+        public DbSet<PrincipalAccount> PrincipalAccounts { get; set; }
+        public DbSet<PrincipalTeacher> PrincipalTeachers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -67,6 +65,21 @@ namespace SchoolManagement.Infrastructure.Data
                 .UsingEntity<StudentSubject>(
                     l => l.HasOne<Student>().WithMany().HasForeignKey(s => s.StudentId),
                     r => r.HasOne<Subject>().WithMany().HasForeignKey(s => s.SubjectId)
+                );
+
+            /*-------------------------- Config Principal Relationship -------------------------*/
+            modelBuilder.Entity<Principal>()
+                .HasOne(s => s.Account)
+                .WithOne(s => s.Principal)
+                .HasForeignKey<PrincipalAccount>(s => s.PrincipalId)
+                .IsRequired();
+
+            modelBuilder.Entity<Principal>()
+                .HasMany(s => s.Teachers)
+                .WithMany(s => s.Principals)
+                .UsingEntity<PrincipalTeacher>(
+                    l => l.HasOne<Teacher>().WithMany().HasForeignKey(s => s.TeacherId),
+                    r => r.HasOne<Principal>().WithMany().HasForeignKey(s => s.PrincipalId)
                 );
 
         }

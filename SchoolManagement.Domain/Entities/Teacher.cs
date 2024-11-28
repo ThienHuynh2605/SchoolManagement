@@ -6,5 +6,6 @@
         public List<Grade>? Grades { get; set; }
         public Subject? Subject { get; set; }
         public int? SubjectId { get; set; }
+        public List<Principal>? Principals { get; set; }
     }
 }

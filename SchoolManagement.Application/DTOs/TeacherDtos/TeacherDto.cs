@@ -2,5 +2,6 @@
 {
     public class TeacherDto : PeopleBaseDto
     {
+        public int Id { get; set; }
     }
 }

@@ -120,5 +120,40 @@ namespace SchoolManagement.Infrastructure.Repositories
             _context.Subjects.Remove(subject);
             await _context.SaveChangesAsync();
         }
+
+        public async Task AssignStudentToSubjectAsync(int id, StudentSubject studentAdd)
+        {
+            var student = await _context.Students
+                .FirstOrDefaultAsync(s => s.Id == studentAdd.StudentId);
+            if (student == null)
+            {
+                throw new NotFoundException("Student not found.");
+            }
+
+            var subject = await _context.Subjects
+                .FirstOrDefaultAsync(s => s.Id == id);
+            if (subject == null)
+            {
+                throw new NotFoundException("Subject not found.");
+
+            }
+
+            var check = await _context.StudentSubjects
+                .FirstOrDefaultAsync(s => s.StudentId == studentAdd.StudentId && s.SubjectId == id);
+
+            if (check != null)
+            {
+                throw new ArgumentException("Subject was assigned to Student.");
+            }
+
+            var studentSubject = new StudentSubject
+            {
+                SubjectId = id,
+                StudentId = studentAdd.StudentId
+            };
+
+            _context.StudentSubjects.Add(studentSubject);
+            await _context.SaveChangesAsync();
+        }
     }
 }

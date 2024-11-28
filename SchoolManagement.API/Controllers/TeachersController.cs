@@ -2,6 +2,7 @@
 using SchoolManagement.Application.DTOs.StudentDtos;
 using SchoolManagement.Application.DTOs.TeacherDtos;
 using SchoolManagement.Application.IServices;
+using SchoolManagement.Application.Services;
 
 namespace SchoolManagement.API.Controllers
 {
@@ -76,6 +77,13 @@ namespace SchoolManagement.API.Controllers
         {
             var deleteTeacher = await _teacherService.DeleteTeacherAsync(id);
             return Ok(deleteTeacher);
+        }
+
+        [HttpGet("{id}/principals")]
+        public async Task<IActionResult> GetTeacherByIdPrincipalsAsync(int id, int page = 1, int pageSize = 5)
+        {
+            var principalsDto = await _teacherService.GetTeacherByIdPrincipalsAsync(id, page, pageSize);
+            return Ok(principalsDto);
         }
     }
 }

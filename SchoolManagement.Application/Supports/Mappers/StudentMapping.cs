@@ -25,6 +25,7 @@ namespace SchoolManagement.Application.Supports.Mappers
             CreateMap<UpdateStudentPartialDto, Student>();
 
             CreateMap<Student, StudentInGradeDto>().ReverseMap();
+            CreateMap<StudentSubject, AssignSubjectDto>().ReverseMap();
         }
     }
 }

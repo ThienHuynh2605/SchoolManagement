@@ -2,7 +2,7 @@
 {
     public class PaginationTeacher<T> : PaginationBase
     {
-        public int TotalTeacher { get; set; }
+        public int TotalTeachers { get; set; }
         public List<T>? Teachers { get; set; }
     }
 }

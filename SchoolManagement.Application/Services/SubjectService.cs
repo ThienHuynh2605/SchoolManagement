@@ -166,5 +166,11 @@ namespace SchoolManagement.Application.Services
         {
             await _subjectRepository.DeleteSubjectAsync(Id);
         }
+
+        public async Task AssignStudentToSubjectAsync(int id, AssignStudentDto studentAdd)
+        {
+            var student = _mapper.Map<StudentSubject>(studentAdd);
+            await _subjectRepository.AssignStudentToSubjectAsync(id, student);
+        }
     }
 }

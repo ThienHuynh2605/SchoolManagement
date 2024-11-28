@@ -206,5 +206,40 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             return true;
         }
+
+        public async Task AssignSubjectToStudentAsync(int id, StudentSubject subjectAdd)
+        {
+            var student = await _context.Students
+                .FirstOrDefaultAsync(s => s.Id == id);
+            if (student == null)
+            {
+                throw new NotFoundException("Student not found.");
+            }
+
+            var subject = await _context.Subjects
+                .FirstOrDefaultAsync(s => s.Id == subjectAdd.SubjectId);
+            if (subject == null)
+            {
+                throw new NotFoundException("Subject not found.");
+
+            }
+
+            var check = await _context.StudentSubjects
+                .FirstOrDefaultAsync(s => s.StudentId == id && s.SubjectId == subjectAdd.SubjectId);
+
+            if (check != null)
+            {
+                throw new ArgumentException("Subject was assigned to Student.");
+            }
+
+            var studentSubject = new StudentSubject
+            {
+                SubjectId = subjectAdd.SubjectId,
+                StudentId = id
+            };
+
+            _context.StudentSubjects.Add(studentSubject);
+            await _context.SaveChangesAsync();
+        }
     }
 }

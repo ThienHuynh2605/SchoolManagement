@@ -110,6 +110,16 @@ namespace SchoolManagement.Application.Services
         // Get Student and Subject from Repository
         public async Task<PaginationStudentSubject> GetStudentByIdSubjectsAsync(int id, int page, int pageSize)
         {
+            if (page < 1)
+            {
+                throw new ArgumentException("Page must be greater than or equal to 1.");
+            }
+
+            if (pageSize < 1)
+            {
+                throw new ArgumentException("Page size must be greater than or equal to 1.");
+            }
+
             var student = await _studentRepository.GetStudentByIdSubjectsAsync(id);
 
             var totalSubjects = student.Subjects?.Count() ?? 0;
@@ -192,6 +202,12 @@ namespace SchoolManagement.Application.Services
             }
 
             return "Successfully";
+        }
+
+        public async Task AssignSubjectToStudentAsync(int id, AssignSubjectDto subjectAdd)
+        {
+            var subject = _mapper.Map<StudentSubject>(subjectAdd);
+            await _studentRepository.AssignSubjectToStudentAsync(id, subject);
         }
     }
 }
