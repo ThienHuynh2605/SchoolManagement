@@ -18,6 +18,7 @@ namespace SchoolManagement.Infrastructure.Repositories
         public async Task<List<Student>> GetStudentsAsync(int page, int pageSize)
         {
             var students = await _context.Students
+                .Include(s => s.Grade)
                 .Where(s => s.IsActive)
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
@@ -29,6 +30,7 @@ namespace SchoolManagement.Infrastructure.Repositories
         public async Task<List<Student>> GetStudentsNotActiveAsync(int page, int pageSize)
         {
             var students = await _context.Students
+                .Include (s => s.Grade)
                 .Where(s => !s.IsActive)
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
@@ -66,6 +68,22 @@ namespace SchoolManagement.Infrastructure.Repositories
         {
             var student = await _context.Students
                 .Include(s => s.Account)
+                .Include(s => s.Grade)
+                .FirstOrDefaultAsync(s => s.Id == id);
+
+            if (student == null)
+            {
+                throw new NotFoundException("Student not found.");
+            }
+
+            return student;
+        }
+
+        // Get Student and Subject by Student Id from Db
+        public async Task<Student> GetStudentByIdSubjectsAsync(int id)
+        {
+            var student = await _context.Students
+                .Include(s => s.Subjects)
                 .FirstOrDefaultAsync(s => s.Id == id);
 
             if (student == null)
@@ -137,17 +155,10 @@ namespace SchoolManagement.Infrastructure.Repositories
                 existingStudent.DateOfBirth = student.DateOfBirth.Value;
             }
 
-            if (student.GradeId != null)
+            if (student.GradeId.HasValue)
             {
-                existingStudent.GradeId = student.GradeId;
+                existingStudent.GradeId = student.GradeId.Value;
             }
-
-#pragma warning disable CS0472 // The result of the expression is always the same since a value of this type is never equal to 'null'
-            if (student.IsActive != null)
-            {
-                existingStudent.IsActive = student.IsActive;
-            }
-#pragma warning restore CS0472 // The result of the expression is always the same since a value of this type is never equal to 'null'
 
             await _context.SaveChangesAsync();
 
@@ -194,6 +205,41 @@ namespace SchoolManagement.Infrastructure.Repositories
             await _context.SaveChangesAsync();
 
             return true;
+        }
+
+        public async Task AssignSubjectToStudentAsync(int id, StudentSubject subjectAdd)
+        {
+            var student = await _context.Students
+                .FirstOrDefaultAsync(s => s.Id == id);
+            if (student == null)
+            {
+                throw new NotFoundException("Student not found.");
+            }
+
+            var subject = await _context.Subjects
+                .FirstOrDefaultAsync(s => s.Id == subjectAdd.SubjectId);
+            if (subject == null)
+            {
+                throw new NotFoundException("Subject not found.");
+
+            }
+
+            var check = await _context.StudentSubjects
+                .FirstOrDefaultAsync(s => s.StudentId == id && s.SubjectId == subjectAdd.SubjectId);
+
+            if (check != null)
+            {
+                throw new ArgumentException("Subject was assigned to Student.");
+            }
+
+            var studentSubject = new StudentSubject
+            {
+                SubjectId = subjectAdd.SubjectId,
+                StudentId = id
+            };
+
+            _context.StudentSubjects.Add(studentSubject);
+            await _context.SaveChangesAsync();
         }
     }
 }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SchoolManagement.Domain.Entities
+﻿namespace SchoolManagement.Domain.Entities
 {
     public class Grade : BaseEntity
     {
@@ -12,5 +6,8 @@ namespace SchoolManagement.Domain.Entities
         public string? Classroom { get; set; }
 
         public List<Student>? Students { get; set; }
+
+        public Teacher? Teacher { get; set; }
+        public int? TeacherId { get; set; }
     }
 }

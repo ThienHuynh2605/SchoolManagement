@@ -4,6 +4,7 @@ using SchoolManagement.Application.DTOs.StudentDtos;
 using SchoolManagement.Application.IServices;
 using SchoolManagement.Application.Supports.Paginations;
 using SchoolManagement.Domain.Entities;
+using SchoolManagement.Domain.Exceptions;
 using SchoolManagement.Domain.IRepositories;
 using System;
 using System.Collections.Generic;
@@ -56,6 +57,63 @@ namespace SchoolManagement.Application.Services
                 TotalPages = totalPages,
                 Grades = gardeDtos
             };
+        }
+
+        public async Task<PaginationGradeDetail> GetGradeDetailAsync(int id, int page, int pageSize)
+        {
+            var grade = await _gradeRepository.GetGradeDetailAsync (id);
+
+            var totalStudents = grade.Students?.Count() ?? 0;
+            var totalPages = (int)Math.Ceiling(totalStudents / (double)pageSize);
+
+            var students = grade.Students?
+                .OrderBy(s => s.Id)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            var studentDtos = _mapper.Map<List<StudentInGradeDto>>(students);
+            var gradeDto = _mapper.Map<GetGradeDetail>(grade);
+            gradeDto.Students = studentDtos;
+
+            return new PaginationGradeDetail
+            {
+                TotalPages = totalPages,
+                CurrentPage = page,
+                PageSize = pageSize,
+                TotalStudent = totalStudents,
+                Grade = gradeDto
+            };
+        }
+
+        public async Task<UpdateGradeDto> UpdateGradeAsync(int id, UpdateGradeDto updateGradeDto)
+        {
+            var grade = _mapper.Map<Grade> (updateGradeDto);
+            var updateGrade = await _gradeRepository.UpdateGradeAsync(id, grade);
+            return _mapper.Map<UpdateGradeDto>(updateGrade);
+        }
+
+        public async Task<bool> DeleteGradeAsync(int id)
+        {
+            return await  _gradeRepository.DeleteGradeAsync(id);
+        }
+
+        public async Task<UpdateGradeDto> UpdateGradePartialAsync(int id, UpdateGradeDto updateGradeDto)
+        {
+            var existingGrade = await _gradeRepository.GetGradeDetailAsync(id);
+            if (updateGradeDto.IsActive.HasValue)
+            {
+                existingGrade.IsActive = updateGradeDto.IsActive.Value;
+            }
+            else
+            {
+                existingGrade.IsActive = existingGrade.IsActive;
+            }
+
+            var grade = _mapper.Map<Grade>(updateGradeDto);
+            var updateGrade = await _gradeRepository.UpdateGradePartialAsync (id, grade);
+
+            return _mapper.Map<UpdateGradeDto>(updateGrade);
         }
     }
 }

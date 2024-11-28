@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SchoolManagement.Application.DTOs.PrincipalDtos;
 using SchoolManagement.Application.DTOs.StudentDtos;
 using SchoolManagement.Domain.Interfaces.IServices;
 
@@ -41,9 +42,17 @@ namespace SchoolManagement.API.Controllers
 
         // Endpoint to Get the student by Id
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetStudentById(int id)
+        public async Task<IActionResult> GetStudentByIdAsync(int id)
         {
             var studentDto = await _studentService.GetStudentByIdAsync(id);
+            return Ok(studentDto);
+        }
+
+        // Endpoint to Get the student and subject by Id
+        [HttpGet("{id}/subjects")]
+        public async Task<IActionResult> GetStudentByIdSubjectsAsync(int id, int page = 1, int pageSize = 5)
+        {
+            var studentDto = await _studentService.GetStudentByIdSubjectsAsync(id, page, pageSize);
             return Ok(studentDto);
         }
 
@@ -85,6 +94,13 @@ namespace SchoolManagement.API.Controllers
         {
             var deleteStudent = await _studentService.DeleteStudentAsync(id);
             return Ok(deleteStudent);
+        }
+
+        [HttpPost("{studentId}/add-subject")]
+        public async Task<IActionResult> AssignSubjectToStudentAsync(int studentId, AssignSubjectDto subjectAdd)
+        {
+            await _studentService.AssignSubjectToStudentAsync(studentId, subjectAdd);
+            return Ok("Successfully.");
         }
     }
 }

@@ -7,7 +7,6 @@ using SchoolManagement.Infrastructure.Data;
 using SchoolManagement.Infrastructure.Repositories;
 using SchoolManagement.Application.Services;
 using SchoolManagement.API.Middlewares;
-using static System.Net.Mime.MediaTypeNames;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Http.Features;
 using SchoolManagement.Application.Supports.Mappers;
@@ -29,14 +28,23 @@ builder.Services.AddDbContext<SchoolDbContext>(Options =>
 // Add AutoMapper
 builder.Services.AddAutoMapper(typeof(StudentMapping));
 builder.Services.AddAutoMapper(typeof(GradeMapping));
+builder.Services.AddAutoMapper(typeof(TeacherMapping));
+builder.Services.AddAutoMapper(typeof(SubjectMapping));
+builder.Services.AddAutoMapper(typeof(PrincipalMapping));
 
 // Add Dependency Injection for Repositories
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 builder.Services.AddScoped<IGradeRepository, GradeRepository>();
+builder.Services.AddScoped<ITeacherRepository, TeacherRepository>();
+builder.Services.AddScoped<ISubjectRepository, SubjectRepository>();
+builder.Services.AddScoped<IPrincipalRepository, PrincipalRepository>();
 
 // Add Dependency Injection for Services
 builder.Services.AddScoped<IStudentService, StudentService>();
 builder.Services.AddScoped<IGradeService, GradeService>();
+builder.Services.AddScoped<ITeacherService, TeacherService>();
+builder.Services.AddScoped<ISubjectService, SubjectService>();
+builder.Services.AddScoped<IPrincipalService, PrincipalService>();
 
 // Add Fluent Validation 
 builder.Services.AddFluentValidationAutoValidation();

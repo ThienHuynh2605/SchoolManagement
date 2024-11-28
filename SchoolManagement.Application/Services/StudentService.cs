@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using SchoolManagement.Application.DTOs.StudentDtos;
+using SchoolManagement.Application.DTOs.SubjectDtos;
 using SchoolManagement.Application.Supports.Paginations;
 using SchoolManagement.Domain.Entities;
 using SchoolManagement.Domain.Exceptions;
@@ -44,7 +45,7 @@ namespace SchoolManagement.Application.Services
             var totalPages = (int)Math.Ceiling((decimal)totalStudent / pageSize);
 
             var studentDtos = _mapper.Map<List<GetStudentDto>>(students);
-            
+
             return new PaginationStudent<GetStudentDto>
             {
                 TotalStudent = totalStudent,
@@ -106,6 +107,42 @@ namespace SchoolManagement.Application.Services
             return _mapper.Map<GetStudentIdDto>(student);
         }
 
+        // Get Student and Subject from Repository
+        public async Task<PaginationStudentSubject> GetStudentByIdSubjectsAsync(int id, int page, int pageSize)
+        {
+            if (page < 1)
+            {
+                throw new ArgumentException("Page must be greater than or equal to 1.");
+            }
+
+            if (pageSize < 1)
+            {
+                throw new ArgumentException("Page size must be greater than or equal to 1.");
+            }
+
+            var student = await _studentRepository.GetStudentByIdSubjectsAsync(id);
+
+            var totalSubjects = student.Subjects?.Count() ?? 0;
+            var totalPages = (int)Math.Ceiling(totalSubjects / (double)pageSize);
+
+            var subjects = student.Subjects?
+                .OrderBy(s => s.Id)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            var subjectDto = _mapper.Map<List<DisplaySubjectDto>>(subjects);
+
+            return new PaginationStudentSubject
+            {
+                TotalPages = totalPages,
+                CurrentPage = page,
+                PageSize = pageSize,
+                TotalSubjects = totalSubjects,
+                Subjects = subjectDto
+            };
+        }
+
         // Create a new student in the Db through the Repository
         public async Task<CreateStudentDto> CreateStudentAsync(CreateStudentDto studentDto)
         {
@@ -130,6 +167,15 @@ namespace SchoolManagement.Application.Services
         // Update a student partial in the Db through the Repository
         public async Task<UpdateStudentDto> UpdateStudentPartialAsync(int id, UpdateStudentPartialDto studentDto)
         {
+            var findStudent = await _studentRepository.GetStudentByIdAsync(id);
+            if (studentDto.IsActive.HasValue)
+            {
+                findStudent.IsActive = studentDto.IsActive.Value;
+            }
+            else
+            {
+                findStudent.IsActive = findStudent.IsActive;
+            }
             var student = _mapper.Map<Student>(studentDto);
 
             var updateStudent = await _studentRepository.UpdateStudentPartialAsync(id, student);
@@ -137,7 +183,7 @@ namespace SchoolManagement.Application.Services
             return _mapper.Map<UpdateStudentDto>(updateStudent);
         }
 
-        // Update a student account int the Db through Repository
+        // Update a student account in the Db through Repository
         public async Task<StudentAccountDto> UpdateStudentAccountAsync(int studentId, StudentAccountDto accountDto)
         {
             var account = _mapper.Map<StudentAccount>(accountDto);
@@ -156,6 +202,12 @@ namespace SchoolManagement.Application.Services
             }
 
             return "Successfully";
+        }
+
+        public async Task AssignSubjectToStudentAsync(int id, AssignSubjectDto subjectAdd)
+        {
+            var subject = _mapper.Map<StudentSubject>(subjectAdd);
+            await _studentRepository.AssignSubjectToStudentAsync(id, subject);
         }
     }
 }
