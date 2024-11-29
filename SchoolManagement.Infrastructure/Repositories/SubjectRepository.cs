@@ -123,19 +123,19 @@ namespace SchoolManagement.Infrastructure.Repositories
 
         public async Task AssignStudentToSubjectAsync(int id, StudentSubject studentAdd)
         {
-            var student = await _context.Students
-                .FirstOrDefaultAsync(s => s.Id == studentAdd.StudentId);
-            if (student == null)
-            {
-                throw new NotFoundException("Student not found.");
-            }
-
             var subject = await _context.Subjects
                 .FirstOrDefaultAsync(s => s.Id == id);
             if (subject == null)
             {
                 throw new NotFoundException("Subject not found.");
 
+            }
+
+            var student = await _context.Students
+                .FirstOrDefaultAsync(s => s.Id == studentAdd.StudentId);
+            if (student == null)
+            {
+                throw new NotFoundException("Student not found.");
             }
 
             var check = await _context.StudentSubjects

@@ -15,6 +15,17 @@ using SchoolManagement.Application.Supports.Validations;
 using SchoolManagement.Application.DTOs.StudentDtos;
 using SchoolManagement.Domain.IRepositories;
 using SchoolManagement.Application.IServices;
+using SchoolManagement.Application.Supports.Validations.StudentValidations;
+using SchoolManagement.Application.Supports.Validations.AccountValidators;
+using SchoolManagement.Application.Supports.Validations.StudentValidators;
+using SchoolManagement.Application.DTOs.TeacherDtos;
+using SchoolManagement.Application.Supports.Validations.TeacherValidators;
+using SchoolManagement.Application.DTOs.PrincipalDtos;
+using SchoolManagement.Application.Supports.Validations.PrincipalValidators;
+using SchoolManagement.Application.DTOs.GradeDtos;
+using SchoolManagement.Application.Supports.Validations.GradeValidators;
+using SchoolManagement.Application.DTOs.SubjectDtos;
+using SchoolManagement.Application.Supports.Validations.SubjectValidators;
 //using Hellang.Middleware.ProblemDetails;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -52,6 +63,21 @@ builder.Services.AddScoped<IValidator<PeopleBaseDto>, PeopleBaseValidator<People
 builder.Services.AddScoped<IValidator<CreateStudentDto>, CreateStudentValidator>();
 builder.Services.AddScoped<IValidator<UpdateStudentDto>, UpdateStudentValidator>();
 builder.Services.AddScoped<IValidator<UpdateStudentPartialDto>, UpdateStudentPartialValidator>();
+builder.Services.AddScoped<IValidator<StudentAccountDto>, AccountValidator<AccountBaseDto>>();
+builder.Services.AddScoped<IValidator<StudentAccountDto>, StudentAccountValidator>();
+builder.Services.AddScoped<IValidator<CreateTeacherDto>, CreateTeacherValidator>();
+builder.Services.AddScoped<IValidator<TeacherAccountDto>, TeacherAccountValidator>();
+builder.Services.AddScoped<IValidator<UpdateTeacherDto>, UpdateTeacherValidator>();
+builder.Services.AddScoped<IValidator<UpdateTeacherPartialDto>, UpdateTeacherPartialValidator>();
+builder.Services.AddScoped<IValidator<CreatePrincipalDto>, CreatePrincipalValidator>();
+builder.Services.AddScoped<IValidator<PrincipalAccountDto>, PrincipalAccountValidator>();
+builder.Services.AddScoped<IValidator<UpdatePrincipalDto>, UpdatePrincipalValidator>();
+builder.Services.AddScoped<IValidator<GradeDto>, CreateGradeValidator>();
+builder.Services.AddScoped<IValidator<UpdateGradeDto>, UpdateGradeValidator>();
+builder.Services.AddScoped<IValidator<CreateSubjectDto>, CreateSubjectValidator>();
+builder.Services.AddScoped<IValidator<UpdateSubjectDto>, UpdateSubjectValidator>();
+
+
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

@@ -97,6 +97,12 @@ namespace SchoolManagement.Infrastructure.Repositories
         // Create the new student to Db
         public async Task<Student> CreateStudentAsync(Student student)
         {
+            var gradeId = await _context.Grades
+                .FirstOrDefaultAsync(g => g.Id == student.GradeId);
+            if (gradeId == null)
+            {
+                throw new NotFoundException("Grade not found.");
+            }
             _context.Students.Add(student);
             await _context.SaveChangesAsync();
 

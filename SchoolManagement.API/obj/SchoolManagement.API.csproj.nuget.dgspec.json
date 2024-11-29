@@ -130,6 +130,9 @@
             "projectReferences": {
               "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\SchoolManagement.Domain.csproj": {
                 "projectPath": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\SchoolManagement.Domain.csproj"
+              },
+              "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj": {
+                "projectPath": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj"
               }
             }
           }
