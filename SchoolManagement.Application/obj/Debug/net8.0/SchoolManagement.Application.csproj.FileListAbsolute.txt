@@ -14,3 +14,5 @@ C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.App
 C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Application\obj\Debug\net8.0\SchoolManagement.Application.csproj.AssemblyReference.cache
 C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Application\obj\Debug\net8.0\SchoolMa.1175F4A4.Up2Date
 C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Application\obj\Debug\net8.0\SchoolManagement.Application.sourcelink.json
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Application\bin\Debug\net8.0\SchoolManagement.Infrastructure.dll
+C:\CSHARP\Visual_Studio\Clean_Architecture\SchoolManagement\SchoolManagement.Application\bin\Debug\net8.0\SchoolManagement.Infrastructure.pdb

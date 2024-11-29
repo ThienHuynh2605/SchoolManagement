@@ -2363,7 +2363,8 @@
         "dependencies": {
           "AutoMapper": "13.0.1",
           "FluentValidation": "11.10.0",
-          "SchoolManagement.Domain": "1.0.0"
+          "SchoolManagement.Domain": "1.0.0",
+          "SchoolManagement.Infrastructure": "1.0.0"
         },
         "compile": {
           "bin/placeholder/SchoolManagement.Application.dll": {}
