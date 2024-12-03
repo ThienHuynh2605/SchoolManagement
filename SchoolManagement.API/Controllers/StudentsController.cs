@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SchoolManagement.Application.DTOs.PrincipalDtos;
 using SchoolManagement.Application.DTOs.StudentDtos;
@@ -6,7 +7,7 @@ using SchoolManagement.Domain.Interfaces.IServices;
 
 namespace SchoolManagement.API.Controllers
 {
-    [Route("api/students")]
+    [Route("api/students"), Authorize]
     [ApiController]
     public class StudentsController : ControllerBase
     {

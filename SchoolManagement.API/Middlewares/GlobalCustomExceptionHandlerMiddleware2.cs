@@ -25,12 +25,19 @@ namespace SchoolManagement.API.Middlewares
                 httpContext.Response.StatusCode = (int)HttpStatusCode.OK;
                 problemDetails.Status = (int)HttpStatusCode.BadRequest;
             }
+            else if(exception is UnauthorizedAccessException)
+            {
+                httpContext.Response.StatusCode = (int)HttpStatusCode.OK;
+                problemDetails.Status = (int)HttpStatusCode.Unauthorized;
+            }
             else
             {
                 httpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
                 problemDetails.Status = (int)HttpStatusCode.InternalServerError;
                 problemDetails.Detail = exception.StackTrace;
             }
+
+            
 
             return await problemDetailsService.TryWriteAsync(new ProblemDetailsContext
             {

@@ -1,10 +1,5 @@
 ﻿using FluentValidation;
 using SchoolManagement.Application.DTOs.StudentDtos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolManagement.Application.Supports.Validations.StudentValidations
 {
@@ -20,6 +15,9 @@ namespace SchoolManagement.Application.Supports.Validations.StudentValidations
 
             RuleFor(s => s.Email)
                 .EmailAddress().WithMessage("Email is not valid.");
+
+            RuleFor(s => s.GradeId)
+                .NotEmpty().WithMessage("GradeId is required.");
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 using SchoolManagement.Application.DTOs.StudentDtos;
-using SchoolManagement.Application.Supports.Validations.StudentValidators;
+using SchoolManagement.Application.Supports.Validations.AccountValidators;
 using SchoolManagement.Infrastructure.Data;
 
 namespace SchoolManagement.Application.Supports.Validations.StudentValidations
@@ -15,7 +15,7 @@ namespace SchoolManagement.Application.Supports.Validations.StudentValidations
                 .NotEmpty().WithMessage("GradeId is required.");
 
             RuleFor(s => s.Account)
-                .SetValidator(new StudentAccountValidator(_context));
+                .SetValidator(new AccountValidator<StudentAccountDto?>(_context));
         }
     }
 }

@@ -60,6 +60,10 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[11.10.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[7.1.0, )"
             }
           },
           "imports": [

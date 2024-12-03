@@ -121,6 +121,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SchoolManagement.API.Controllers.LoginsController",
+    "Method": "LoginAsync",
+    "RelativePath": "api/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "SchoolManagement.Application.DTOs.LoginDtos.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SchoolManagement.API.Controllers.PrincipalsController",
     "Method": "CreatePrincipalAsync",
     "RelativePath": "api/principals",

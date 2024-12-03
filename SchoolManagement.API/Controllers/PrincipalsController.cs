@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SchoolManagement.Application.DTOs.PrincipalDtos;
 using SchoolManagement.Application.DTOs.SubjectDtos;
@@ -8,7 +9,7 @@ using SchoolManagement.Domain.Interfaces.IServices;
 
 namespace SchoolManagement.API.Controllers
 {
-    [Route("api/principals")]
+    [Route("api/principals"), Authorize]
     [ApiController]
     public class PrincipalsController : ControllerBase
     {
