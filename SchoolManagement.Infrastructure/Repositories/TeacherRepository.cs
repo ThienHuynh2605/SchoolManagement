@@ -18,6 +18,12 @@ namespace SchoolManagement.Infrastructure.Repositories
         // Create the teacher to Db
         public async Task<Teacher> CreateTeacherAsync(Teacher teacher)
         {
+            var subjectId = await _context.Subjects
+                .FirstOrDefaultAsync(g => g.Id == teacher.SubjectId);
+            if (subjectId == null)
+            {
+                throw new NotFoundException("Subject not found.");
+            }
             _context.Teachers.Add(teacher);
             await _context.SaveChangesAsync();
 

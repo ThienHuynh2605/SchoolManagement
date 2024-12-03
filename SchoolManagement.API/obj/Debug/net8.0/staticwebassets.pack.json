@@ -1,0 +1,97 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\custom.css",
+      "PackagePath": "staticwebassets\\swagger\\ui\\custom.css"
+    },
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\swagger\\ui\\favicon-16x16.png"
+    },
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\swagger\\ui\\favicon-32x32.png"
+    },
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\index.css",
+      "PackagePath": "staticwebassets\\swagger\\ui\\index.css"
+    },
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\index.html",
+      "PackagePath": "staticwebassets\\swagger\\ui\\index.html"
+    },
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\oauth2-redirect.html",
+      "PackagePath": "staticwebassets\\swagger\\ui\\oauth2-redirect.html"
+    },
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\swagger-initializer.js",
+      "PackagePath": "staticwebassets\\swagger\\ui\\swagger-initializer.js"
+    },
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\swagger-ui-bundle.js",
+      "PackagePath": "staticwebassets\\swagger\\ui\\swagger-ui-bundle.js"
+    },
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\swagger-ui-bundle.js.map",
+      "PackagePath": "staticwebassets\\swagger\\ui\\swagger-ui-bundle.js.map"
+    },
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\swagger-ui-es-bundle-core.js",
+      "PackagePath": "staticwebassets\\swagger\\ui\\swagger-ui-es-bundle-core.js"
+    },
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\swagger-ui-es-bundle-core.js.map",
+      "PackagePath": "staticwebassets\\swagger\\ui\\swagger-ui-es-bundle-core.js.map"
+    },
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\swagger-ui-es-bundle.js",
+      "PackagePath": "staticwebassets\\swagger\\ui\\swagger-ui-es-bundle.js"
+    },
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\swagger-ui-es-bundle.js.map",
+      "PackagePath": "staticwebassets\\swagger\\ui\\swagger-ui-es-bundle.js.map"
+    },
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\swagger-ui-standalone-preset.js",
+      "PackagePath": "staticwebassets\\swagger\\ui\\swagger-ui-standalone-preset.js"
+    },
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\swagger-ui-standalone-preset.js.map",
+      "PackagePath": "staticwebassets\\swagger\\ui\\swagger-ui-standalone-preset.js.map"
+    },
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\swagger-ui.css",
+      "PackagePath": "staticwebassets\\swagger\\ui\\swagger-ui.css"
+    },
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\swagger-ui.css.map",
+      "PackagePath": "staticwebassets\\swagger\\ui\\swagger-ui.css.map"
+    },
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\swagger-ui.js",
+      "PackagePath": "staticwebassets\\swagger\\ui\\swagger-ui.js"
+    },
+    {
+      "Id": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\wwwroot\\swagger\\ui\\swagger-ui.js.map",
+      "PackagePath": "staticwebassets\\swagger\\ui\\swagger-ui.js.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SchoolManagement.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SchoolManagement.API.props",
+      "PackagePath": "build\\SchoolManagement.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SchoolManagement.API.props",
+      "PackagePath": "buildMultiTargeting\\SchoolManagement.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SchoolManagement.API.props",
+      "PackagePath": "buildTransitive\\SchoolManagement.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

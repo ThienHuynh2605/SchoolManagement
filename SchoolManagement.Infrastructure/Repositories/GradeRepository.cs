@@ -23,6 +23,12 @@ namespace SchoolManagement.Infrastructure.Repositories
         // Create the grade to Db
         public async Task<Grade> CreateGradeAsync(Grade grade)
         {
+            var teacherId = await _context.Teachers
+                .FirstOrDefaultAsync(t => t.Id == grade.TeacherId);
+            if (teacherId == null)
+            {
+                throw new NotFoundException("Student not found.");
+            }
             _context.Grades.Add(grade);
             await _context.SaveChangesAsync();
             return grade;
@@ -57,6 +63,13 @@ namespace SchoolManagement.Infrastructure.Repositories
         // Update grade in Db
         public async Task<Grade> UpdateGradeAsync(int id, Grade grade)
         {
+            var teacherId = await _context.Teachers
+                .FirstOrDefaultAsync(t => t.Id == grade.TeacherId);
+            if (teacherId == null)
+            {
+                throw new NotFoundException("Student not found.");
+            }
+
             var existingGrade = await _context.Grades
                 .FirstOrDefaultAsync(s => s.Id == id);
             if (existingGrade == null)
@@ -67,6 +80,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             existingGrade.Name = grade.Name;
             existingGrade.Classroom = grade.Classroom;
             existingGrade.IsActive = grade.IsActive;
+            existingGrade.TeacherId = grade.TeacherId;
             await _context.SaveChangesAsync();
 
             return existingGrade;

@@ -1,12 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SchoolManagement.Application.DTOs.GradeDtos;
 using SchoolManagement.Application.IServices;
-using SchoolManagement.Domain.Exceptions;
 
 namespace SchoolManagement.API.Controllers
 {
-    [Route("api/grades")]
+    [Route("api/grades"), Authorize]
     [ApiController]
     public class GradesController : ControllerBase
     {
@@ -16,10 +15,16 @@ namespace SchoolManagement.API.Controllers
             _gradeService = gradeService;
         }
 
+        /// <summary>
+        /// Create a new grade
+        /// </summary>
+        /// <param name="gradeDto"></param>
+        /// <returns></returns>
         [HttpPost]
+        [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> CreateGradeAsync(GradeDto gradeDto)
         {
-             var createGrade = await _gradeService.CreateGradeAsync(gradeDto);
+            var createGrade = await _gradeService.CreateGradeAsync(gradeDto);
             return Ok(createGrade);
         }
 
@@ -31,6 +36,7 @@ namespace SchoolManagement.API.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> GetGradeDetailAsync(int id, int page = 1, int pageSize = 5)
         {
             var getGradeDetail = await _gradeService.GetGradeDetailAsync(id, page, pageSize);
@@ -38,6 +44,7 @@ namespace SchoolManagement.API.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> UpdateGradeAsync(int id, UpdateGradeDto gradeDto)
         {
             var updateGrade = await _gradeService.UpdateGradeAsync(id, gradeDto);
@@ -45,6 +52,7 @@ namespace SchoolManagement.API.Controllers
         }
 
         [HttpPatch("{id}")]
+        [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> UpdateGradePartialAsync(int id, UpdateGradeDto gradeDto)
         {
             var updateGradePartial = await _gradeService.UpdateGradePartialAsync(id, gradeDto);
@@ -52,6 +60,7 @@ namespace SchoolManagement.API.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Policy = "OnlyPrincipal")]
         public async Task<IActionResult> DeleteGradeAsync(int id)
         {
             var deleteGrade = await _gradeService.DeleteGradeAsync(id);
