@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SchoolManagement.Domain.Models.Enums;
 
 namespace SchoolManagement.Application.DTOs
 {
@@ -13,5 +9,6 @@ namespace SchoolManagement.Application.DTOs
         public string? Email { get; set; }
         public string? HomeTown { get; set; }
         public bool? IsActive { get; set; }
+        public Role? Role { get; set; }
     }
 }

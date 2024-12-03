@@ -1,4 +1,6 @@
-﻿namespace SchoolManagement.Domain.Entities
+﻿using SchoolManagement.Domain.Models.Enums;
+
+namespace SchoolManagement.Domain.Entities
 {
     public class Account : BaseEntity
     {

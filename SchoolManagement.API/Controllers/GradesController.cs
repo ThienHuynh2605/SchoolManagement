@@ -21,6 +21,7 @@ namespace SchoolManagement.API.Controllers
         /// <param name="gradeDto"></param>
         /// <returns></returns>
         [HttpPost]
+        [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> CreateGradeAsync(GradeDto gradeDto)
         {
             var createGrade = await _gradeService.CreateGradeAsync(gradeDto);
@@ -35,6 +36,7 @@ namespace SchoolManagement.API.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> GetGradeDetailAsync(int id, int page = 1, int pageSize = 5)
         {
             var getGradeDetail = await _gradeService.GetGradeDetailAsync(id, page, pageSize);
@@ -42,6 +44,7 @@ namespace SchoolManagement.API.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> UpdateGradeAsync(int id, UpdateGradeDto gradeDto)
         {
             var updateGrade = await _gradeService.UpdateGradeAsync(id, gradeDto);
@@ -49,6 +52,7 @@ namespace SchoolManagement.API.Controllers
         }
 
         [HttpPatch("{id}")]
+        [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> UpdateGradePartialAsync(int id, UpdateGradeDto gradeDto)
         {
             var updateGradePartial = await _gradeService.UpdateGradePartialAsync(id, gradeDto);
@@ -56,6 +60,7 @@ namespace SchoolManagement.API.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Policy = "OnlyPrincipal")]
         public async Task<IActionResult> DeleteGradeAsync(int id)
         {
             var deleteGrade = await _gradeService.DeleteGradeAsync(id);

@@ -20,6 +20,7 @@ namespace SchoolManagement.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> CreateSubjectAsync([FromBody] CreateSubjectDto subjectDto)
         {
             await _subjectService.CreateSubjectAsync(subjectDto);
@@ -34,6 +35,7 @@ namespace SchoolManagement.API.Controllers
         }
 
         [HttpGet("not-active")]
+        [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> GetSubjectsNotActiveAsync(int page = 1, int pageSize = 5)
         {
             var subject = await _subjectService.GetSubjectsNotActiveAsync(page, pageSize);
@@ -41,6 +43,7 @@ namespace SchoolManagement.API.Controllers
         }
 
         [HttpGet("numbers")]
+        [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> GetSubjectNumberAsync()
         {
             var subjectNumber = await _subjectService.GetSubjectNumbersAsync();
@@ -62,6 +65,7 @@ namespace SchoolManagement.API.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> UpdateSubjectAsync(int id, [FromBody] UpdateSubjectDto subjectDto)
         {
             await _subjectService.UpdateSubjectAsync(id, subjectDto);
@@ -69,6 +73,7 @@ namespace SchoolManagement.API.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> DeleteSubjectAsync(int id)
         {
             await _subjectService.DeleteSubjectAsync(id);
@@ -76,6 +81,7 @@ namespace SchoolManagement.API.Controllers
         }
 
         [HttpPost("{subjectId}/add-student")]
+        [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> AssignStudentToSubjectAsync(int subjectId, AssignStudentDto studentAdd)
         {
             await _subjectService.AssignStudentToSubjectAsync(subjectId, studentAdd);
