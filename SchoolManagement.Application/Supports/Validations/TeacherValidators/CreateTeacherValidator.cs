@@ -1,6 +1,5 @@
 ﻿using FluentValidation;
 using SchoolManagement.Application.DTOs.TeacherDtos;
-using SchoolManagement.Application.Supports.Validations.StudentValidators;
 using SchoolManagement.Infrastructure.Data;
 
 namespace SchoolManagement.Application.Supports.Validations.TeacherValidators

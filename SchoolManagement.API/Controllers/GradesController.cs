@@ -1,12 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SchoolManagement.Application.DTOs.GradeDtos;
 using SchoolManagement.Application.IServices;
-using SchoolManagement.Domain.Exceptions;
 
 namespace SchoolManagement.API.Controllers
 {
-    [Route("api/grades")]
+    [Route("api/grades"), Authorize]
     [ApiController]
     public class GradesController : ControllerBase
     {
@@ -16,10 +15,15 @@ namespace SchoolManagement.API.Controllers
             _gradeService = gradeService;
         }
 
+        /// <summary>
+        /// Create a new grade
+        /// </summary>
+        /// <param name="gradeDto"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> CreateGradeAsync(GradeDto gradeDto)
         {
-             var createGrade = await _gradeService.CreateGradeAsync(gradeDto);
+            var createGrade = await _gradeService.CreateGradeAsync(gradeDto);
             return Ok(createGrade);
         }
 

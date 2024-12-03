@@ -1,4 +1,5 @@
 ﻿using SchoolManagement.Application.DTOs.PrincipalDtos;
+using SchoolManagement.Application.Supports.Validations.AccountValidators;
 using SchoolManagement.Application.Supports.Validations.TeacherValidators;
 using SchoolManagement.Infrastructure.Data;
 
@@ -11,7 +12,7 @@ namespace SchoolManagement.Application.Supports.Validations.PrincipalValidators
         {
             _context = context;
             RuleFor(s => s.Account)
-                .SetValidator(new PrincipalAccountValidator(_context));
+                .SetValidator(new AccountValidator<PrincipalAccountDto?>(_context));
         }
     }
 }

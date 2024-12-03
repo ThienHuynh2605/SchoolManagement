@@ -1,4 +1,5 @@
-﻿using SchoolManagement.Application.DTOs.StudentDtos;
+﻿using FluentValidation;
+using SchoolManagement.Application.DTOs.StudentDtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,8 @@ namespace SchoolManagement.Application.Supports.Validations.StudentValidations
     {
         public UpdateStudentValidator()
         {
-
+            RuleFor(s => s.GradeId)
+                .NotEmpty().WithMessage("GradeId is required.");
         }
     }
 }
