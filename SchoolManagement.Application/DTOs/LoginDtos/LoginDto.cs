@@ -1,4 +1,6 @@
-﻿namespace SchoolManagement.Application.DTOs.LoginDtos
+﻿using SchoolManagement.Domain.Models.Enums;
+
+namespace SchoolManagement.Application.DTOs.LoginDtos
 {
     public class LoginDto
     {

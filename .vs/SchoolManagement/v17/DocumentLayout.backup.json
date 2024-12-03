@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:schoolmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.api\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:schoolmanagement.api\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,12 +23,12 @@
       "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:schoolmanagement.api\\controllers\\principalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.api\\controllers\\loginscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:schoolmanagement.api\\controllers\\loginscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.api\\controllers\\gradescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:schoolmanagement.api\\controllers\\gradescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.api\\controllers\\loginscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:schoolmanagement.api\\controllers\\loginscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,67 +38,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TeachersController.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\TeachersController.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.API\\Controllers\\TeachersController.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\TeachersController.cs",
-              "RelativeToolTip": "SchoolManagement.API\\Controllers\\TeachersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T06:17:12.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SubjectsController.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\SubjectsController.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.API\\Controllers\\SubjectsController.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\SubjectsController.cs",
-              "RelativeToolTip": "SchoolManagement.API\\Controllers\\SubjectsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T06:16:59.364Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StudentsController.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\StudentsController.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.API\\Controllers\\StudentsController.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\StudentsController.cs",
-              "RelativeToolTip": "SchoolManagement.API\\Controllers\\StudentsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "TeachersController.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\TeachersController.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.API\\Controllers\\TeachersController.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\TeachersController.cs",
+              "RelativeToolTip": "SchoolManagement.API\\Controllers\\TeachersController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAIwFoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T06:16:48.811Z",
+              "WhenOpened": "2024-12-03T09:40:31.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SubjectsController.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\SubjectsController.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.API\\Controllers\\SubjectsController.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\SubjectsController.cs",
+              "RelativeToolTip": "SchoolManagement.API\\Controllers\\SubjectsController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAADwv1MAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T09:39:10.608Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PrincipalsController.cs",
-              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\PrincipalsController.cs",
-              "RelativeDocumentMoniker": "SchoolManagement.API\\Controllers\\PrincipalsController.cs",
-              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\PrincipalsController.cs",
-              "RelativeToolTip": "SchoolManagement.API\\Controllers\\PrincipalsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.API\\Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "SchoolManagement.API\\Controllers\\StudentsController.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAA2wG0AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T06:16:31.726Z",
+              "WhenOpened": "2024-12-03T09:36:53.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Program.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.API\\Program.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Program.cs",
+              "RelativeToolTip": "SchoolManagement.API\\Program.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAAAGMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T09:34:15.124Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "PrincipalsController.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\PrincipalsController.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.API\\Controllers\\PrincipalsController.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\PrincipalsController.cs",
+              "RelativeToolTip": "SchoolManagement.API\\Controllers\\PrincipalsController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwCwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T09:34:10.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "LoginsController.cs",
               "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\LoginsController.cs",
               "RelativeDocumentMoniker": "SchoolManagement.API\\Controllers\\LoginsController.cs",
@@ -102,7 +119,7 @@
               "RelativeToolTip": "SchoolManagement.API\\Controllers\\LoginsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T06:16:28.566Z",
+              "WhenOpened": "2024-12-03T09:34:09.31Z",
               "EditorCaption": ""
             },
             {
@@ -113,9 +130,9 @@
               "RelativeDocumentMoniker": "SchoolManagement.API\\Controllers\\GradesController.cs",
               "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Controllers\\GradesController.cs",
               "RelativeToolTip": "SchoolManagement.API\\Controllers\\GradesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T06:16:24.243Z",
+              "WhenOpened": "2024-12-03T09:34:08.24Z",
               "EditorCaption": ""
             }
           ]

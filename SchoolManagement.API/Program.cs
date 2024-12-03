@@ -31,6 +31,7 @@ using SchoolManagement.Infrastructure.Common.Token;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using SchoolManagement.Domain.Models.Enums;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -96,7 +97,7 @@ builder.Services.AddSwaggerGen(options =>
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
-        Title = "SchoolManagement API",
+        Title = "School Management API",
         Description = "An ASP.NET Core Web API for managing School Systems.",
         TermsOfService = new Uri("https://policies.google.com/terms"),
         Contact = new OpenApiContact
@@ -174,7 +175,13 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     };
 });
 
-builder.Services.AddAuthorization();
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("OnlyStudent", policy => policy.RequireRole(Role.Student.ToString()));
+    options.AddPolicy("OnlyTeacher", policy => policy.RequireRole(Role.Teacher.ToString()));
+    options.AddPolicy("TeacherAndPrincipal", policy => policy.RequireRole(Role.Teacher.ToString(), Role.Principal.ToString()));
+    options.AddPolicy("OnlyPrincipal", policy => policy.RequireRole(Role.Principal.ToString()));
+});
 
 var app = builder.Build();
 
