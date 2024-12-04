@@ -2,6 +2,7 @@
 using SchoolManagement.Domain.Entities;
 using SchoolManagement.Domain.Exceptions;
 using SchoolManagement.Domain.IRepositories;
+using SchoolManagement.Domain.Models.Enums;
 using SchoolManagement.Infrastructure.Data;
 
 namespace SchoolManagement.Infrastructure.Repositories
@@ -13,6 +14,8 @@ namespace SchoolManagement.Infrastructure.Repositories
         {
             _context = context;
         }
+
+        /*-----------------Create the new subject in Repository--------------------------*/
         public async Task<Subject> CreateSubjectAsync(Subject subject)
         {
             _context.Subjects.Add(subject);
@@ -20,6 +23,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return subject;
         }
 
+        /*----------------Get the subject that is active in Repository-------------------*/
         public async Task<List<Subject>> GetSubjectsAsync(int page, int pageSize)
         {
             var subjects = await _context.Subjects
@@ -30,6 +34,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return subjects;
         }
 
+        /*-------------Get the subject that is inactive in Repository---------------------*/
         public async Task<List<Subject>> GetSubjectsNotActiveAsync(int page, int pageSize)
         {
             var subjects = await _context.Subjects
@@ -41,6 +46,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return subjects;
         }
 
+        /*---------------Get the number of subject in Repository----------------------*/
         public async Task<(int totalSubjects, int activeSubjects, int notActiveSubjects)> GetSubjectNumbersAsync()
         {
             var totalSubjects = await _context.Subjects.CountAsync();
@@ -64,6 +70,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return (totalSubjects, activeSubjects, notActiveSubjects);
         }
 
+        /*-----------------Get the subject by Id with list teacher in Repository----------*/
         public async Task<Subject> GetSubjectByIdTeachersAsync(int id)
         {
             var subject = await _context.Subjects
@@ -72,12 +79,13 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             if (subject == null)
             {
-                throw new NotFoundException("Subject not found.");
+                throw new NotFoundException(ErrorCode.NotFoundSubject);
             }
 
             return subject;
         }
 
+        /*-------------Get the subject by Id with list student in Repository-----------*/
         public async Task<Subject> GetSubjectByIdStudentsAsync(int id)
         {
             var subject = await _context.Subjects
@@ -86,19 +94,20 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             if (subject == null)
             {
-                throw new NotFoundException("Subject not found.");
+                throw new NotFoundException(ErrorCode.NotFoundSubject);
             }
 
             return subject;
         }
 
+        /*-------------Update the subject in Repository--------------------*/
         public async Task<Subject> UpdateSubjectAsync(int Id, Subject subject)
         {
             var existingSubject = await _context.Subjects
                 .FirstOrDefaultAsync(s => s.Id == Id);
             if (existingSubject == null)
             {
-                throw new NotFoundException("Subject not found.");
+                throw new NotFoundException(ErrorCode.NotFoundSubject);
             }
             existingSubject.Name = subject.Name;
             existingSubject.IsActive = subject.IsActive;
@@ -107,6 +116,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return existingSubject;
         }
 
+        /*-----------------Delete the subject in Repository---------------------*/
         public async Task DeleteSubjectAsync(int id)
         {
             var subject = await _context.Subjects
@@ -114,20 +124,21 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             if (subject == null)
             {
-                throw new NotFoundException("Subject not found.");
+                throw new NotFoundException(ErrorCode.NotFoundSubject);
             }
 
             _context.Subjects.Remove(subject);
             await _context.SaveChangesAsync();
         }
 
+        /*-------------Assign the student to the subject in Repository-------------------*/
         public async Task AssignStudentToSubjectAsync(int id, StudentSubject studentAdd)
         {
             var subject = await _context.Subjects
                 .FirstOrDefaultAsync(s => s.Id == id);
             if (subject == null)
             {
-                throw new NotFoundException("Subject not found.");
+                throw new NotFoundException(ErrorCode.NotFoundSubject);
 
             }
 
@@ -135,7 +146,7 @@ namespace SchoolManagement.Infrastructure.Repositories
                 .FirstOrDefaultAsync(s => s.Id == studentAdd.StudentId);
             if (student == null)
             {
-                throw new NotFoundException("Student not found.");
+                throw new NotFoundException(ErrorCode.NotFoundStudent);
             }
 
             var check = await _context.StudentSubjects

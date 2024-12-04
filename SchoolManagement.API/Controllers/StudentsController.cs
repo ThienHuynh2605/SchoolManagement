@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using SchoolManagement.Application.DTOs.PrincipalDtos;
 using SchoolManagement.Application.DTOs.StudentDtos;
 using SchoolManagement.Domain.Interfaces.IServices;
 
@@ -17,7 +15,7 @@ namespace SchoolManagement.API.Controllers
             _studentService = studentService;
         }
 
-        // Endpoint to Get all active students with pagination
+        /*-------------Endpoint to Get all active students with pagination----------------*/
         [HttpGet]
         public async Task<IActionResult> GetStudentsAsync(int page = 1, int pageSize = 5)
         {
@@ -25,17 +23,16 @@ namespace SchoolManagement.API.Controllers
             return Ok(studentsDto);
         }
 
-        // Endpoint to Get all not active students with pagination
+        /*-------------Endpoint to Get all not active students with pagination-----------*/
         [HttpGet("not-active")]
         [Authorize(Policy = "TeacherAndPrincipal")]
-
         public async Task<IActionResult> GetStudentsNotActiveAsync(int page = 1, int pageSize = 5)
         {
             var studentsDto = await _studentService.GetStudentsNotActiveAsync(page, pageSize);
             return Ok(studentsDto);
         }
 
-        // Endpoint to Get the student number with detail
+        /*-------------------Endpoint to Get the student number with detail----------------*/
         [HttpGet("numbers")]
         [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> GetStudentNumberAsync()
@@ -44,7 +41,7 @@ namespace SchoolManagement.API.Controllers
             return Ok(studentNumber);
         }
 
-        // Endpoint to Get the student by Id
+        /*----------------------Endpoint to Get the student by Id--------------------------*/
         [HttpGet("{id}")]
         [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> GetStudentByIdAsync(int id)
@@ -53,7 +50,7 @@ namespace SchoolManagement.API.Controllers
             return Ok(studentDto);
         }
 
-        // Endpoint to Get the student and subject by Id
+        /*-------------------Endpoint to Get the student and subject by Id------------------*/
         [HttpGet("{id}/subjects")]
         public async Task<IActionResult> GetStudentByIdSubjectsAsync(int id, int page = 1, int pageSize = 5)
         {
@@ -61,7 +58,7 @@ namespace SchoolManagement.API.Controllers
             return Ok(studentDto);
         }
 
-        // Endpoint to Create the new student
+        /*-------------------------Endpoint to Create the new student----------------------*/
         [HttpPost]
         [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<ActionResult> CreateStudentAsync(CreateStudentDto studentDto)
@@ -70,7 +67,7 @@ namespace SchoolManagement.API.Controllers
             return Ok(createStudent);
         }
 
-        // Endpoint to Update the student
+        /*--------------------------Endpoint to Update the student--------------------------*/
         [HttpPut("{id}")]
         [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> UpdateStudentAsync(int id, [FromBody] UpdateStudentDto studentDto)
@@ -79,7 +76,7 @@ namespace SchoolManagement.API.Controllers
             return Ok(updateStudent);
         }
 
-        // Endpoint to Update the student partial
+        /*-------------------------Endpoint to Update the student partial--------------------*/
         [HttpPatch("{id}")]
         [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> UpdateStudentPartialAsync(int id, [FromBody] UpdateStudentPartialDto studentDto)
@@ -88,7 +85,7 @@ namespace SchoolManagement.API.Controllers
             return Ok(updateStudent);
         }
 
-        // Endpoint to Update the student account
+        /*--------------------------Endpoint to Update the student account-----------------*/
         [HttpPut("{studentId}/account")]
         [Authorize(Policy = "OnlyStudent")]
         public async Task<IActionResult> UpdateStudentAccountAsync(int studentId, [FromBody] StudentAccountDto accountDto)
@@ -97,7 +94,7 @@ namespace SchoolManagement.API.Controllers
             return Ok(updateStudentAccount);
         }
 
-        // Endpoint to Delete the student
+        /*---------------------------Endpoint to Delete the student--------------------------*/
         [HttpDelete("{id}")]
         [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> DeleteStudentAsync(int id)
@@ -106,6 +103,7 @@ namespace SchoolManagement.API.Controllers
             return Ok(deleteStudent);
         }
 
+        /*---------------------------Endpoint to Assign the Subject to thr Student-----------*/
         [HttpPost("{studentId}/add-subject")]
         [Authorize(Policy = "TeacherAndPrincipal")]
         public async Task<IActionResult> AssignSubjectToStudentAsync(int studentId, AssignSubjectDto subjectAdd)

@@ -16,6 +16,7 @@ namespace SchoolManagement.Infrastructure.Common.Token
             _configuration = configuration;
         }
 
+        /*-------------------------Generate JWT string-------------------------------*/
         public string GenerateToken<T>(T User, Role role)
         {
             var jwtSettings = _configuration.GetSection("JwtSettings");
@@ -50,12 +51,12 @@ namespace SchoolManagement.Infrastructure.Common.Token
             claims.Add(new Claim(ClaimTypes.Role, role.ToString()));
 
             var expiresInMinutes = jwtSettings["ExpiresInMinutes"];
-
             if (string.IsNullOrEmpty(expiresInMinutes))
             {
                 expiresInMinutes = "1";
             }
 
+            // Token string
             var token = new JwtSecurityToken(
                 issuer: jwtSettings["Issuer"],
                 audience: jwtSettings["Audience"],

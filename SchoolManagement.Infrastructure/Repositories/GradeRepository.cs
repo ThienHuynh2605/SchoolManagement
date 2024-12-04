@@ -1,14 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using SchoolManagement.Domain.Entities;
 using SchoolManagement.Domain.Exceptions;
 using SchoolManagement.Domain.IRepositories;
+using SchoolManagement.Domain.Models.Enums;
 using SchoolManagement.Infrastructure.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolManagement.Infrastructure.Repositories
 {
@@ -20,21 +15,21 @@ namespace SchoolManagement.Infrastructure.Repositories
             _context = context;
         }
 
-        // Create the grade to Db
+        /*-------------------Create the new grade in Repository------------------------*/
         public async Task<Grade> CreateGradeAsync(Grade grade)
         {
             var teacherId = await _context.Teachers
                 .FirstOrDefaultAsync(t => t.Id == grade.TeacherId);
             if (teacherId == null)
             {
-                throw new NotFoundException("Student not found.");
+                throw new NotFoundException(ErrorCode.NotFoundStudent);
             }
             _context.Grades.Add(grade);
             await _context.SaveChangesAsync();
             return grade;
         }
 
-        // Get grades in Db
+        /*--------------------Get all of the grade in Repository------------------------*/
         public async Task<(List<Grade> grades, int totalGrade)> GetGradeAsync(int page, int pageSize)
         {
             var grades = await _context.Grades
@@ -45,7 +40,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return (grades, totalGrade);
         }
 
-        // Get Grade detail in Db
+        /*---------------------Get the grade detail in Repository----------------------*/
         public async Task<Grade> GetGradeDetailAsync(int id)
         {
             var grade = await _context.Grades
@@ -54,27 +49,27 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             if (grade == null)
             {
-                throw new NotFoundException("Grade not found.");
+                throw new NotFoundException(ErrorCode.NotFoundGrade);
             }
 
             return grade;
         }
 
-        // Update grade in Db
+        /*----------------------Update the grade in Repository---------------------*/
         public async Task<Grade> UpdateGradeAsync(int id, Grade grade)
         {
             var teacherId = await _context.Teachers
                 .FirstOrDefaultAsync(t => t.Id == grade.TeacherId);
             if (teacherId == null)
             {
-                throw new NotFoundException("Student not found.");
+                throw new NotFoundException(ErrorCode.NotFoundTeacher);
             }
 
             var existingGrade = await _context.Grades
                 .FirstOrDefaultAsync(s => s.Id == id);
             if (existingGrade == null)
             {
-                throw new NotFoundException("Grade not found.");
+                throw new NotFoundException(ErrorCode.NotFoundGrade);
             }
 
             existingGrade.Name = grade.Name;
@@ -86,7 +81,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return existingGrade;
         }
 
-        // Update grade partial in Db
+        /*---------------------Update the grade partial in Repository----------------------*/
         public async Task<Grade> UpdateGradePartialAsync(int id, Grade grade)
         {
             var existingGrade = await _context.Grades
@@ -94,7 +89,7 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             if (existingGrade == null)
             {
-                throw new NotFoundException("Grade not found");
+                throw new NotFoundException(ErrorCode.NotFoundGrade);
             }
 
             if (grade.Name != null)
@@ -113,7 +108,7 @@ namespace SchoolManagement.Infrastructure.Repositories
                     .FirstOrDefaultAsync(s => s.Id == grade.TeacherId.Value);
                 if (teacher == null)
                 {
-                    throw new NotFoundException("Teacher not found");
+                    throw new NotFoundException(ErrorCode.NotFoundTeacher);
                 }
                 existingGrade.TeacherId = grade.TeacherId.Value;   
             }
@@ -122,7 +117,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return existingGrade;
         }
 
-        // Delete grade in Db
+        /*----------------------Delete the grade in Repository--------------------------*/
         public async Task<bool> DeleteGradeAsync(int id)
         {
             var grade = await _context.Grades
@@ -130,7 +125,7 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             if (grade == null)
             {
-                throw new NotFoundException("Grade not found.");
+                throw new NotFoundException(ErrorCode.NotFoundGrade);
             }
 
             _context.Grades.Remove(grade);

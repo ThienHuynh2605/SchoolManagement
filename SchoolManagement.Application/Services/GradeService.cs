@@ -1,16 +1,9 @@
 ﻿using AutoMapper;
 using SchoolManagement.Application.DTOs.GradeDtos;
-using SchoolManagement.Application.DTOs.StudentDtos;
 using SchoolManagement.Application.IServices;
 using SchoolManagement.Application.Supports.Paginations;
 using SchoolManagement.Domain.Entities;
-using SchoolManagement.Domain.Exceptions;
 using SchoolManagement.Domain.IRepositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolManagement.Application.Services
 {
@@ -23,6 +16,8 @@ namespace SchoolManagement.Application.Services
             _gradeRepository = gradeRepository;
             _mapper = mapper;
         }
+
+        /*---------------Create the new grade in Service-------------------*/
         public async Task<GradeDto> CreateGradeAsync(GradeDto gradeDto)
         {
             var grade = _mapper.Map<Grade>(gradeDto);
@@ -31,6 +26,7 @@ namespace SchoolManagement.Application.Services
             return _mapper.Map<GradeDto>(createGrade);
         }
 
+        /*----------------Get all of the grade in Service-----------------------*/
         public async Task<PaginationGrade<GetGradesDto>> GetGradesAsync (int page, int pageSize)
         {
             if (page < 1)
@@ -59,6 +55,7 @@ namespace SchoolManagement.Application.Services
             };
         }
 
+        /*-------------------Get the grade detail in Service-------------------*/
         public async Task<PaginationGradeDetail> GetGradeDetailAsync(int id, int page, int pageSize)
         {
             var grade = await _gradeRepository.GetGradeDetailAsync (id);
@@ -86,6 +83,7 @@ namespace SchoolManagement.Application.Services
             };
         }
 
+        /*---------------Update the grade in Service-------------------------*/
         public async Task<UpdateGradeDto> UpdateGradeAsync(int id, UpdateGradeDto updateGradeDto)
         {
             var grade = _mapper.Map<Grade> (updateGradeDto);
@@ -93,11 +91,13 @@ namespace SchoolManagement.Application.Services
             return _mapper.Map<UpdateGradeDto>(updateGrade);
         }
 
+        /*----------------Delete the grade in Service-------------------------*/
         public async Task<bool> DeleteGradeAsync(int id)
         {
             return await  _gradeRepository.DeleteGradeAsync(id);
         }
 
+        /*--------------Update the grade partial in Service------------------------*/
         public async Task<UpdateGradeDto> UpdateGradePartialAsync(int id, UpdateGradeDto updateGradeDto)
         {
             var existingGrade = await _gradeRepository.GetGradeDetailAsync(id);

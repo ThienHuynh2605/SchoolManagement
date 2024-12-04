@@ -1,8 +1,8 @@
-﻿using Azure;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using SchoolManagement.Domain.Entities;
 using SchoolManagement.Domain.Exceptions;
 using SchoolManagement.Domain.IRepositories;
+using SchoolManagement.Domain.Models.Enums;
 using SchoolManagement.Infrastructure.Data;
 
 namespace SchoolManagement.Infrastructure.Repositories
@@ -15,14 +15,14 @@ namespace SchoolManagement.Infrastructure.Repositories
             _context = context;
         }
 
-        // Create the teacher to Db
+        /*-------------------------Create the teacher to Db------------------------*/
         public async Task<Teacher> CreateTeacherAsync(Teacher teacher)
         {
             var subjectId = await _context.Subjects
                 .FirstOrDefaultAsync(g => g.Id == teacher.SubjectId);
             if (subjectId == null)
             {
-                throw new NotFoundException("Subject not found.");
+                throw new NotFoundException(ErrorCode.NotFoundTeacher);
             }
             _context.Teachers.Add(teacher);
             await _context.SaveChangesAsync();
@@ -30,7 +30,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return teacher;
         }
 
-        // Get teachers with "IsActive == true" in Db
+        /*---------------------Get teachers with "IsActive == true" in Db----------------*/
         public async Task<List<Teacher>> GetTeachersAsync(int page, int pageSize)
         {
             var teachers = await _context.Teachers
@@ -43,7 +43,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return teachers;
         }
 
-        //Get teachers with "IsActive == false" from Db
+        /*------------------------Get teachers with "IsActive == false" from Db-------------*/
         public async Task<List<Teacher>> GetTeachersNotActiveAsync(int page, int pageSize)
         {
             var teachers = await _context.Teachers
@@ -57,7 +57,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return teachers;
         }
 
-        // Get teacher numbers in Db
+        /*-----------------------------Get teacher numbers in Db--------------------------*/
         public async Task<(int totalTeachers, int activeTeachers, int notActiveTeachers)> GetTeacherNumbersAsync()
         {
             var totalTeachers = await _context.Teachers.CountAsync();
@@ -81,7 +81,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return (totalTeachers, activeTeachers, notActiveTeachers);
         }
 
-        // Get teacher by Id from Db
+        /*---------------------------Get teacher by Id from Db---------------------------*/
         public async Task<Teacher> GetTeacherByIdAsync(int id)
         {
             var teacher = await _context.Teachers
@@ -92,27 +92,27 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             if (teacher == null)
             {
-                throw new NotFoundException("Teacher not found.");
+                throw new NotFoundException(ErrorCode.NotFoundTeacher);
             }
 
             return teacher;
         }
 
-        // Update the teacher from Db
+        /*-----------------------------Update the teacher from Db------------------------*/
         public async Task<Teacher> UpdateTeacherAsync(int Id, Teacher teacher)
         {
             var existingTeacher = await _context.Teachers
                 .FirstOrDefaultAsync(s => s.Id == Id);
             if (existingTeacher == null)
             {
-                throw new NotFoundException("Teacher not found.");
+                throw new NotFoundException(ErrorCode.NotFoundTeacher);
             }
 
             var existingSubject = await _context.Subjects
                 .FirstOrDefaultAsync(s => s.Id == teacher.SubjectId);
             if (existingSubject == null)
             {
-                throw new NotFoundException("Subject not found.");
+                throw new NotFoundException(ErrorCode.NotFoundSubject);
             }
 
             existingTeacher.Email = teacher.Email;
@@ -126,7 +126,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return existingTeacher;
         }
 
-        // Update the teacher partial in Db
+        /*-------------------------------Update the teacher partial in Db-----------------*/
         public async Task<Teacher> UpdateTeacherPartialAsync(int id, Teacher teacher)
         {
             var existingTeacher = await _context.Teachers
@@ -134,7 +134,7 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             if (existingTeacher == null)
             {
-                throw new NotFoundException("Student not found.");
+                throw new NotFoundException(ErrorCode.NotFoundTeacher);
             }
 
             if (!string.IsNullOrEmpty(teacher.Email))
@@ -163,7 +163,7 @@ namespace SchoolManagement.Infrastructure.Repositories
                 .FirstOrDefaultAsync(s => s.Id == teacher.SubjectId);
                 if (existingSubject == null)
                 {
-                    throw new NotFoundException("Subject not found.");
+                    throw new NotFoundException(ErrorCode.NotFoundSubject);
                 }
 
                 existingTeacher.SubjectId = teacher.SubjectId.Value;
@@ -174,7 +174,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return existingTeacher;
         }
 
-        // Update the teacher account in Db
+        /*--------------------------Update the teacher account in Db---------------------*/
         public async Task<TeacherAccount> UpdateTeacherAccountAsync(int teacherId, TeacherAccount account)
         {
             var existingTeacher = await _context.Teachers
@@ -183,7 +183,7 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             if (existingTeacher == null)
             {
-                throw new NotFoundException("Teacher not found.");
+                throw new NotFoundException(ErrorCode.NotFoundTeacher);
             }
 
             existingTeacher.Account.UserName = account.UserName;
@@ -193,7 +193,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return existingTeacher.Account;
         }
 
-        // Delete the student in Db
+        /*---------------------------Delete the student in Db--------------------------*/
         public async Task<bool> DeleteTeacherAsync(int id)
         {
             var teacher = await _context.Teachers
@@ -216,6 +216,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return true;
         }
 
+        /*-------------------------Get Teacher by Id with List Principal--------------------*/
         public async Task<Teacher> GetTeacherByIdPrincipalsAsync(int id)
         {
             var teacher = await _context.Teachers
@@ -224,7 +225,7 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             if (teacher == null)
             {
-                throw new NotFoundException("Teacher not found.");
+                throw new NotFoundException(ErrorCode.NotFoundTeacher);
             }
 
             return teacher;

@@ -14,13 +14,39 @@ namespace SchoolManagement.Domain.Models.Enums
     {
         ErrorCode = 400,
 
-        #region NotFoundStudent = ErrorCode + 1000
+        #region Student = ErrorCode + 1000
         StudentError = ErrorCode + 1000,
-
-        [Display(GroupName = "StudentError")]
-        [Description("Student not found..")]
+        [Display(GroupName = "Student")]
+        [Description("Student not found.")]
         NotFoundStudent = StudentError + 1,
+        #endregion
 
+        #region Teacher = ErrorCode + 2000
+        TeacherError = ErrorCode + 2000,
+        [Display(GroupName = "Teacher")]
+        [Description("Teacher not found.")]
+        NotFoundTeacher = TeacherError + 1,
+        #endregion
+
+        #region Principal = ErrorCode + 3000
+        PrincipalError = ErrorCode + 3000,
+        [Display(GroupName = "Principal")]
+        [Description("Principal not found.")]
+        NotFoundPrincipal = PrincipalError + 1,
+        #endregion
+
+        #region Grade = ErrorCode + 4000
+        GradeError = ErrorCode + 4000,
+        [Display(GroupName = "Grade")]
+        [Description("Grade not found.")]
+        NotFoundGrade = GradeError + 1,
+        #endregion
+
+        #region Subject = ErrorCode + 5000
+        SubjectError = ErrorCode + 5000,
+        [Display(GroupName = "Subject")]
+        [Description("Subject not found.")]
+        NotFoundSubject = SubjectError + 1,
         #endregion
     }
 }
