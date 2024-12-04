@@ -3,7 +3,6 @@ using SchoolManagement.Application.DTOs.LoginDtos;
 using SchoolManagement.Application.IServices;
 using SchoolManagement.Domain.IRepositories;
 using SchoolManagement.Domain.Models.LoginModel;
-using SchoolManagement.Infrastructure.Common.Token;
 
 namespace SchoolManagement.Application.Services
 {
@@ -17,6 +16,7 @@ namespace SchoolManagement.Application.Services
             _mapper = mapper;
         }
 
+        /*-------------------------Login Action-------------------------------*/
         public async Task<(string? token, bool check)> LoginAsync(LoginDto loginDto)
         {
             var login = _mapper.Map<Login>(loginDto);

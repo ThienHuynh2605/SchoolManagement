@@ -1,6 +1,4 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Mvc;
-using SchoolManagement.Application.DTOs.GradeDtos;
 using SchoolManagement.Application.DTOs.StudentDtos;
 using SchoolManagement.Application.DTOs.SubjectDtos;
 using SchoolManagement.Application.DTOs.TeacherDtos;
@@ -8,7 +6,6 @@ using SchoolManagement.Application.IServices;
 using SchoolManagement.Application.Supports.Paginations;
 using SchoolManagement.Domain.Entities;
 using SchoolManagement.Domain.IRepositories;
-using System.Diagnostics;
 
 namespace SchoolManagement.Application.Services
 {
@@ -22,6 +19,7 @@ namespace SchoolManagement.Application.Services
             _mapper = mapper;
         }
 
+        /*-----------------Create the new subject in Service---------------------*/
         public async Task CreateSubjectAsync(CreateSubjectDto subjectDto)
         {
             var subject = _mapper.Map<Subject>(subjectDto);
@@ -29,6 +27,7 @@ namespace SchoolManagement.Application.Services
             var createSubject = await _subjectRepository.CreateSubjectAsync(subject);
         }
 
+        /*-------------------Get the subject that is active in Service--------------------*/
         public async Task<PaginationSubject<SubjectDto>> GetSubjectsAsync(int page, int pageSize)
         {
             if (page < 1)
@@ -59,6 +58,7 @@ namespace SchoolManagement.Application.Services
             };
         }
 
+        /*-----------------Get the subject that is inactive in Service-------------------*/
         public async Task<PaginationSubject<SubjectDto>> GetSubjectsNotActiveAsync(int page, int pageSize)
         {
             if (page < 1)
@@ -89,6 +89,7 @@ namespace SchoolManagement.Application.Services
             };
         }
 
+        /*------------------Get the number of subject in Service---------------------*/
         public async Task<SubjectNumber> GetSubjectNumbersAsync()
         {
             var subjectNumber = await _subjectRepository.GetSubjectNumbersAsync();
@@ -101,6 +102,7 @@ namespace SchoolManagement.Application.Services
             };
         }
 
+        /*---------------Get the subject by Id with list teacher in Service----------------*/
         public async Task<PaginationSubjectTeacher> GetSubjectByIdTeachersAsync(int id, int page, int pageSize)
         {
             var subject = await _subjectRepository.GetSubjectByIdTeachersAsync(id);
@@ -128,6 +130,7 @@ namespace SchoolManagement.Application.Services
             };
         }
 
+        /*---------------Get the subject by Id with list student in Service-------------------*/
         public async Task<PaginationSubjectStudent> GetSubjectByIdStudentsAsync(int id, int page, int pageSize)
         {
             var subject = await _subjectRepository.GetSubjectByIdStudentsAsync(id);
@@ -155,6 +158,7 @@ namespace SchoolManagement.Application.Services
             };
         }
 
+        /*----------------Update the subject in Service-----------------------------*/
         public async Task UpdateSubjectAsync(int Id, UpdateSubjectDto subjectDto)
         {
             var subject = _mapper.Map<Subject>(subjectDto);
@@ -162,11 +166,13 @@ namespace SchoolManagement.Application.Services
             await _subjectRepository.UpdateSubjectAsync(Id, subject);
         }
 
+        /*------------------Delete the subject in Service---------------------------*/
         public async Task DeleteSubjectAsync(int Id)
         {
             await _subjectRepository.DeleteSubjectAsync(Id);
         }
 
+        /*------------------Assign the student to the subject-----------------------*/
         public async Task AssignStudentToSubjectAsync(int id, AssignStudentDto studentAdd)
         {
             var student = _mapper.Map<StudentSubject>(studentAdd);

@@ -6,6 +6,7 @@ using SchoolManagement.Application.Supports.Paginations;
 using SchoolManagement.Domain.Entities;
 using SchoolManagement.Domain.Exceptions;
 using SchoolManagement.Domain.IRepositories;
+using SchoolManagement.Domain.Models.Enums;
 
 namespace SchoolManagement.Application.Services
 {
@@ -18,6 +19,8 @@ namespace SchoolManagement.Application.Services
             _teacherRepository = teacherRepository;
             _mapper = mapper;
         }
+
+        /*-------------------------Create the new teacher in Service--------------------*/
         public async Task<CreateTeacherDto> CreateTeacherAsync(CreateTeacherDto teacherDto)
         {
             var teacher = _mapper.Map<Teacher>(teacherDto);
@@ -26,6 +29,7 @@ namespace SchoolManagement.Application.Services
             return _mapper.Map<CreateTeacherDto>(createTeacher);
         }
 
+        /*---------------------Get the list teacher is active in Service--------------------*/
         public async Task<PaginationTeacher<GetTeacherDto>> GetTeachersAsync(int page, int pageSize)
         {
             if (page < 1)
@@ -56,6 +60,7 @@ namespace SchoolManagement.Application.Services
             };
         }
 
+        /*---------------------Get the list teacher is inactive in Service-------------------*/
         public async Task<PaginationTeacher<GetTeacherDto>> GetTeachersNotActiveAsync(int page, int pageSize)
         {
             if (page < 1)
@@ -86,14 +91,14 @@ namespace SchoolManagement.Application.Services
             };
         }
 
-        // Get Student by Id from Repository
+        /*-------------------------Get Student by Id from Repository---------------------*/
         public async Task<GetTeacherIdDto> GetTeacherByIdAsync(int id)
         {
             var teacher = await _teacherRepository.GetTeacherByIdAsync(id);
             return _mapper.Map<GetTeacherIdDto>(teacher);
         }
 
-        // Update a teacher in the Db through the Repository
+        /*------------------Update a teacher in the Db through the Repository--------------*/
         public async Task<UpdateTeacherDto> UpdateTeacherAsync(int Id, UpdateTeacherDto teacherDto)
         {
             var teacher = _mapper.Map<Teacher>(teacherDto);
@@ -103,7 +108,7 @@ namespace SchoolManagement.Application.Services
             return _mapper.Map<UpdateTeacherDto>(updateTeacher);
         }
 
-        // Update a student partial in the Db through the Repository
+        /*-----------------Update a student partial in the Db through the Repository-------*/
         public async Task<UpdateTeacherDto> UpdateTeacherPartialAsync(int id, UpdateTeacherPartialDto teacherDto)
         {
             var findteacher = await _teacherRepository.GetTeacherByIdAsync(id);
@@ -122,7 +127,7 @@ namespace SchoolManagement.Application.Services
             return _mapper.Map<UpdateTeacherDto>(updateTeacher);
         }
 
-        // Get teacher number from Repository
+        /*-------------------------Get teacher number from Repository-----------------------*/
         public async Task<TeacherNumber> GetTeacherNumbersAsync()
         {
             var teacherNumber = await _teacherRepository.GetTeacherNumbersAsync();
@@ -135,7 +140,7 @@ namespace SchoolManagement.Application.Services
             };
         }
 
-        // Update a teacher account in the Db through Repository
+        /*------------------Update a teacher account in the Db through Repository-----------*/
         public async Task<TeacherAccountDto> UpdateTeacherAccountAsync(int teacherId, TeacherAccountDto accountDto)
         {
             var account = _mapper.Map<TeacherAccount>(accountDto);
@@ -144,18 +149,19 @@ namespace SchoolManagement.Application.Services
             return _mapper.Map<TeacherAccountDto>(updateTeacherAccount);
         }
 
-        // Delete a teacher in the Db through the Repository
+        /*----------------Delete a teacher in the Db through the Repository-------------------*/
         public async Task<string> DeleteTeacherAsync(int id)
         {
             var deleteTeacher = await _teacherRepository.DeleteTeacherAsync(id);
             if (!deleteTeacher)
             {
-                throw new NotFoundException("Teacher not found.");
+                throw new NotFoundException(ErrorCode.NotFoundTeacher);
             }
 
             return "Successfully";
         }
 
+        /*----------------Get Teacher by Id with List Principal in Service----------------*/
         public async Task<PaginationPrincipal<GetPrincipalDto>> GetTeacherByIdPrincipalsAsync(int id, int page, int pageSize)
         {
             if (page < 1)
