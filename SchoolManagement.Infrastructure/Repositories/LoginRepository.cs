@@ -16,8 +16,11 @@ namespace SchoolManagement.Infrastructure.Repositories
             _context = context;
             _jwtTokenGenerator = jwtTokenGenerator;
         }
+
+        /*-------------------------Login Action-------------------------------*/
         public async Task<(string? token, bool check)> LoginAsync(Login login)
         {
+            // Check Student account
             var student = await _context.Students
                 .Include(s => s.Account)
                 .SingleOrDefaultAsync(s => s.Account.UserName == login.UserName);
@@ -29,6 +32,7 @@ namespace SchoolManagement.Infrastructure.Repositories
                 return (token.ToString(), true);
             }
 
+            // Check Teacher account
             var teacher = await _context.Teachers
                 .Include(s => s.Account)
                 .SingleOrDefaultAsync(s => s.Account.UserName == login.UserName);
@@ -40,6 +44,7 @@ namespace SchoolManagement.Infrastructure.Repositories
                 return (token.ToString(), true);
             }
 
+            // Check Principal account
             var principal = await _context.Principals
                 .Include(s => s.Account)
                 .SingleOrDefaultAsync(s => s.Account.UserName == login.UserName);

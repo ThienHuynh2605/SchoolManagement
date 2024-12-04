@@ -1,11 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SchoolManagement.Application.DTOs.PrincipalDtos;
-using SchoolManagement.Application.DTOs.SubjectDtos;
 using SchoolManagement.Application.IServices;
-using SchoolManagement.Application.Services;
-using SchoolManagement.Domain.Interfaces.IServices;
 
 namespace SchoolManagement.API.Controllers
 {
@@ -19,6 +15,7 @@ namespace SchoolManagement.API.Controllers
             _principalService = principalService;
         }
 
+        /*------------------Endpoint to create the new principal----------------------*/
         [HttpPost]
         [Authorize(Policy = "OnlyPrincipal")]
         public async Task<IActionResult> CreatePrincipalAsync([FromBody] CreatePrincipalDto principalDto)
@@ -27,6 +24,7 @@ namespace SchoolManagement.API.Controllers
             return Ok("Successfully.");
         }
 
+        /*------------------Endpoint to get all of the principal--------------------------*/
         [HttpGet("isActive/{isActive}")]
         public async Task<IActionResult> GetPrincipalsAsync(bool isActive, int page = 1, int pageSize = 5)
         {
@@ -34,6 +32,7 @@ namespace SchoolManagement.API.Controllers
             return Ok(principal);
         }
 
+        /*----------------Endpoint to get the number of principal------------------------*/
         [HttpGet("numbers")]
         [Authorize(Policy = "OnlyPrincipal")]
         public async Task<IActionResult> GetPrincipalNumberAsync()
@@ -42,6 +41,7 @@ namespace SchoolManagement.API.Controllers
             return Ok(principalNumber);
         }
 
+        /*-----------------Endpoint to get principal by Id--------------------------*/
         [HttpGet("{id}")]
         public async Task<IActionResult> GetPrincipalByIdAsync(int id)
         {
@@ -49,6 +49,7 @@ namespace SchoolManagement.API.Controllers
             return Ok(principalDto);
         }
 
+        /*------------------Endpoint to Update the principal-----------------------*/
         [HttpPut("{id}")]
         [Authorize(Policy = "OnlyPrincipal")]
         public async Task<IActionResult> UpdatePrincipalAsync(int id, [FromBody] UpdatePrincipalDto principalDto)
@@ -57,6 +58,7 @@ namespace SchoolManagement.API.Controllers
             return Ok("Successfully.");
         }
 
+        /*-------------------Endpoint to Update the principal account-----------------*/
         [HttpPut("{id}/account")]
         [Authorize(Policy = "OnlyPrincipal")]
         public async Task<IActionResult> UpdatePrincipalAccountAsync(int id, [FromBody] PrincipalAccountDto accountDto)
@@ -65,6 +67,7 @@ namespace SchoolManagement.API.Controllers
             return Ok("Successfully.");
         }
 
+        /*------------------Endpoint to Delete the principal------------------------*/
         [HttpDelete("{id}")]
         [Authorize(Policy = "OnlyPrincipal")]
         public async Task<IActionResult> DeletePrincipalAsync(int id)
@@ -73,6 +76,7 @@ namespace SchoolManagement.API.Controllers
             return Ok("Successfully.");
         }
 
+        /*-----------------Endpoint to Get principal by Id with list teacher----------------*/
         [HttpGet("{id}/teachers")]
         [Authorize(Policy = "OnlyPrincipal")]
         public async Task<IActionResult> GetPrincipalByIdTeachersAsync(int id, int page = 1, int pageSize = 5)
@@ -81,6 +85,7 @@ namespace SchoolManagement.API.Controllers
             return Ok(teachersDto);
         }
 
+        /*---------------Endpoint to Assign the teacher to the principal------------------*/
         [HttpPost("{principalId}/add-teacher")]
         [Authorize(Policy = "OnlyPrincipal")]
         public async Task<IActionResult> AssignTeacherToPrincipalAsync(int principalId, AssignTeacherDto teacherAdd)

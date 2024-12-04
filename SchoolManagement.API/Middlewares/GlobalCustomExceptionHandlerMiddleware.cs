@@ -1,34 +1,45 @@
-﻿
-using Microsoft.AspNetCore.Diagnostics;
+﻿using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using SchoolManagement.Domain.Exceptions;
+using System.Net;
 
 namespace SchoolManagement.API.Middlewares
 {
-    public class GlobalCustomExceptionHandlerMiddleware : IExceptionHandler
+    public class GlobalCustomExceptionHandlerMiddleware(IProblemDetailsService problemDetailsService) : IExceptionHandler
     {
         public async ValueTask<bool> TryHandleAsync(HttpContext httpContext, Exception exception, CancellationToken cancellationToken)
         {
-            int status = exception switch
-            {
-                ArgumentException => StatusCodes.Status400BadRequest,
-                NotFoundException => StatusCodes.Status404NotFound,
-                _ => StatusCodes.Status500InternalServerError
-            };
-
-            httpContext.Response.StatusCode = status;
-
             var problemDetails = new ProblemDetails
             {
-                Type = exception.GetType().Name,
-                Title = exception.Message,
-                Status = status,
-                Detail = exception.StackTrace
+                Title = "An error occurred.",
+                Detail = exception.Message
             };
 
-            await httpContext.Response.WriteAsJsonAsync(problemDetails, cancellationToken);
+            if (exception is NotFoundException)
+            {
+                httpContext.Response.StatusCode = (int)HttpStatusCode.OK;
+                problemDetails.Status = (int)HttpStatusCode.NotFound;
+            }
+            else if(exception is ArgumentException)
+            {
+                httpContext.Response.StatusCode = (int)HttpStatusCode.OK;
+                problemDetails.Status = (int)HttpStatusCode.BadRequest;
+            }
+            else
+            {
+                httpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                problemDetails.Status = (int)HttpStatusCode.InternalServerError;
+                problemDetails.Detail = exception.StackTrace;
+            }
 
-            return true;
+            
+
+            return await problemDetailsService.TryWriteAsync(new ProblemDetailsContext
+            {
+                Exception = exception,
+                HttpContext = httpContext,
+                ProblemDetails = problemDetails
+            });
         }
     }
 }

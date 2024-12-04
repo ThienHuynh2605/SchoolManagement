@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using SchoolManagement.Application.DTOs.PrincipalDtos;
-using SchoolManagement.Application.DTOs.StudentDtos;
 using SchoolManagement.Application.DTOs.TeacherDtos;
 using SchoolManagement.Application.IServices;
 using SchoolManagement.Application.Supports.Paginations;
@@ -19,30 +18,34 @@ namespace SchoolManagement.Application.Services
             _mapper = mapper;
         }
 
+        /*---------------Assign the teacher to principal in Service-----------------------*/
         public async Task AssignTeacherToPrincipalAsync(int id, AssignTeacherDto teacherAdd)
         {
             var teacher = _mapper.Map<PrincipalTeacher>(teacherAdd);
             await _principalRepository.AssignTeacherToPrincipalAsync(id, teacher);
         }
 
-        // Create the new principal
+        /*----------------------Create the new principal in Service----------------------------*/
         public async Task CreatePrincipalAsync(CreatePrincipalDto principalDto)
         {
             var principal = _mapper.Map<Principal>(principalDto);
             await _principalRepository.CreatePrincipalAsync(principal);
         }
 
+        /*-----------------------Delete the principal in Service---------------------------*/
         public async Task DeletePrincipalAsync(int id)
         {
             await _principalRepository.DeletePrincipalAsync(id);
         }
 
+        /*-----------------------Get the principal by Id in Service-----------------------*/
         public async Task<GetPrincipalIdDto> GetPrincipalByIdAsync(int id)
         {
             var principal = await _principalRepository.GetPrincipalByIdAsync(id);
             return _mapper.Map<GetPrincipalIdDto>(principal);
         }
 
+        /*---------------------Get the principal by Id with list teacher in Service-----------*/
         public async Task<PaginationTeacher<TeacherDto>> GetPrincipalByIdTeachersAsync(int id, int page, int pageSize)
         {
             if (page < 1)
@@ -78,6 +81,7 @@ namespace SchoolManagement.Application.Services
             };
         }
 
+        /*--------------------Get the number of principal in Service-------------------*/
         public async Task<PrincipalNumber> GetPrincipalNumbersAsync()
         {
             var principalNumber = await _principalRepository.GetPrincipalNumbersAsync();
@@ -90,7 +94,7 @@ namespace SchoolManagement.Application.Services
             };
         }
 
-        // Get the all principal
+        /*-----------------------Get the all principal in Service-------------------------*/
         public async Task<PaginationPrincipal<GetPrincipalDto>> GetPrincipalsAsync(bool isActive, int page, int pageSize)
         {
             if (page < 1)
@@ -130,6 +134,7 @@ namespace SchoolManagement.Application.Services
             };
         }
 
+        /*----------------Update the principal account in Service---------------------*/
         public async Task UpdatePrincipalAccountAsync(int Id, PrincipalAccountDto accountDto)
         {
             var account = _mapper.Map<PrincipalAccount>(accountDto);
@@ -137,6 +142,7 @@ namespace SchoolManagement.Application.Services
             await _principalRepository.UpdatePrincipalAccountAsync(Id, account);
         }
 
+        /*-----------------Update the principal in Service-----------------------*/
         public async Task UpdatePrincipalAsync(int Id, UpdatePrincipalDto principalDto)
         {
             var principal = _mapper.Map<Principal>(principalDto);

@@ -2,6 +2,7 @@
 using SchoolManagement.Domain.Entities;
 using SchoolManagement.Domain.Exceptions;
 using SchoolManagement.Domain.Interfaces;
+using SchoolManagement.Domain.Models.Enums;
 using SchoolManagement.Infrastructure.Data;
 
 namespace SchoolManagement.Infrastructure.Repositories
@@ -14,7 +15,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             _context = context;
         }
         
-        // Get Students with "IsActive == True" from Db
+        /*--------------Get Students with "IsActive == True" from Db---------------*/
         public async Task<List<Student>> GetStudentsAsync(int page, int pageSize)
         {
             var students = await _context.Students
@@ -26,7 +27,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return students; 
         }
 
-        //Get students with "IsActive == false" from Db
+        /*-------------Get students with "IsActive == false" from Db-----------------*/
         public async Task<List<Student>> GetStudentsNotActiveAsync(int page, int pageSize)
         {
             var students = await _context.Students
@@ -39,7 +40,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return students;
         }
 
-        // Get Student number from Db
+        /*-----------------------------Get Student number from Db-------------------------*/
         public async Task<(int totalStudents, int activeStudents, int notActiveStudents)> GetStudentNumbersAsync()
         {
             var totalStudents = await _context.Students.CountAsync();
@@ -63,7 +64,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return (totalStudents, activeStudents, notActiveStudents);
         }
 
-        // Get Student by Id from Db
+        /*----------------------------------Get Student by Id from Db-------------------------*/
         public async Task<Student> GetStudentByIdAsync(int id)
         {
             var student = await _context.Students
@@ -73,13 +74,13 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             if (student == null)
             {
-                throw new NotFoundException("Student not found.");
+                throw new NotFoundException(ErrorCode.NotFoundStudent);
             }
 
             return student;
         }
 
-        // Get Student and Subject by Student Id from Db
+        /*------------------------Get Student and Subject by Student Id from Db----------------*/
         public async Task<Student> GetStudentByIdSubjectsAsync(int id)
         {
             var student = await _context.Students
@@ -88,20 +89,20 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             if (student == null)
             {
-                throw new NotFoundException("Student not found.");
+                throw new NotFoundException(ErrorCode.NotFoundStudent);
             }
 
             return student;
         }
 
-        // Create the new student to Db
+        /*---------------------------Create the new student to Db------------------------*/
         public async Task<Student> CreateStudentAsync(Student student)
         {
             var gradeId = await _context.Grades
                 .FirstOrDefaultAsync(g => g.Id == student.GradeId);
             if (gradeId == null)
             {
-                throw new NotFoundException("Grade not found.");
+                throw new NotFoundException(ErrorCode.NotFoundGrade);
             }
             _context.Students.Add(student);
             await _context.SaveChangesAsync();
@@ -109,14 +110,14 @@ namespace SchoolManagement.Infrastructure.Repositories
             return student;
         }
 
-        // Update the student from Db
+        /*--------------------------Update the student from Db---------------------------*/
         public async Task<Student> UpdateStudentAsync(int Id,  Student student)
         {
             var existingStudent = await _context.Students
                 .FirstOrDefaultAsync(s => s.Id ==  Id);
             if (existingStudent == null)
             {
-                throw new NotFoundException("Student not found.");
+                throw new NotFoundException(ErrorCode.NotFoundStudent);
             }
 
             existingStudent.Email = student.Email;
@@ -130,7 +131,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return existingStudent;
         }
 
-        // Update the student partial in Db
+        /*--------------------------Update the student partial in Db-------------------------_*/
         public async Task<Student> UpdateStudentPartialAsync(int id, Student student)
         {
             var existingStudent = await _context.Students
@@ -138,7 +139,7 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             if (existingStudent == null)
             {
-                throw new NotFoundException("Student not found.");
+                throw new NotFoundException(ErrorCode.NotFoundStudent);
             }
 
             if (!string.IsNullOrEmpty(student.Email))
@@ -171,7 +172,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return existingStudent;
         }
 
-        // Update the student account in Db
+        /*---------------------------Update the student account in Db-----------------------*/
         public async Task<StudentAccount> UpdateStudentAccountAsync(int studentId, StudentAccount account)
         {
             var existingStudent = await _context.Students
@@ -180,7 +181,7 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             if (existingStudent == null)
             {
-                throw new NotFoundException("Student not found.");
+                throw new NotFoundException(ErrorCode.NotFoundStudent);
             }
 
             existingStudent.Account.UserName = account.UserName;
@@ -190,7 +191,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return existingStudent.Account;
         }
 
-        // Delete the student in Db
+        /*--------------------------Delete the student in Db------------------------------*/
         public async Task<bool> DeleteStudentAsync(int id)
         {
             var student = await _context.Students
@@ -213,20 +214,21 @@ namespace SchoolManagement.Infrastructure.Repositories
             return true;
         }
 
+        /*---------------------------Assign the Subject to the Student--------------------*/
         public async Task AssignSubjectToStudentAsync(int id, StudentSubject subjectAdd)
         {
             var student = await _context.Students
                 .FirstOrDefaultAsync(s => s.Id == id);
             if (student == null)
             {
-                throw new NotFoundException("Student not found.");
+                throw new NotFoundException(ErrorCode.NotFoundStudent);
             }
 
             var subject = await _context.Subjects
                 .FirstOrDefaultAsync(s => s.Id == subjectAdd.SubjectId);
             if (subject == null)
             {
-                throw new NotFoundException("Subject not found.");
+                throw new NotFoundException(ErrorCode.NotFoundStudent);
 
             }
 

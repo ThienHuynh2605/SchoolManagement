@@ -2,6 +2,7 @@
 using SchoolManagement.Domain.Entities;
 using SchoolManagement.Domain.Exceptions;
 using SchoolManagement.Domain.IRepositories;
+using SchoolManagement.Domain.Models.Enums;
 using SchoolManagement.Infrastructure.Data;
 
 namespace SchoolManagement.Infrastructure.Repositories
@@ -14,20 +15,21 @@ namespace SchoolManagement.Infrastructure.Repositories
             _context = context;
         }
 
+        /*----------------Assign the Teacher to the Principal----------------------*/
         public async Task AssignTeacherToPrincipalAsync(int id, PrincipalTeacher teacherAdd)
         {
             var principal = await _context.Principals
                 .FirstOrDefaultAsync(s => s.Id == id); 
             if (principal == null)
             {
-                throw new NotFoundException("Principal not found.");
+                throw new NotFoundException(ErrorCode.NotFoundPrincipal);
             }
 
             var teacher = await _context.Teachers
                 .FirstOrDefaultAsync(s => s.Id == teacherAdd.TeacherId);
             if (teacher == null)
             {
-                throw new NotFoundException("Teacher not found.");
+                throw new NotFoundException(ErrorCode.NotFoundTeacher);
 
             }
 
@@ -49,6 +51,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
+        /*---------------------Create the new principal in Repository---------------*/
         public async Task<Principal> CreatePrincipalAsync(Principal principal)
         {
             _context.Principals.Add(principal);
@@ -57,6 +60,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return principal;
         }
 
+        /*--------------------Delete the principal in Repository----------------------*/
         public async Task DeletePrincipalAsync(int id)
         {
             var principal = await _context.Principals
@@ -65,7 +69,7 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             if (principal == null)
             {
-                throw new NotFoundException("Principal not found.");
+                throw new NotFoundException(ErrorCode.NotFoundPrincipal);
             }
 
             if (principal.Account != null)
@@ -77,6 +81,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
+        /*------------------Get the principal by Id-------------------------------*/
         public async Task<Principal> GetPrincipalByIdAsync(int id)
         {
 
@@ -86,12 +91,13 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             if (principal == null)
             {
-                throw new NotFoundException("Principal not found.");
+                throw new NotFoundException(ErrorCode.NotFoundPrincipal);
             }
 
             return principal;
         }
 
+        /*------------Get the principal by Id with list teacher in Repository---------------*/
         public async Task<Principal> GetPrincipalByIdTeachersAsync(int id)
         {
             var principal = await _context.Principals
@@ -100,12 +106,13 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             if (principal == null)
             {
-                throw new NotFoundException("Principal not found.");
+                throw new NotFoundException(ErrorCode.NotFoundPrincipal);
             }
 
             return principal;
         }
 
+        /*------------------Get the number of principal in Repository-------------------*/
         public async Task<(int totalPrincipals, int activePrincipals, int notActivePrincipals)> GetPrincipalNumbersAsync()
         {
             var totalPrincipals = await _context.Principals.CountAsync();
@@ -129,6 +136,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return (totalPrincipals, activePrincipals, notActivePrincipals);
         }
 
+        /*----------------Get the principal that is active in Repository------------------*/
         public async Task<List<Principal>> GetPrincipalsAsync(int page, int pageSize)
         {
             var principals = await _context.Principals
@@ -139,6 +147,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return principals;
         }
 
+        /*---------------Get the principal that is inactive in Repository-----------------*/
         public async Task<List<Principal>> GetPrincipalsNotActiveAsync(int page, int pageSize)
         {
             var principals = await _context.Principals
@@ -149,6 +158,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             return principals;
         }
 
+        /*-----------------Update the principal account in Repository---------------------*/
         public async Task UpdatePrincipalAccountAsync(int principalId, PrincipalAccount account)
         {
             var existingPrincipal = await _context.Principals
@@ -157,7 +167,7 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             if (existingPrincipal == null)
             {
-                throw new NotFoundException("Principal not found.");
+                throw new NotFoundException(ErrorCode.NotFoundPrincipal);
             }
 
             if (existingPrincipal.Account is null)
@@ -170,13 +180,14 @@ namespace SchoolManagement.Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
+        /*------------------Update the principal------------------------------*/
         public async Task UpdatePrincipalAsync(int Id, Principal principal)
         {
             var existingPrincipal = await _context.Principals
                 .FirstOrDefaultAsync(s => s.Id == Id);
             if (existingPrincipal == null)
             {
-                throw new NotFoundException("Principal not found.");
+                throw new NotFoundException(ErrorCode.NotFoundPrincipal);
             }
 
             existingPrincipal.Email = principal.Email;

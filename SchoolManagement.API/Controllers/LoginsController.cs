@@ -16,6 +16,7 @@ namespace SchoolManagement.API.Controllers
             _loginService = loginService;
         }
 
+        /*-------------------------Login Action-------------------------------*/
         [HttpPost]
         [AllowAnonymous]
         public async Task<IActionResult> LoginAsync(LoginDto loginDto)

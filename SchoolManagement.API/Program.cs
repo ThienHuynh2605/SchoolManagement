@@ -144,7 +144,7 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 // Add Exception services
-builder.Services.AddExceptionHandler<GlobalCustomExceptionHandlerMiddleware2>();
+builder.Services.AddExceptionHandler<GlobalCustomExceptionHandlerMiddleware>();
 builder.Services.AddProblemDetails(options =>
 {
     options.CustomizeProblemDetails = context =>
@@ -198,7 +198,6 @@ app.UseHsts();
 
 app.UseStaticFiles();
 
-//app.UseMiddleware(typeof(GlobalExceptionHandlerMiddleware));
 app.UseHttpsRedirection();
 
 app.UseAuthentication();

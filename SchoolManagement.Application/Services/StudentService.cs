@@ -7,11 +7,6 @@ using SchoolManagement.Domain.Exceptions;
 using SchoolManagement.Domain.Interfaces;
 using SchoolManagement.Domain.Interfaces.IServices;
 using SchoolManagement.Domain.Models.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolManagement.Application.Services
 {
@@ -25,7 +20,7 @@ namespace SchoolManagement.Application.Services
             _studentRepository = studentRepository;
         }
 
-        // Get Student with "IsActive == True" from Repository
+        /*----------------Get Student with "IsActive == True" from Repository-------------*/
         public async Task<PaginationStudent<GetStudentDto>> GetStudentsAsync(int page, int pageSize)
         {
             if (page < 1)
@@ -56,7 +51,7 @@ namespace SchoolManagement.Application.Services
             };
         }
 
-        // Get students with "IsAction == False" in the Database through Repository
+        /*--------Get students with "IsAction == False" in the Database through Repository----*/
         public async Task<PaginationStudent<GetStudentDto>> GetStudentsNotActiveAsync(int page, int pageSize)
         {
             if (page < 1)
@@ -87,7 +82,7 @@ namespace SchoolManagement.Application.Services
             };
         }
 
-        // Get student number from Repository
+        /*---------------------Get student number from Repository--------------------*/
         public async Task<StudentNumber> GetStudentNumbersAsync()
         {
             var studentNumber = await _studentRepository.GetStudentNumbersAsync();
@@ -100,14 +95,14 @@ namespace SchoolManagement.Application.Services
             };
         }
 
-        // Get Student by Id from Repository
+        /*--------------------Get Student by Id from Repository------------------------*/
         public async Task<GetStudentIdDto> GetStudentByIdAsync(int id)
         {
             var student = await _studentRepository.GetStudentByIdAsync(id);
             return _mapper.Map<GetStudentIdDto>(student);
         }
 
-        // Get Student and Subject from Repository
+        /*-------------------Get Student and Subject from Repository--------------------*/
         public async Task<PaginationStudentSubject> GetStudentByIdSubjectsAsync(int id, int page, int pageSize)
         {
             if (page < 1)
@@ -143,18 +138,17 @@ namespace SchoolManagement.Application.Services
             };
         }
 
-        // Create a new student in the Db through the Repository
+        /*--------------Create a new student in the Db through the Repository--------------*/
         public async Task<CreateStudentDto> CreateStudentAsync(CreateStudentDto studentDto)
         {
             var student = _mapper.Map<Student>(studentDto);
 
             var createStudent = await _studentRepository.CreateStudentAsync(student);
 
-            //return _mapper.Map<CreateStudentDto>(student);
             return _mapper.Map<CreateStudentDto>(createStudent);
         }
 
-        // Update a student in the Db through the Repository
+        /*----------------Update a student in the Db through the Repository-----------------*/
         public async Task<UpdateStudentDto> UpdateStudentAsync(int Id, UpdateStudentDto studentDto)
         {
             var student = _mapper.Map<Student>(studentDto);
@@ -164,7 +158,7 @@ namespace SchoolManagement.Application.Services
             return _mapper.Map<UpdateStudentDto>(updateStudent);
         }
 
-        // Update a student partial in the Db through the Repository
+        /*--------------Update a student partial in the Db through the Repository------------*/
         public async Task<UpdateStudentDto> UpdateStudentPartialAsync(int id, UpdateStudentPartialDto studentDto)
         {
             var findStudent = await _studentRepository.GetStudentByIdAsync(id);
@@ -183,7 +177,7 @@ namespace SchoolManagement.Application.Services
             return _mapper.Map<UpdateStudentDto>(updateStudent);
         }
 
-        // Update a student account in the Db through Repository
+        /*----------------Update a student account in the Db through Repository---------------*/
         public async Task<StudentAccountDto> UpdateStudentAccountAsync(int studentId, StudentAccountDto accountDto)
         {
             var account = _mapper.Map<StudentAccount>(accountDto);
@@ -192,18 +186,19 @@ namespace SchoolManagement.Application.Services
             return _mapper.Map<StudentAccountDto>(updateStudentAccount);
         }
 
-        // Delete a student in the Db through the Repository
+        /*------------------Delete a student in the Db through the Repository----------------*/
         public async Task<string> DeleteStudentAsync(int id)
         {
             var deleteStudent = await _studentRepository.DeleteStudentAsync(id);
             if (!deleteStudent)
             {
-                throw new NotFoundException("Student not found.");
+                throw new NotFoundException(ErrorCode.NotFoundStudent);
             }
 
             return "Successfully";
         }
 
+        /*--------------------Assign the Subject to the Student-------------------------------*/
         public async Task AssignSubjectToStudentAsync(int id, AssignSubjectDto subjectAdd)
         {
             var subject = _mapper.Map<StudentSubject>(subjectAdd);
