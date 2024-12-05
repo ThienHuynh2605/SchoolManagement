@@ -1,4 +1,6 @@
-﻿namespace SchoolManagement.Domain.Entities
+﻿using SchoolManagement.Domain.Entities.Base;
+
+namespace SchoolManagement.Domain.Entities
 {
     public class Principal : PeopleEntity
     {

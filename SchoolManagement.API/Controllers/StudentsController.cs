@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SchoolManagement.Application.DTOs.StudentDtos;
+using SchoolManagement.Domain.Entities;
 using SchoolManagement.Domain.Interfaces.IServices;
 
 namespace SchoolManagement.API.Controllers
