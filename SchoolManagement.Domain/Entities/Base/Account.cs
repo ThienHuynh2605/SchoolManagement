@@ -1,6 +1,6 @@
 ﻿using SchoolManagement.Domain.Models.Enums;
 
-namespace SchoolManagement.Domain.Entities
+namespace SchoolManagement.Domain.Entities.Base
 {
     public class Account : BaseEntity
     {

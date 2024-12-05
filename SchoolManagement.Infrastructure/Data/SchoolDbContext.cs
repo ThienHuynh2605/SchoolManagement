@@ -1,11 +1,20 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using SchoolManagement.Domain.Entities;
+using SchoolManagement.Domain.Models.Enums;
+using SchoolManagement.Domain.Models.Loging;
+using System.Security.Claims;
 
 namespace SchoolManagement.Infrastructure.Data
 {
     public class SchoolDbContext : DbContext
     {
-        public SchoolDbContext(DbContextOptions<SchoolDbContext> options) : base(options) { }
+        private readonly IHttpContextAccessor _contextAccessor;
+        public SchoolDbContext(DbContextOptions<SchoolDbContext> options, IHttpContextAccessor httpContextAccessor) : base(options)
+        {
+            _contextAccessor = httpContextAccessor;
+        }
         
         public DbSet<Student> Students { get; set; }
         public DbSet<StudentAccount> StudentAccounts { get; set; }
@@ -21,6 +30,8 @@ namespace SchoolManagement.Infrastructure.Data
         public DbSet<Principal> Principals { get; set; }
         public DbSet<PrincipalAccount> PrincipalAccounts { get; set; }
         public DbSet<PrincipalTeacher> PrincipalTeachers { get; set; }
+        
+        public DbSet<Audit> Audits { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -82,6 +93,59 @@ namespace SchoolManagement.Infrastructure.Data
                     r => r.HasOne<Principal>().WithMany().HasForeignKey(s => s.PrincipalId)
                 );
 
+        }
+
+        /*============================Change tracking================================*/
+        public virtual async Task<int> SaveChangesAsync()
+        {
+            ChangeTracker.DetectChanges();
+            var auditEntries = new List<AuditEntry>();
+            foreach (var entry in ChangeTracker.Entries())
+            {
+                if (entry.Entity is Audit || entry.State == EntityState.Detached || entry.State == EntityState.Unchanged)
+                    continue;
+                var auditEntry = new AuditEntry(entry);
+                auditEntry.TableName = entry.Entity.GetType().Name;
+                auditEntry.UserId = _contextAccessor.HttpContext?.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                auditEntry.Name = _contextAccessor.HttpContext?.User?.FindFirst(ClaimTypes.Name)?.Value;
+                auditEntries.Add(auditEntry);
+
+                foreach (var property in entry.Properties)
+                {
+                    string propertyName = property.Metadata.Name;
+                    if (property.Metadata.IsPrimaryKey())
+                    {
+                        auditEntry.KeyValues[propertyName] = property.CurrentValue;
+                        continue;
+                    }
+
+                    switch (entry.State)
+                    {
+                        case EntityState.Added:
+                            auditEntry.AuditType = AuditType.Create;
+                            auditEntry.NewValues[propertyName] = property.CurrentValue;
+                            break;
+                        case EntityState.Deleted:
+                            auditEntry.AuditType = AuditType.Delete;
+                            auditEntry.OldValues[propertyName] = property.OriginalValue;
+                            break;
+                        case EntityState.Modified:
+                            if (property.IsModified)
+                            {
+                                auditEntry.ChangedColumns.Add(propertyName);
+                                auditEntry.AuditType = AuditType.Update;
+                                auditEntry.OldValues[propertyName] = property.OriginalValue;
+                                auditEntry.NewValues[propertyName] = property.CurrentValue;
+                            }
+                            break;
+                    }
+                }
+            }
+            foreach (var auditEntry in auditEntries)
+            {
+                Audits.Add(auditEntry.ToAudit());
+            }
+            return await base.SaveChangesAsync(); 
         }
     }
 }

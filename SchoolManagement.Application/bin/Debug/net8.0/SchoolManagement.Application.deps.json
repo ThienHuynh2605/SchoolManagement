@@ -1100,7 +1100,8 @@
       "SchoolManagement.Domain/1.0.0": {
         "dependencies": {
           "Enums.NET": "5.0.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
+          "Microsoft.EntityFrameworkCore": "8.0.10"
         },
         "runtime": {
           "SchoolManagement.Domain.dll": {

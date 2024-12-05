@@ -88,6 +88,9 @@ builder.Services.AddScoped<IValidator<UpdateGradeDto>, UpdateGradeValidator>();
 builder.Services.AddScoped<IValidator<CreateSubjectDto>, CreateSubjectValidator>();
 builder.Services.AddScoped<IValidator<UpdateSubjectDto>, UpdateSubjectValidator>();
 
+// Different Service
+builder.Services.AddHttpContextAccessor();
+
 
 
 builder.Services.AddControllers();
