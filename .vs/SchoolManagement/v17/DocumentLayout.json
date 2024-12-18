@@ -1,7 +1,44 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.application\\services\\gradeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351325E5-9F6F-400B-9C41-77EB1CA9043E}|SchoolManagement.Application\\SchoolManagement.Application.csproj|solutionrelative:schoolmanagement.application\\services\\gradeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.domain\\entities\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C566962-1B18-446D-85A2-20F197C0CD31}|SchoolManagement.Domain\\SchoolManagement.Domain.csproj|solutionrelative:schoolmanagement.domain\\entities\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:schoolmanagement.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:schoolmanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:schoolmanagement.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.infrastructure\\data\\schooldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D86D9BB3-12C9-4423-AC6A-51DB217F9525}|SchoolManagement.Infrastructure\\SchoolManagement.Infrastructure.csproj|solutionrelative:schoolmanagement.infrastructure\\data\\schooldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:schoolmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|c:\\csharp\\visual_studio\\clean_architecture\\schoolmanagement\\schoolmanagement.api\\schoolmanagement.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0F2AC99B-E54C-47DB-B5D6-4A0A535523B0}|SchoolManagement.API\\SchoolManagement.API.csproj|solutionrelative:schoolmanagement.api\\schoolmanagement.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +46,122 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GradeService.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Services\\GradeService.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Application\\Services\\GradeService.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Application\\Services\\GradeService.cs",
+              "RelativeToolTip": "SchoolManagement.Application\\Services\\GradeService.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAnwFkAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T07:02:01.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Grade.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\Entities\\Grade.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Domain\\Entities\\Grade.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Domain\\Entities\\Grade.cs",
+              "RelativeToolTip": "SchoolManagement.Domain\\Entities\\Grade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T07:01:13.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SchoolDbContext.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Data\\SchoolDbContext.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.Infrastructure\\Data\\SchoolDbContext.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.Infrastructure\\Data\\SchoolDbContext.cs",
+              "RelativeToolTip": "SchoolManagement.Infrastructure\\Data\\SchoolDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T09:41:36.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": ".dockerignore",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\.dockerignore",
+              "RelativeDocumentMoniker": ".dockerignore",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\.dockerignore",
+              "RelativeToolTip": ".dockerignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-12T08:46:44.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Dockerfile",
+              "RelativeDocumentMoniker": "SchoolManagement.API\\Dockerfile",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Dockerfile",
+              "RelativeToolTip": "SchoolManagement.API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-12T08:34:29.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\appsettings.json",
+              "RelativeDocumentMoniker": "SchoolManagement.API\\appsettings.json",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\appsettings.json",
+              "RelativeToolTip": "SchoolManagement.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAC2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-11T08:04:11.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "SchoolManagement.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "SchoolManagement.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-10T04:39:21.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SchoolManagement.API.csproj",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\SchoolManagement.API.csproj",
+              "RelativeDocumentMoniker": "SchoolManagement.API\\SchoolManagement.API.csproj",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\SchoolManagement.API.csproj",
+              "RelativeToolTip": "SchoolManagement.API\\SchoolManagement.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-10T04:39:08.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Program.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.API\\Program.cs",
+              "ToolTip": "C:\\CSHARP\\Visual_Studio\\Clean_Architecture\\SchoolManagement\\SchoolManagement.API\\Program.cs",
+              "RelativeToolTip": "SchoolManagement.API\\Program.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAUwNMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T04:10:35.473Z"
             }
           ]
         }
