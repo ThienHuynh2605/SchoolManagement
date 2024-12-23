@@ -14,7 +14,7 @@ namespace SchoolManagement.Infrastructure.Repositories
         {
             _context = context;
         }
-        
+
         /*--------------Get Students with "IsActive == True" from Db---------------*/
         public async Task<List<Student>> GetStudentsAsync(int page, int pageSize)
         {
@@ -127,7 +127,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             existingStudent.IsActive = student.IsActive;
             existingStudent.HomeTown = student.HomeTown;
             await _context.SaveChangesAsync();
-
+            //await _log.WriteLogAsync(existingStudent, "Update");
             return existingStudent;
         }
 
@@ -168,6 +168,7 @@ namespace SchoolManagement.Infrastructure.Repositories
             }
 
             await _context.SaveChangesAsync();
+            //await _log.WriteLogAsync(existingStudent, "Update");
 
             return existingStudent;
         }
@@ -210,6 +211,7 @@ namespace SchoolManagement.Infrastructure.Repositories
 
             _context.Students.Remove(student);
             await _context.SaveChangesAsync();
+            //await _log.WriteLogAsync(student, "Delete");
 
             return true;
         }

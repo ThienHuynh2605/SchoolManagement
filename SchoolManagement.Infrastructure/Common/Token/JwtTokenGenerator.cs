@@ -30,17 +30,20 @@ namespace SchoolManagement.Infrastructure.Common.Token
             switch (User)
             {
                 case Student student:
-                    claims.Add(new Claim("name", student.Name ?? string.Empty));
+                    claims.Add(new Claim(ClaimTypes.NameIdentifier, student.Id.ToString()));
+                    claims.Add(new Claim(ClaimTypes.Name, student.Name ?? string.Empty));
                     claims.Add(new Claim("email", student.Email ?? string.Empty));
                     break;
 
                 case Teacher teacher:
-                    claims.Add(new Claim("name", teacher.Name ?? string.Empty));
+                    claims.Add(new Claim(ClaimTypes.NameIdentifier, teacher.Id.ToString()));
+                    claims.Add(new Claim(ClaimTypes.Name, teacher.Name??string.Empty));
                     claims.Add(new Claim("email", teacher.Email ?? string.Empty));
                     break;
 
                 case Principal principal:
-                    claims.Add(new Claim("name", principal.Name ?? string.Empty));
+                    claims.Add(new Claim(ClaimTypes.NameIdentifier, principal.Id.ToString()));
+                    claims.Add(new Claim(ClaimTypes.Name, principal.Name ?? string.Empty));
                     claims.Add(new Claim("email", principal.Email ?? string.Empty));
                     break;
 
