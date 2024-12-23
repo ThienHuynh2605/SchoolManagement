@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManagement.Applicatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManagement.Infrastructure", "SchoolManagement.Infrastructure\SchoolManagement.Infrastructure.csproj", "{D86D9BB3-12C9-4423-AC6A-51DB217F9525}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManager.Test", "SchoolManager.Test\SchoolManager.Test.csproj", "{863A368A-BC21-4F2B-A5BA-BF651826FCC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManager.Test", "SchoolManager.Test\SchoolManager.Test.csproj", "{863A368A-BC21-4F2B-A5BA-BF651826FCC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
